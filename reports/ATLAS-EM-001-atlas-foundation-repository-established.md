@@ -10,6 +10,8 @@
 | **Status** | **Published** |
 | **Authority** | ATLAS-001 — First Inheriting Repository Charter |
 | **Repository** | Donum Dei Atlas — Repository 1 |
+| **Remote** | https://github.com/eejonathangomez/DonumDei-Atlas |
+| **Commit** | `42dae07` |
 | **Production impact** | None |
 
 ---
@@ -28,7 +30,7 @@ Atlas is the **Knowledge Preservation Repository** — not a product.
 
 | Truth | Evidence |
 |-------|----------|
-| Repository initialized | `DonumDei-Atlas` git repository |
+| Repository initialized | `DonumDei-Atlas` git repository · [github.com/eejonathangomez/DonumDei-Atlas](https://github.com/eejonathangomez/DonumDei-Atlas) · `42dae07` |
 | Documentation structure established | Root docs + `docs/` + `reports/` |
 | Mission defined | [MISSION.md](../MISSION.md) · [README.md](../README.md) |
 | Architecture documented | [ARCHITECTURE.md](../ARCHITECTURE.md) |
