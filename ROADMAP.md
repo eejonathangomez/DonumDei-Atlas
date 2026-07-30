@@ -19,7 +19,7 @@
 | Constitutional inheritance | ✅ Verified | References resolve to Repository 0 |
 | [ATLAS-EM-001](./reports/ATLAS-EM-001-atlas-foundation-repository-established.md) | ✅ Published | First Atlas engineering milestone |
 
-**Gate satisfied:** [EM-007](../TradingBot/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md)
+**Gate satisfied:** [EM-007](../DonumDei-TradingPlatform/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md)
 
 ---
 

@@ -111,7 +111,7 @@ Every curated entry should declare: **source repository**, **source artifact**, 
 
 ## Inheritance architecture
 
-Per [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md):
+Per [ATLAS-INHERITANCE-GUIDE](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md):
 
 | Class | Atlas behavior |
 |-------|----------------|
@@ -119,7 +119,7 @@ Per [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/ATLAS-INH
 | **Extend** | Author Atlas instances using Repository 0 patterns (boot docs, reports, DECS when earned) |
 | **Own** | Atlas knowledge domains, curation, relationships, milestones |
 
-Physical DDEB repository split is **deferred**. Atlas references `../TradingBot` paths until a future split is earned.
+Physical DDEB repository split is **deferred**. Atlas references `../DonumDei-TradingPlatform` paths until a future split is earned.
 
 ---
 

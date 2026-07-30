@@ -16,10 +16,10 @@ Atlas inherits engineering philosophy from Repository 0. Read these at source:
 
 | Artifact | Reference |
 |----------|-----------|
-| **The Donum Dei Way** | [docs/THE-DONUM-DEI-WAY.md](../TradingBot/docs/THE-DONUM-DEI-WAY.md) |
-| **DDEF Principles** | [DDEF-PRINCIPLES.md](../TradingBot/docs/engineering-framework/DDEF-PRINCIPLES.md) |
-| **DDEOS Foundation** | [DDEOS-FOUNDATION-v1.0.md](../TradingBot/docs/engineering-framework/DDEOS-FOUNDATION-v1.0.md) |
-| **DDEOS Engineering DNA** | [DDEOS-ENGINEERING-DNA.md](../TradingBot/docs/engineering-framework/DDEOS-ENGINEERING-DNA.md) |
+| **The Donum Dei Way** | [docs/THE-DONUM-DEI-WAY.md](../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) |
+| **DDEF Principles** | [DDEF-PRINCIPLES.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEF-PRINCIPLES.md) |
+| **DDEOS Foundation** | [DDEOS-FOUNDATION-v1.0.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEOS-FOUNDATION-v1.0.md) |
+| **DDEOS Engineering DNA** | [DDEOS-ENGINEERING-DNA.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEOS-ENGINEERING-DNA.md) |
 | **Principle of TRUTH** | Embedded in DDEF and The Donum Dei Way |
 
 Repository 0 preserves **engineering**. Atlas preserves **knowledge**.

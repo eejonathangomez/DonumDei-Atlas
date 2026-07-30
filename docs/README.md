@@ -37,16 +37,16 @@
 
 | Topic | Reference |
 |-------|-----------|
-| **Inheritance guide** | [ATLAS-INHERITANCE-GUIDE](../../TradingBot/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md) |
-| **Inheritance gate** | [EM-007](../../TradingBot/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) |
-| **The Donum Dei Way** | [THE-DONUM-DEI-WAY.md](../../TradingBot/docs/THE-DONUM-DEI-WAY.md) |
-| **Engineering standards** | [ENGINEERING-STANDARDS/](../../TradingBot/docs/ENGINEERING-STANDARDS/) |
-| **Investigation discipline** | [DDES-002](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) |
-| **Case study standard** | [DDES-003](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
-| **Vocabulary authority** | [DDEV-000](../../TradingBot/docs/ENGINEERING-STANDARDS/DDEV-000-engineering-vocabulary-authority.md) |
-| **Engineering lexicon** | [ENGINEERING-LEXICON.md](../../TradingBot/docs/ENGINEERING-LEXICON.md) |
-| **DECS library** | [engineering-case-studies/](../../TradingBot/docs/engineering-case-studies/) |
-| **Engineering framework** | [engineering-framework/](../../TradingBot/docs/engineering-framework/) |
+| **Inheritance guide** | [ATLAS-INHERITANCE-GUIDE](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md) |
+| **Inheritance gate** | [EM-007](../../DonumDei-TradingPlatform/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) |
+| **The Donum Dei Way** | [THE-DONUM-DEI-WAY.md](../../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) |
+| **Engineering standards** | [ENGINEERING-STANDARDS/](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/) |
+| **Investigation discipline** | [DDES-002](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) |
+| **Case study standard** | [DDES-003](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
+| **Vocabulary authority** | [DDEV-000](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDEV-000-engineering-vocabulary-authority.md) |
+| **Engineering lexicon** | [ENGINEERING-LEXICON.md](../../DonumDei-TradingPlatform/docs/ENGINEERING-LEXICON.md) |
+| **DECS library** | [engineering-case-studies/](../../DonumDei-TradingPlatform/docs/engineering-case-studies/) |
+| **Engineering framework** | [engineering-framework/](../../DonumDei-TradingPlatform/docs/engineering-framework/) |
 
 ---
 

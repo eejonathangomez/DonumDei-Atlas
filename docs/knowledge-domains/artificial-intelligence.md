@@ -25,9 +25,9 @@ Knowledge for and about AI engineering partners in the Donum Dei ecosystem:
 
 | Source | Reference |
 |--------|-----------|
-| Boot standard | [DDES-001](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md) |
+| Boot standard | [DDES-001](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md) |
 | Atlas boot instance | [PROJECT_CONTEXT.md](../../PROJECT_CONTEXT.md) |
-| AI engineering standards | [ENGINEERING-STANDARDS](../../TradingBot/docs/ENGINEERING-STANDARDS/) (as applicable) |
+| AI engineering standards | [ENGINEERING-STANDARDS](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/) (as applicable) |
 
 ---
 

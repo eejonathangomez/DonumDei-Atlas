@@ -27,9 +27,9 @@ Atlas preserves **conceptual and applied mathematical knowledge** — not comput
 
 | Source | Reference |
 |--------|-----------|
-| DDTP indicators / validation | [TradingBot](../../TradingBot/) — curated references |
-| Market data architecture | [MARKET-DATA-ARCHITECTURE](../../TradingBot/docs/MARKET-DATA-ARCHITECTURE.md) |
-| Calibration workflows | [validation](../../TradingBot/validation/) — methodology only |
+| DDTP indicators / validation | [DonumDei-TradingPlatform](../../DonumDei-TradingPlatform/) — curated references |
+| Market data architecture | [MARKET-DATA-ARCHITECTURE](../../DonumDei-TradingPlatform/docs/MARKET-DATA-ARCHITECTURE.md) |
+| Calibration workflows | [validation](../../DonumDei-TradingPlatform/validation/) — methodology only |
 
 ---
 

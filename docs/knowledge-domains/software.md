@@ -27,9 +27,9 @@ Atlas preserves **knowledge about software** — not production source code. App
 
 | Source | Reference |
 |--------|-----------|
-| DDTP architecture | [ARCHITECTURE-MANUAL](../../TradingBot/docs/ARCHITECTURE-MANUAL.md) — curated references |
-| Engineering standards | [ENGINEERING-STANDARDS](../../TradingBot/docs/ENGINEERING-STANDARDS/) |
-| Case studies | [DECS library](../../TradingBot/docs/engineering-case-studies/) |
+| DDTP architecture | [ARCHITECTURE-MANUAL](../../DonumDei-TradingPlatform/docs/ARCHITECTURE-MANUAL.md) — curated references |
+| Engineering standards | [ENGINEERING-STANDARDS](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/) |
+| Case studies | [DECS library](../../DonumDei-TradingPlatform/docs/engineering-case-studies/) |
 
 ---
 

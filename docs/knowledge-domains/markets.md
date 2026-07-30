@@ -27,10 +27,10 @@ Atlas stores **curated knowledge** — not live market data, feeds, or productio
 
 | Source | Reference |
 |--------|-----------|
-| DDTP vision | [VISION.md](../../TradingBot/docs/VISION.md) |
-| Market data architecture | [MARKET-DATA-ARCHITECTURE](../../TradingBot/docs/MARKET-DATA-ARCHITECTURE.md) |
-| DDTP investigations | [reports](../../TradingBot/reports/) — curated entries |
-| DECS case studies | [engineering-case-studies](../../TradingBot/docs/engineering-case-studies/) |
+| DDTP vision | [VISION.md](../../DonumDei-TradingPlatform/docs/VISION.md) |
+| Market data architecture | [MARKET-DATA-ARCHITECTURE](../../DonumDei-TradingPlatform/docs/MARKET-DATA-ARCHITECTURE.md) |
+| DDTP investigations | [reports](../../DonumDei-TradingPlatform/reports/) — curated entries |
+| DECS case studies | [engineering-case-studies](../../DonumDei-TradingPlatform/docs/engineering-case-studies/) |
 
 ---
 

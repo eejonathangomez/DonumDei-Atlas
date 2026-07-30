@@ -27,8 +27,8 @@ Theology in Atlas is not separate from engineering — it is the foundation from
 
 | Source | Reference |
 |--------|-----------|
-| The Donum Dei Way | [THE-DONUM-DEI-WAY.md](../../TradingBot/docs/THE-DONUM-DEI-WAY.md) |
-| DDEF Principles | [DDEF-PRINCIPLES.md](../../TradingBot/docs/engineering-framework/DDEF-PRINCIPLES.md) |
+| The Donum Dei Way | [THE-DONUM-DEI-WAY.md](../../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) |
+| DDEF Principles | [DDEF-PRINCIPLES.md](../../DonumDei-TradingPlatform/docs/engineering-framework/DDEF-PRINCIPLES.md) |
 | Atlas philosophy | [PHILOSOPHY.md](../../PHILOSOPHY.md) |
 
 ---

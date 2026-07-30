@@ -27,9 +27,9 @@ Atlas connects scientific method to engineering practice without duplicating Rep
 
 | Source | Reference |
 |--------|-----------|
-| Investigation discipline | [DDES-002](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) |
-| Case study methodology | [DDES-003](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
-| DECS exemplars | [DECS-001](../../TradingBot/docs/engineering-case-studies/DECS-001-gateway-auto-logoff-investigation.md) |
+| Investigation discipline | [DDES-002](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) |
+| Case study methodology | [DDES-003](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
+| DECS exemplars | [DECS-001](../../DonumDei-TradingPlatform/docs/engineering-case-studies/DECS-001-gateway-auto-logoff-investigation.md) |
 
 ---
 

@@ -9,7 +9,7 @@
 | **Last Updated** | 2026-07-08 |
 | **Living document** | Update at session end when state materially changes |
 
-> **AI / engineer boot:** [PROJECT_CONTEXT.md](./PROJECT_CONTEXT.md) first ([DDES-001](../TradingBot/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md)), then [ARCHITECTURE.md](./ARCHITECTURE.md), then this file + [MISSION.md](./MISSION.md).
+> **AI / engineer boot:** [PROJECT_CONTEXT.md](./PROJECT_CONTEXT.md) first ([DDES-001](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md)), then [ARCHITECTURE.md](./ARCHITECTURE.md), then this file + [MISSION.md](./MISSION.md).
 
 ---
 
@@ -20,7 +20,7 @@
 | **Stage** | Foundation — Repository 1 established |
 | **Phase** | ATLAS-001 complete |
 | **Active milestone** | [ATLAS-EM-001](./reports/ATLAS-EM-001-atlas-foundation-repository-established.md) — Published |
-| **Parent gate** | [EM-007](../TradingBot/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) — Satisfied |
+| **Parent gate** | [EM-007](../DonumDei-TradingPlatform/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) — Satisfied |
 | **Production impact** | None — documentation only |
 
 Atlas is the first official inheriting repository of the Donum Dei Engineering Ecosystem.
@@ -34,7 +34,7 @@ Atlas is the first official inheriting repository of the Donum Dei Engineering E
 | **Name** | Donum Dei Atlas |
 | **Repository folder** | `DonumDei-Atlas` |
 | **Classification** | Repository 1 |
-| **Parent** | Repository 0 — [Donum Dei Engineering Bridge](../TradingBot) |
+| **Parent** | Repository 0 — [Donum Dei Engineering Bridge](../DonumDei-TradingPlatform) |
 | **Mission** | Preserve, connect, and make discoverable institutional knowledge |
 
 Atlas is **not** a product repository.
@@ -43,7 +43,7 @@ Atlas is **not** a product repository.
 
 ## 3. Inheritance status
 
-Verified per [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md):
+Verified per [ATLAS-INHERITANCE-GUIDE](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md):
 
 | Check | Result |
 |-------|--------|
@@ -55,7 +55,7 @@ Verified per [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/
 | DDEV-000 / lexicon authority acknowledged | ✅ |
 | DECS-001 readable via Repository 0 | ✅ |
 
-**Inherit method:** Documented sibling reference to `../TradingBot` until physical DDEB split.
+**Inherit method:** Documented sibling reference to `../DonumDei-TradingPlatform` until physical DDEB split.
 
 ---
 
@@ -76,14 +76,14 @@ Verified per [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/
 
 | Artifact | Repository 0 path |
 |----------|-------------------|
-| The Donum Dei Way | [docs/THE-DONUM-DEI-WAY.md](../TradingBot/docs/THE-DONUM-DEI-WAY.md) |
-| DDEF Principles | [DDEF-PRINCIPLES.md](../TradingBot/docs/engineering-framework/DDEF-PRINCIPLES.md) |
-| DDEOS Foundation | [DDEOS-FOUNDATION-v1.0.md](../TradingBot/docs/engineering-framework/DDEOS-FOUNDATION-v1.0.md) |
-| DDES-001–003 | [docs/ENGINEERING-STANDARDS/](../TradingBot/docs/ENGINEERING-STANDARDS/) |
-| DDEV-000 | [DDEV-000](../TradingBot/docs/ENGINEERING-STANDARDS/DDEV-000-engineering-vocabulary-authority.md) |
-| ENGINEERING-LEXICON | [docs/ENGINEERING-LEXICON.md](../TradingBot/docs/ENGINEERING-LEXICON.md) |
-| DECS library | [docs/engineering-case-studies/](../TradingBot/docs/engineering-case-studies/) |
-| ATLAS-INHERITANCE-GUIDE | [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md) |
+| The Donum Dei Way | [docs/THE-DONUM-DEI-WAY.md](../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) |
+| DDEF Principles | [DDEF-PRINCIPLES.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEF-PRINCIPLES.md) |
+| DDEOS Foundation | [DDEOS-FOUNDATION-v1.0.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEOS-FOUNDATION-v1.0.md) |
+| DDES-001–003 | [docs/ENGINEERING-STANDARDS/](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/) |
+| DDEV-000 | [DDEV-000](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDEV-000-engineering-vocabulary-authority.md) |
+| ENGINEERING-LEXICON | [docs/ENGINEERING-LEXICON.md](../DonumDei-TradingPlatform/docs/ENGINEERING-LEXICON.md) |
+| DECS library | [docs/engineering-case-studies/](../DonumDei-TradingPlatform/docs/engineering-case-studies/) |
+| ATLAS-INHERITANCE-GUIDE | [ATLAS-INHERITANCE-GUIDE](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md) |
 
 ---
 

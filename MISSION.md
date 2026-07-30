@@ -71,7 +71,7 @@ Future repos  →  inherit both
 |----|-------|--------|
 | [ATLAS-EM-001](./reports/ATLAS-EM-001-atlas-foundation-repository-established.md) | Atlas Foundation Repository Established | **Published** |
 
-**Parent gate:** [EM-007](../TradingBot/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) — Repository 0 Approved for Inheritance
+**Parent gate:** [EM-007](../DonumDei-TradingPlatform/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) — Repository 0 Approved for Inheritance
 
 ---
 

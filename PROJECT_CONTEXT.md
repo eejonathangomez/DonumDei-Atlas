@@ -2,7 +2,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Standard** | [DDES-001](../TradingBot/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md) |
+| **Standard** | [DDES-001](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md) |
 | **Purpose** | Official Engineering Boot Document — repository truth without chat history |
 | **Last Updated** | 2026-07-08 |
 | **Living document** | Update on stage, milestones, architecture, or mission changes |
@@ -22,7 +22,7 @@
 | **Current Branch** | `main` (initial) |
 | **Repository Purpose** | Knowledge Preservation Repository — preserve, connect, and make discoverable institutional engineering wisdom across the Donum Dei Engineering Ecosystem. Atlas is not a product. |
 
-**Parent:** [Repository 0 — Donum Dei Engineering Bridge](../TradingBot) (constitutional authority)
+**Parent:** [Repository 0 — Donum Dei Engineering Bridge](../DonumDei-TradingPlatform) (constitutional authority)
 
 ---
 
@@ -50,13 +50,13 @@ Atlas exists so knowledge becomes **institutional** rather than **personal**.
 | **Certification Status** | N/A — documentation-only repository |
 | **Active Investigation** | None at foundation |
 
-**Inheritance gate:** [EM-007](../TradingBot/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) — satisfied
+**Inheritance gate:** [EM-007](../DonumDei-TradingPlatform/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md) — satisfied
 
 ---
 
 ## 4. Engineering Philosophy
 
-**Primary (inherited — read at source):** [The Donum Dei Way](../TradingBot/docs/THE-DONUM-DEI-WAY.md) — Faith · Character · Engineering · Service
+**Primary (inherited — read at source):** [The Donum Dei Way](../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) — Faith · Character · Engineering · Service
 
 **Atlas philosophy (owned):** [PHILOSOPHY.md](./PHILOSOPHY.md)
 
@@ -69,9 +69,9 @@ Governing principles (documented):
 
 **Constitutional references (not duplicated):**
 
-- [DDEF-PRINCIPLES.md](../TradingBot/docs/engineering-framework/DDEF-PRINCIPLES.md)
-- [DDEOS-FOUNDATION-v1.0.md](../TradingBot/docs/engineering-framework/DDEOS-FOUNDATION-v1.0.md)
-- [DDEOS-ENGINEERING-DNA.md](../TradingBot/docs/engineering-framework/DDEOS-ENGINEERING-DNA.md)
+- [DDEF-PRINCIPLES.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEF-PRINCIPLES.md)
+- [DDEOS-FOUNDATION-v1.0.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEOS-FOUNDATION-v1.0.md)
+- [DDEOS-ENGINEERING-DNA.md](../DonumDei-TradingPlatform/docs/engineering-framework/DDEOS-ENGINEERING-DNA.md)
 
 ---
 
@@ -88,7 +88,7 @@ Knowledge domains (docs/knowledge-domains/)
         ↓
 Evidence (reports/)
         ↓
-Constitutional reference → Repository 0 (../TradingBot)
+Constitutional reference → Repository 0 (../DonumDei-TradingPlatform)
 ```
 
 **Do not duplicate detail here.** Canonical reference: [ARCHITECTURE.md](./ARCHITECTURE.md)
@@ -105,7 +105,7 @@ Constitutional reference → Repository 0 (../TradingBot)
 | **Knowledge domains** | Subject-area organization — `docs/knowledge-domains/` |
 | **Reports** | Milestones and curation evidence — `reports/` |
 | **Roadmap** | Planned knowledge work — ROADMAP.md |
-| **Constitutional reference** | Inherited standards from Repository 0 — `../TradingBot/docs/` |
+| **Constitutional reference** | Inherited standards from Repository 0 — `../DonumDei-TradingPlatform/docs/` |
 
 No services, frontend, or production code exist in this repository by design.
 
@@ -128,7 +128,7 @@ DonumDei-Atlas/
 └── reports/                 ← milestone and evidence
 ```
 
-**Where artifacts live:** philosophy & architecture → root · domains → `docs/knowledge-domains/` · evidence → `reports/` · constitutional authority → `../TradingBot`
+**Where artifacts live:** philosophy & architecture → root · domains → `docs/knowledge-domains/` · evidence → `reports/` · constitutional authority → `../DonumDei-TradingPlatform`
 
 ---
 
@@ -150,7 +150,7 @@ Ordered (highest first):
 | 2026-07-08 | **ATLAS-EM-001** | Atlas Foundation Repository Established |
 | 2026-07-08 | ATLAS-001 | First inheriting repository charter executed |
 
-**Parent milestone:** [EM-007](../TradingBot/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md)
+**Parent milestone:** [EM-007](../DonumDei-TradingPlatform/docs/engineering-milestones/EM-007-repository-0-approved-for-inheritance.md)
 
 ---
 
@@ -162,7 +162,7 @@ Ordered (highest first):
 | Experience intake from DDTP | Planned — protocol not yet authored |
 | Discovery conventions | Planned — Phase 3 |
 
-No active investigations at foundation. Use [DDES-002](../TradingBot/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) when investigations begin.
+No active investigations at foundation. Use [DDES-002](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) when investigations begin.
 
 ---
 
@@ -178,7 +178,7 @@ No active investigations at foundation. Use [DDES-002](../TradingBot/docs/ENGINE
 | [ROADMAP.md](./ROADMAP.md) | Planned work |
 | [docs/README.md](./docs/README.md) | Documentation index |
 | [docs/knowledge-domains/](./docs/knowledge-domains/) | Domain organization |
-| [ATLAS-INHERITANCE-GUIDE](../TradingBot/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md) | Inheritance protocol |
+| [ATLAS-INHERITANCE-GUIDE](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/ATLAS-INHERITANCE-GUIDE.md) | Inheritance protocol |
 | [ATLAS-EM-001](./reports/ATLAS-EM-001-atlas-foundation-repository-established.md) | Foundation milestone |
 
 ---
@@ -190,7 +190,7 @@ AI assistants working in Atlas shall:
 - Read **PROJECT_CONTEXT.md** first
 - Read **ARCHITECTURE.md** before structural changes
 - **Reference** Repository 0 constitutional documents — never duplicate or redefine them
-- Follow [The Donum Dei Way](../TradingBot/docs/THE-DONUM-DEI-WAY.md) and Atlas [PHILOSOPHY.md](./PHILOSOPHY.md)
+- Follow [The Donum Dei Way](../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) and Atlas [PHILOSOPHY.md](./PHILOSOPHY.md)
 - Preserve **provenance** — knowledge must trace to source
 - Treat **relationships** as first-class knowledge
 - **Not** add production code, dependencies, or automation unless explicitly authorized

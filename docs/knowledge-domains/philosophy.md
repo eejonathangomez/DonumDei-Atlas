@@ -28,9 +28,9 @@ Atlas [PHILOSOPHY.md](../../PHILOSOPHY.md) is the primary Atlas-owned philosophi
 | Source | Reference |
 |--------|-----------|
 | Atlas philosophy | [PHILOSOPHY.md](../../PHILOSOPHY.md) |
-| The Donum Dei Way | [THE-DONUM-DEI-WAY.md](../../TradingBot/docs/THE-DONUM-DEI-WAY.md) |
-| DDEF Principles | [DDEF-PRINCIPLES.md](../../TradingBot/docs/engineering-framework/DDEF-PRINCIPLES.md) |
-| Engineering humility | [EEP-007](../../TradingBot/docs/engineering-evolution/EEP-007-principle-of-engineering-humility.md) |
+| The Donum Dei Way | [THE-DONUM-DEI-WAY.md](../../DonumDei-TradingPlatform/docs/THE-DONUM-DEI-WAY.md) |
+| DDEF Principles | [DDEF-PRINCIPLES.md](../../DonumDei-TradingPlatform/docs/engineering-framework/DDEF-PRINCIPLES.md) |
+| Engineering humility | [EEP-007](../../DonumDei-TradingPlatform/docs/engineering-evolution/EEP-007-principle-of-engineering-humility.md) |
 
 ---
 

@@ -19,7 +19,7 @@ Donum Dei engineering practice as applied across the ecosystem:
 - Cross-project engineering wisdom
 - Relationships between engineering experience and institutional knowledge
 
-**Constitutional authority remains in Repository 0.** This domain curates and connects — it does not replace [ENGINEERING-STANDARDS](../../TradingBot/docs/ENGINEERING-STANDARDS/).
+**Constitutional authority remains in Repository 0.** This domain curates and connects — it does not replace [ENGINEERING-STANDARDS](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/).
 
 ---
 
@@ -27,12 +27,12 @@ Donum Dei engineering practice as applied across the ecosystem:
 
 | Source | Reference |
 |--------|-----------|
-| Repository 0 standards | [ENGINEERING-STANDARDS](../../TradingBot/docs/ENGINEERING-STANDARDS/) |
-| Investigation discipline | [DDES-002](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) |
-| Case study methodology | [DDES-003](../../TradingBot/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
-| DECS library | [engineering-case-studies](../../TradingBot/docs/engineering-case-studies/) |
-| Engineering framework | [engineering-framework](../../TradingBot/docs/engineering-framework/) |
-| DDTP experience | [TradingBot](../../TradingBot/) — curated, not duplicated |
+| Repository 0 standards | [ENGINEERING-STANDARDS](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/) |
+| Investigation discipline | [DDES-002](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-002-investigation-discipline-standard.md) |
+| Case study methodology | [DDES-003](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
+| DECS library | [engineering-case-studies](../../DonumDei-TradingPlatform/docs/engineering-case-studies/) |
+| Engineering framework | [engineering-framework](../../DonumDei-TradingPlatform/docs/engineering-framework/) |
+| DDTP experience | [DonumDei-TradingPlatform](../../DonumDei-TradingPlatform/) — curated, not duplicated |
 
 ---
 

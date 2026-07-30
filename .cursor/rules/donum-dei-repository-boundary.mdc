@@ -1,0 +1,40 @@
+---
+description: Donum Dei repository boundary — ownership before implementation; route misplaced work.
+alwaysApply: true
+---
+
+# Donum Dei Repository Boundary Rule
+
+Before implementing any task:
+
+1. Identify the capability being changed.
+2. Identify the repository currently open.
+3. Read the current repository charter (`REPOSITORY-CHARTER.md`).
+4. Consult the Donum Dei Ecosystem Registry in EngineeringBridge (`ecosystem/DONUM-DEI-ECOSYSTEM-REGISTRY.md` and `ecosystem/CAPABILITY-OWNERSHIP-MATRIX.md`).
+5. Determine the **constitutional owner** of the capability (not merely the coordination host).
+6. Do not implement work in the current repository merely because it is convenient.
+7. If ownership belongs elsewhere:
+   - stop;
+   - identify the correct repository;
+   - explain the ownership boundary;
+   - identify any dependencies;
+   - request Founder authorization before expanding scope.
+8. If the task legitimately spans repositories:
+   - list every affected repository;
+   - define the change required in each;
+   - identify the integration order;
+   - preserve independent validation and commits;
+   - produce a consolidated cross-repository report;
+   - remember Level 3 multi-repo execution requires explicit Founder approval.
+9. Never create a new repository or shared layer without explicit Founder approval.
+10. Never silently duplicate a canonical document into another repository.
+
+## Authority reminder
+
+- **Constitutional Authority** — the repo that owns the capability.
+- **Coordination Authority** — EngineeringBridge navigates the ecosystem; it does not replace owners.
+
+DonumDei-TradingPlatform owns Trading Platform engineering standards.  
+Academy owns education.  
+Atlas owns institutional knowledge.  
+EngineeringBridge owns ecosystem navigation and coordination artifacts only.
