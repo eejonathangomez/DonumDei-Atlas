@@ -4,11 +4,11 @@
 |-------|-------|
 | **Standard** | [DDES-001](../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-001-project-context-standard.md) |
 | **Purpose** | Official Engineering Boot Document — repository truth without chat history |
-| **Last Updated** | 2026-07-08 |
+| **Last Updated** | 2026-10-25 |
 | **Living document** | Update on stage, milestones, architecture, or mission changes |
 
-> **Read this file first** when joining the repository.  
-> Then complete §15 AI Boot Sequence before any work.
+> **Founder/Architect continuity role:** read [docs/founder-architect/START-HERE.md](./docs/founder-architect/START-HERE.md) **first**, then return here for Atlas repository boot.  
+> **Atlas repository / knowledge-domain work:** read this file first, then complete §15 AI Boot Sequence before any work.
 
 ---
 
@@ -228,7 +228,8 @@ Begin with:
 
 Every AI assistant shall initialize in this order before work:
 
-1. Read **PROJECT_CONTEXT.md** (this file)
+0. **If assuming the Founder/Architect continuity role** — read [docs/founder-architect/START-HERE.md](./docs/founder-architect/START-HERE.md) and follow its bootstrap order (roles, strategy, knowledge map) before Atlas domain work or product execution.
+1. Read **PROJECT_CONTEXT.md** (this file) for Atlas repository truth
 2. Read [ARCHITECTURE.md](./ARCHITECTURE.md)
 3. Read [ENGINEERING_CONTEXT.md](./ENGINEERING_CONTEXT.md)
 4. Read [MISSION.md](./MISSION.md) + latest [reports/](./reports/) evidence
