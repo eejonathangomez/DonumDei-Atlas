@@ -23,6 +23,9 @@ Entry: [START-HERE.md](./START-HERE.md)
 | [START-HERE.md](./START-HERE.md) | Architect bootstrap |
 | [FOUNDER-ARCHITECT.md](./FOUNDER-ARCHITECT.md) | Partnership, continuity, employer boundary, publishing direction |
 | [STRATEGIC-MAP.md](./STRATEGIC-MAP.md) | North Star, bread vs oven, priorities |
+| [EFFICIENCY-LOOP-HANDSHAKE.md](../EFFICIENCY-LOOP-HANDSHAKE.md) | Durable Atlas/DORY/Cursor recovery protocol (`DORY handshake`) |
+| [efficiency-loop-handshake.json](../../handshake/efficiency-loop-handshake.json) | Machine-readable handshake manifest |
+| [efficiency-loop-handshake-lessons.json](../lessons/efficiency-loop-handshake-lessons.json) | Deduplicated reusable recovery lessons |
 
 ---
 

@@ -35,19 +35,26 @@ Never merge these trees. Never dump raw chat into this repository.
 
 ---
 
+## Founder recovery phrase
+
+Say **`DORY handshake`**. Recovery protocol: [EFFICIENCY-LOOP-HANDSHAKE.md](../EFFICIENCY-LOOP-HANDSHAKE.md) · manifest: [`handshake/efficiency-loop-handshake.json`](../../handshake/efficiency-loop-handshake.json) · Cursor skill: `.cursor/skills/reminder-handshake/`. Always verify live DORY `v2/` truth; docs alone are not READY.
+
+---
+
 ## Bootstrap reading order
 
 1. **This file** — `docs/founder-architect/START-HERE.md`
-2. [FOUNDER-ARCHITECT.md](./FOUNDER-ARCHITECT.md) — partnership, continuity, employer boundary
-3. [STRATEGIC-MAP.md](./STRATEGIC-MAP.md) — North Star, bread vs oven, priorities
-4. [KNOWLEDGE-MAP.md](./KNOWLEDGE-MAP.md) — index of authoritative deeper sources (follow links; do not invent parallel maps)
-5. Ecosystem membership / ownership — EngineeringBridge:
+2. [EFFICIENCY-LOOP-HANDSHAKE.md](../EFFICIENCY-LOOP-HANDSHAKE.md) — if recovering the Atlas/DORY/Cursor operating model
+3. [FOUNDER-ARCHITECT.md](./FOUNDER-ARCHITECT.md) — partnership, continuity, employer boundary
+4. [STRATEGIC-MAP.md](./STRATEGIC-MAP.md) — North Star, bread vs oven, priorities
+5. [KNOWLEDGE-MAP.md](./KNOWLEDGE-MAP.md) — index of authoritative deeper sources (follow links; do not invent parallel maps)
+6. Ecosystem membership / ownership — EngineeringBridge:
    - `../../../DonumDei-EngineeringBridge/ecosystem/DONUM-DEI-ECOSYSTEM-REGISTRY.md`
    - `../../../DonumDei-EngineeringBridge/ecosystem/CAPABILITY-OWNERSHIP-MATRIX.md`
-6. Atlas institutional boot — [PROJECT_CONTEXT.md](../../PROJECT_CONTEXT.md), [ARCHITECTURE.md](../../ARCHITECTURE.md), [PHILOSOPHY.md](../../PHILOSOPHY.md)
-7. Product engineering constitution (reference only) — TradingPlatform `docs/THE-DONUM-DEI-WAY.md`, `docs/engineering-framework/` (DDEF / DDEOS)
-8. DORY operating truth (reference only) — `../../../../DORY_LOOP_CONTROL/docs/DORY_V2_SIMPLE_ARCHITECTURE.md`, `../../../../DORY_LOOP_CONTROL/docs/DORY-OPERATING-MODEL.md`
-9. Only then: active campaign TASK / product branch work (live state lives in product repo + DORY `v2/`, not here)
+7. Atlas institutional boot — [PROJECT_CONTEXT.md](../../PROJECT_CONTEXT.md), [ARCHITECTURE.md](../../ARCHITECTURE.md), [PHILOSOPHY.md](../../PHILOSOPHY.md)
+8. Product engineering constitution (reference only) — TradingPlatform `docs/THE-DONUM-DEI-WAY.md`, `docs/engineering-framework/` (DDEF / DDEOS)
+9. DORY operating truth (reference only) — `../../../../DORY_LOOP_CONTROL/docs/DORY_V2_SIMPLE_ARCHITECTURE.md`, `../../../../DORY_LOOP_CONTROL/docs/DORY-OPERATING-MODEL.md`
+10. Only then: active campaign TASK / product branch work (live state lives in product repo + DORY `v2/`, not here)
 
 ---
 

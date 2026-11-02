@@ -1,0 +1,106 @@
+{
+  "protocol": "DORY-EFFICIENCY-LOOP-HANDSHAKE-V1",
+  "version": "1.0.0",
+  "founder_recovery_phrase": "DORY handshake",
+  "authoritative_document": "docs/EFFICIENCY-LOOP-HANDSHAKE.md",
+  "cursor_skill": ".cursor/skills/reminder-handshake/SKILL.md",
+  "roles": {
+    "Founder": "Jonathan — vision, priorities, boundaries, authorization",
+    "Atlas": "Architect / Partner in Execution — knowledge and objectives; not the mailbox publisher",
+    "DORY": "Orchestrator / control plane — sequences and handoffs",
+    "Cursor": "Execution arm — runs only under TASK permissions + READY"
+  },
+  "role_invariants": [
+    "Atlas is not DORY",
+    "Documentation never grants READY",
+    "Knowledge may cross projects; authority may not"
+  ],
+  "control_repository": {
+    "github": "eejonathangomez/dory-loop-control",
+    "branch": "main",
+    "local_name_hint": "DORY_LOOP_CONTROL"
+  },
+  "mailbox_files": [
+    "v2/TASK.md",
+    "v2/RESULT.md",
+    "v2/STATE.json",
+    "v2/STOP"
+  ],
+  "canonical_publisher": {
+    "function": "Publish-DoryAtomicReadyMailbox",
+    "module_path": "v2/DoryAtomicMailbox.ps1",
+    "entry_script": "v2/Publish-DoryAtomicMailbox.ps1",
+    "invariant": "One validated commit containing TASK.md + STATE.json with CURSOR/READY"
+  },
+  "atlas_remote_request": {
+    "path": "v2/atlas-publication-request.json",
+    "protocol": "DORY-ATLAS-PUBLICATION-REQUEST-V1",
+    "allowed_fields": ["protocol", "request_id", "task_text"],
+    "authority": false,
+    "classification": "DATA/non-authority",
+    "adoption_entry": "v2/Invoke-DoryAtlasPublicationRequest.ps1",
+    "adoption_function": "Invoke-DoryAtlasPublicationRequest",
+    "publishes_via": "Publish-DoryAtomicReadyMailbox",
+    "forbidden": [
+      "split TASK.md and STATE.json publication",
+      "treating the request file as READY",
+      "command fields in the request JSON"
+    ]
+  },
+  "authority_definition": {
+    "execution_authority": "Only after Publish-DoryAtomicReadyMailbox publishes one CURSOR/READY mailbox commit",
+    "non_authority_examples": [
+      "atlas-publication-request.json",
+      "lifecycle or health status",
+      "deployment or qualification reports",
+      "broker connectivity",
+      "campaign state",
+      "documentation or skills",
+      "stale PID or sequence observations"
+    ]
+  },
+  "efficiency_loop": [
+    "VERIFY CURRENT TRUTH",
+    "DEFINE THE SMALLEST COMPLETE OBJECTIVE",
+    "PROTECT KNOWN-GOOD STATE + WIP",
+    "EXECUTE WITH MINIMUM NECESSARY AUTHORITY",
+    "OBSERVE REAL EVIDENCE",
+    "UNDERSTAND MECHANISM/ROOT CAUSE",
+    "FIX THE MECHANISM WITHOUT UNNECESSARY COMPLEXITY",
+    "TEST ADVERSARIALLY + FAIL CLOSED",
+    "QUALIFY",
+    "PRESERVE KNOWN-GOOD CHECKPOINT",
+    "EXTRACT/GENERALIZE/DEDUPLICATE/STORE REUSABLE LESSONS WITH PROVENANCE",
+    "VERIFY NOTHING ELSE REGRESSED OR MUTATED",
+    "RETURN AUTHORITY TO DORY/FOUNDER",
+    "SELECT NEXT HIGHEST-VALUE SMALLEST-COMPLETE STEP",
+    "REPEAT"
+  ],
+  "irreversible_actions_rule": "TRUTH -> AUTHORITY -> EXECUTION -> OBSERVE -> RECONCILE",
+  "recovery_steps": [
+    "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest",
+    "Confirm roles Founder/Atlas/DORY/Cursor and Atlas != DORY",
+    "Verify live control truth from DORY_LOOP_CONTROL/v2 (STATE, TASK, RESULT, STOP, worker, publish flags) — never trust baked PID or sequence",
+    "If live truth conflicts with docs, prefer live truth and report mismatch",
+    "Emit compact ATLAS HANDSHAKE; do not grant READY; do not silently mutate projects"
+  ],
+  "transient_current_truth": {
+    "note": "Observe live; never store as protocol constants",
+    "examples": [
+      "runner PID",
+      "current sequence number",
+      "mailbox turn/status snapshot",
+      "STOP presence",
+      "campaign publish_enabled",
+      "product known-good SHAs and WIP"
+    ]
+  },
+  "explicit_non_authority_facts": [
+    "This handshake document is knowledge, not READY",
+    "This manifest is knowledge, not READY",
+    "The reminder-handshake skill grants no execution authority",
+    "Remote Atlas request is DATA only until the canonical publisher acts"
+  ],
+  "lessons_path": "docs/lessons/efficiency-loop-handshake-lessons.json",
+  "secrets_policy": "Do not store secrets, tokens, PIDs, or stale sequence numbers as protocol truth"
+}

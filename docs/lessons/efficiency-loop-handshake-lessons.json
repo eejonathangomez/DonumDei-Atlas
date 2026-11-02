@@ -1,0 +1,55 @@
+{
+  "schema": "atlas-reusable-lessons-v1",
+  "source_task": "DORY-ATLAS-REMINDER-EFFICIENCY-LOOP-HANDSHAKE-V1",
+  "deduplication_notes": [
+    "ATLAS-REMOTE-REQUEST-IS-NOT-EXECUTION-AUTHORITY already QUALIFIED in DORY_LOOP_CONTROL/v2/learning/lessons.json — do not duplicate; reference only.",
+    "ABANDONED-INTERACTIVE-GIT-COMMIT-CAN-OUTLIVE-LAUNCHER already covers latent post-launcher mutation; the process-tree lesson below is complementary and advisory."
+  ],
+  "lessons": [
+    {
+      "lesson_id": "DURABLE-OPERATING-MEMORY-REQUIRES-VC-TRUTH-PLUS-LIVE-VERIFY",
+      "scope": "REUSABLE",
+      "status": "QUALIFIED",
+      "application": "ADVISORY",
+      "authority": false,
+      "learned_from_project": "founder-architect-knowledge",
+      "triggering_task": "DORY-ATLAS-REMINDER-EFFICIENCY-LOOP-HANDSHAKE-V1",
+      "generalized_mechanism": "Durable operating memory must live in version-controlled recoverable truth and be verified live before use. Chat memory, stale PIDs, stale sequences, and stale checkpoints are not protocol authority.",
+      "evidence": "Sequence 539 established DonumDei-Atlas docs/EFFICIENCY-LOOP-HANDSHAKE.md, handshake/efficiency-loop-handshake.json, and .cursor/skills/reminder-handshake/ so a Founder phrase 'DORY handshake' recovers the model from Git plus live DORY_LOOP_CONTROL/v2 verification without reteaching.",
+      "constraints": [
+        "advisory only",
+        "grants no READY or mutation authority",
+        "live verified truth wins on conflict with docs"
+      ],
+      "applicability": ["any-registered-project", "atlas-recovery", "cursor-recovery"]
+    },
+    {
+      "lesson_id": "IDENTIFY-PROCESS-DESCENDANTS-BEFORE-TREE-TERMINATION",
+      "scope": "REUSABLE",
+      "status": "QUALIFIED",
+      "application": "ADVISORY",
+      "authority": false,
+      "learned_from_project": "founder-architect-knowledge",
+      "triggering_task": "DORY-ATLAS-REMINDER-EFFICIENCY-LOOP-HANDSHAKE-V1",
+      "related_observed_context": "Controlled DORY runner restart preceding this handshake work",
+      "generalized_mechanism": "Before destructive process-tree termination, identify descendants when practical. Do not assume all descendants are disposable. Keep restart logic simple; this is advisory protection, not a new orchestration subsystem.",
+      "evidence": "Operational restart lesson preserved during efficiency-loop handshake authoring: process-tree stops can affect non-obvious children; inspect when practical before kill.",
+      "constraints": [
+        "advisory only",
+        "does not authorize restarts",
+        "does not authorize publication",
+        "do not overcomplicate restart logic"
+      ],
+      "applicability": ["any-registered-project", "control-plane-ops"]
+    },
+    {
+      "lesson_id": "ATLAS-REMOTE-REQUEST-IS-NOT-EXECUTION-AUTHORITY",
+      "scope": "REFERENCE",
+      "status": "DEDUPLICATED-REFERENCE",
+      "application": "ADVISORY",
+      "authority": false,
+      "canonical_home": "DORY_LOOP_CONTROL/v2/learning/lessons.json",
+      "note": "Already qualified in the control-repo shared learning store. Atlas handshake documents the same rule by reference only."
+    }
+  ]
+}
