@@ -32,6 +32,7 @@ Donum Dei engineering practice as applied across the ecosystem:
 | Case study methodology | [DDES-003](../../DonumDei-TradingPlatform/docs/ENGINEERING-STANDARDS/DDES-003-engineering-case-study-standard.md) |
 | DECS library | [engineering-case-studies](../../DonumDei-TradingPlatform/docs/engineering-case-studies/) |
 | Engineering framework | [engineering-framework](../../DonumDei-TradingPlatform/docs/engineering-framework/) |
+| Provisional Efficiency Loop v1.0 | [EFFICIENCY-LOOP-v1.0](./engineering/EFFICIENCY-LOOP-v1.0.md) — advisory method, canonical home pending, not execution authority |
 | DDTP experience | [DonumDei-TradingPlatform](../../DonumDei-TradingPlatform/) — curated, not duplicated |
 
 ---
