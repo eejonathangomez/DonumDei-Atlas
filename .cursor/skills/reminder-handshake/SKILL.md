@@ -3,15 +3,17 @@ name: reminder-handshake
 description: >-
   Recover the Atlas/DORY/Cursor operating model from version-controlled
   handshake truth plus live verification. Use when the Founder says
-  DORY handshake, recover DORY, reminder handshake, or when context loss
-  is evident and the efficiency-loop operating model must be restored.
+  "DORY handshake", "Atlas Handshake", "Atlas, handshake",
+  "recover DORY", or "reminder handshake", or when context loss
+  is evident and the
+  efficiency-loop operating model must be restored.
 ---
 
 # reminder-handshake — DORY efficiency-loop recovery
 
 **Goal:** Reconstruct the proven operating model for Atlas without Founder reteaching. Knowledge recovery only — **never** grant READY or invent authority from documentation.
 
-**Founder phrase:** `DORY handshake`
+**Founder phrases:** `DORY handshake`, `Atlas Handshake`, and `Atlas, handshake`. All three resolve to `docs/EFFICIENCY-LOOP-HANDSHAKE.md`. Do not duplicate that contract here. `DORY handshake` remains the primary manifest phrase.
 
 ## Required reads (every invocation)
 
@@ -23,7 +25,7 @@ If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` 
 
 ## Hard rules
 
-- Documentation and this skill are **not** execution authority.
+- Documentation and this skill are **not** execution authority. They do not grant READY, clear STOP, select a project, or publish.
 - `v2/atlas-publication-request.json` is **DATA / non-authority**.
 - Canonical publisher only: `Publish-DoryAtomicReadyMailbox`. Never recommend split `TASK.md` + `STATE.json` writes.
 - Atlas ≠ DORY. Do not conflate roles.
@@ -43,9 +45,13 @@ ATLAS HANDSHAKE
 roles: Founder / Atlas / DORY / Cursor (Atlas ≠ DORY)
 control: dory-loop-control main · mailbox v2/{TASK,RESULT,STATE,STOP}
 authority: Publish-DoryAtomicReadyMailbox only · request=DATA/non-authority
-live: <sequence> <turn>/<status> STOP=<yes/no> worker=<n> publish_enabled=<bool> (verified now)
+project: <active project or UNKNOWN> objective: <current objective or UNKNOWN>
+live: <sequence> <turn>/<status> STOP=<CLEAR or asserted> READY=<present or absent> SYNC_STOP=<why or absent> (verified now)
+constraints: protected WIP and safe points are named and not moved
+provenance: <files read> at <read timestamp>
 knowledge_vs_authority: knowledge may cross projects; authority may not
-next: <smallest safe step or "await Founder/DORY">
+authority_grant: none — this handshake is not execution authority
+next: <approved next action or AWAIT FOUNDER>
 ```
 
 4. Stop. Do not publish a new sequence, enable campaign publication, call brokers, or mutate Donum/Family unless a separate authorized TASK explicitly allows it.

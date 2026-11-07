@@ -2,7 +2,9 @@
 
 **Founder recovery phrase:** `DORY handshake`
 
-This document is the durable, version-controlled recovery protocol for the proven Atlas / DORY / Cursor operating model. A fresh ChatGPT (Atlas) or Cursor session must recover from this file plus the machine manifest and **live verification** — not from chat memory.
+**Compatibility aliases:** `DORY handshake`, `Atlas Handshake`, and `Atlas, handshake`. All three name this one contract. `DORY handshake` remains the primary phrase in the machine manifest.
+
+This document is the one authoritative recovery contract for the Atlas / DORY / Cursor operating model. A fresh ChatGPT (Atlas) or Cursor session must recover from this file plus the machine manifest and **live verification** — not from chat memory. Recovery restores context. It does not grant execution authority.
 
 **Protocol id:** `DORY-EFFICIENCY-LOOP-HANDSHAKE-V1`  
 **Authoritative home:** DonumDei-Atlas (`docs/EFFICIENCY-LOOP-HANDSHAKE.md`)  
@@ -29,7 +31,7 @@ If verified live truth conflicts with this document, **current verified truth wi
 | **Founder** | Jonathan | Vision, priorities, boundaries, authorization, final decisions |
 | **Atlas** | Architect / Partner in Execution (ChatGPT or equivalent) | Strategy, smallest-complete objectives, knowledge preservation, drafting Atlas remote requests as **data only** |
 | **DORY** | Orchestrator / control plane | Sequences, TASK/RESULT/STATE handoffs, idle adoption, fail-closed gates |
-| **Cursor** | Execution arm | Executes only when TASK permissions + READY gates authorize; writes RESULT; returns turn to DORY |
+| **Cursor** | Execution arm | Cursor implements, diagnoses, tests, and returns evidence under the currently authorized execution/result contract. |
 
 **Never confuse Atlas with DORY.** Atlas is not the mailbox publisher. DORY (via the canonical publisher) is.
 
@@ -101,6 +103,8 @@ VERIFY CURRENT TRUTH
 → REPEAT
 ```
 
+The collaboration order remains Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder.
+
 For irreversible actions: **TRUTH → AUTHORITY → EXECUTION → OBSERVE → RECONCILE**.
 
 ---
@@ -130,9 +134,21 @@ Documentation never grants READY. Skills never grant READY.
 
 ---
 
+## Minimum recovered fields
+
+Labels only. Values come from a fresh live read and are never stored in this contract:
+
+- Active project and objective, or UNKNOWN
+- Sequence, turn, and status
+- STOP and READY
+- SYNC_STOP
+- Protected WIP and safe-point constraints
+- Current approved next action, or AWAIT FOUNDER
+- Evidence provenance and the read timestamp
+
 ## Fresh-session recovery procedure
 
-**Founder says only:** `DORY handshake`
+**Founder may say:** `DORY handshake`, `Atlas Handshake`, or `Atlas, handshake`
 
 **Atlas / Cursor then:**
 
@@ -151,9 +167,13 @@ ATLAS HANDSHAKE
 roles: Founder / Atlas / DORY / Cursor (Atlas ≠ DORY)
 control: dory-loop-control main · mailbox v2/{TASK,RESULT,STATE,STOP}
 authority: Publish-DoryAtomicReadyMailbox only · request=DATA/non-authority
-live: <sequence> <turn>/<status> STOP=<yes/no> worker=<n> publish_enabled=<bool> (verified now)
+project: <active project or UNKNOWN> objective: <current objective or UNKNOWN>
+live: <sequence> <turn>/<status> STOP=<CLEAR or asserted> READY=<present or absent> SYNC_STOP=<why or absent> (verified now)
+constraints: protected WIP and safe points are named and not moved
+provenance: <files read> at <read timestamp>
 knowledge_vs_authority: knowledge may cross projects; authority may not
-next: <smallest safe step or "await Founder/DORY">
+authority_grant: none — this handshake is not execution authority
+next: <approved next action or AWAIT FOUNDER>
 ```
 
 ---
@@ -173,6 +193,13 @@ next: <smallest safe step or "await Founder/DORY">
 
 ## Related pointers (reference only)
 
+Do not copy these documents into this contract:
+
+- Partnership and judgment addendum: `DORY_LOOP_CONTROL/atlas/handshake/founder-atlas-partnership-and-challenge-2026-11-05.md`
+- Operating restoration and judgment map: `DORY_LOOP_CONTROL/atlas/README.md`
+- Allowed-path and manual-mode rules: `DORY_LOOP_CONTROL/docs/DORY-OPERATING-MODEL.md`
+- Standards index: product `docs/standards/DDS-000-ENGINEERING-STANDARDS-INDEX.md`
+- Defect closure: product `docs/ENGINEERING-STANDARDS/DES-001-EVIDENCE-DRIVEN-DEFECT-RESOLUTION-STANDARD.md`
 - Founder/Architect bootstrap: `docs/founder-architect/START-HERE.md`
 - DORY simple architecture (control repo): `DORY_LOOP_CONTROL/docs/DORY_V2_SIMPLE_ARCHITECTURE.md`
 - Dual-Atlas clarification (control repo): `DORY_LOOP_CONTROL/docs/ATLAS_WHAT_IS_AND_IS_NOT.md`

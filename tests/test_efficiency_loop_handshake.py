@@ -132,6 +132,40 @@ class EfficiencyLoopHandshakeTests(unittest.TestCase):
         self.assertEqual(self.manifest["founder_recovery_phrase"], "DORY handshake")
         self.assertIn("DORY handshake", self.skill)
 
+    def test_three_phrases_alias_one_contract(self) -> None:
+        aliases = ["DORY handshake", "Atlas Handshake", "Atlas, handshake"]
+        self.assertEqual(self.manifest["recovery_phrase_aliases"], aliases)
+        self.assertEqual(
+            self.manifest["authoritative_document"],
+            "docs/EFFICIENCY-LOOP-HANDSHAKE.md",
+        )
+        for phrase in aliases:
+            self.assertIn(phrase, self.doc)
+            self.assertIn(phrase, self.skill)
+        self.assertIn("one authoritative recovery contract", self.doc.lower())
+        self.assertIn("one contract", self.doc.lower())
+        self.assertNotIn("writes RESULT", self.doc)
+        self.assertIn(
+            "returns evidence under the currently authorized execution/result contract",
+            self.doc,
+        )
+        self.assertIn(
+            "Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder",
+            self.doc,
+        )
+        for label in (
+            "SYNC_STOP",
+            "AWAIT FOUNDER",
+            "Protected WIP",
+            "safe-point",
+        ):
+            self.assertIn(label, self.doc)
+        self.assertEqual(
+            self.manifest["recovered_field_labels"][0],
+            "active project or UNKNOWN",
+        )
+        self.assertIn("SYNC_STOP", self.manifest["recovered_field_labels"])
+
     def test_skill_never_grants_ready(self) -> None:
         self.assertRegex(
             self.skill,

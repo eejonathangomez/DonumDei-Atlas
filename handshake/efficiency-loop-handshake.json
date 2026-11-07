@@ -2,13 +2,18 @@
   "protocol": "DORY-EFFICIENCY-LOOP-HANDSHAKE-V1",
   "version": "1.0.0",
   "founder_recovery_phrase": "DORY handshake",
+  "recovery_phrase_aliases": [
+    "DORY handshake",
+    "Atlas Handshake",
+    "Atlas, handshake"
+  ],
   "authoritative_document": "docs/EFFICIENCY-LOOP-HANDSHAKE.md",
   "cursor_skill": ".cursor/skills/reminder-handshake/SKILL.md",
   "roles": {
     "Founder": "Jonathan — vision, priorities, boundaries, authorization",
     "Atlas": "Architect / Partner in Execution — knowledge and objectives; not the mailbox publisher",
     "DORY": "Orchestrator / control plane — sequences and handoffs",
-    "Cursor": "Execution arm — runs only under TASK permissions + READY"
+    "Cursor": "Implements, diagnoses, tests, and returns evidence under the currently authorized execution/result contract"
   },
   "role_invariants": [
     "Atlas is not DORY",
@@ -82,7 +87,21 @@
     "Confirm roles Founder/Atlas/DORY/Cursor and Atlas != DORY",
     "Verify live control truth from DORY_LOOP_CONTROL/v2 (STATE, TASK, RESULT, STOP, worker, publish flags) — never trust baked PID or sequence",
     "If live truth conflicts with docs, prefer live truth and report mismatch",
-    "Emit compact ATLAS HANDSHAKE; do not grant READY; do not silently mutate projects"
+    "Emit compact ATLAS HANDSHAKE; do not grant READY; do not silently mutate projects",
+    "Treat DORY handshake, Atlas Handshake, and Atlas, handshake as aliases of this one contract"
+  ],
+  "recovered_field_labels": [
+    "active project or UNKNOWN",
+    "objective or UNKNOWN",
+    "sequence",
+    "turn",
+    "status",
+    "STOP",
+    "READY",
+    "SYNC_STOP",
+    "protected WIP and safe-point constraints",
+    "approved next action or AWAIT FOUNDER",
+    "evidence provenance and read timestamp"
   ],
   "transient_current_truth": {
     "note": "Observe live; never store as protocol constants",
