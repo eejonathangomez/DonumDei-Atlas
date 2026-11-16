@@ -70,10 +70,56 @@ class EngineeringContinuityArchiveTests(unittest.TestCase):
         self.assertFalse(archive["full_audit_on_every_handshake"])
         self.assertEqual(archive["missing_value"], "UNKNOWN")
         self.assertEqual(archive["index"], "reports/engineering-continuity/LATEST.md")
+        self.assertEqual(archive["current_checkpoint"], "docs/CURRENT-CHECKPOINT.md")
+        self.assertEqual(
+            archive["handshake_read_order"],
+            [
+                "docs/CURRENT-CHECKPOINT.md",
+                "reports/engineering-continuity/LATEST.md",
+                "fresh evidence",
+            ],
+        )
         self.assertIn(
             "An engineering-continuity report is evidence, not READY",
             self.manifest["explicit_non_authority_facts"],
         )
+        self.assertIn(
+            "The current checkpoint is evidence, not READY",
+            self.manifest["explicit_non_authority_facts"],
+        )
+
+    def test_checkpoint_mode_and_handshake_link(self) -> None:
+        checkpoint = (ROOT / "docs" / "CURRENT-CHECKPOINT.md").read_text(encoding="utf-8")
+        reminder = (
+            ROOT / ".cursor" / "skills" / "reminder-handshake" / "SKILL.md"
+        ).read_text(encoding="utf-8")
+        established = (
+            ROOT
+            / "reports"
+            / "engineering-continuity"
+            / "2026-11-15"
+            / "CHECKPOINT-ESTABLISHED.md"
+        ).read_text(encoding="utf-8")
+        self.assertIn("## CHECKPOINT", self.skill)
+        self.assertIn("do not commit", self.skill)
+        self.assertIn("VERIFIED", checkpoint)
+        self.assertIn("REPORTED", checkpoint)
+        self.assertIn("UNKNOWN", checkpoint)
+        self.assertIn("HISTORICAL", checkpoint)
+        self.assertIn("cannot authorize READY, AUTO-READY, publication, or product execution", checkpoint)
+        self.assertIn("docs/CURRENT-CHECKPOINT.md", self.doc)
+        self.assertLess(
+            self.doc.find("docs/CURRENT-CHECKPOINT.md"),
+            self.doc.find("reports/engineering-continuity/LATEST.md"),
+        )
+        self.assertIn("docs/CURRENT-CHECKPOINT.md", reminder)
+        self.assertLess(
+            reminder.find("docs/CURRENT-CHECKPOINT.md"),
+            reminder.find("reports/engineering-continuity/LATEST.md"),
+        )
+        self.assertIn("Verify time-sensitive", reminder)
+        self.assertNotEqual(established, self.report)
+        self.assertIn("not a second copy", established)
 
 
 if __name__ == "__main__":

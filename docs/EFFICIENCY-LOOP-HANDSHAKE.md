@@ -175,7 +175,7 @@ Read these after the stable contract and before naming a next action. If a file 
 
 The operating roadmap, the decision register, and a planning proposal cannot authorize READY. They do not replace this contract, the knowledge roadmap `ROADMAP.md`, or the disaster-recovery procedure.
 
-After those records, read `reports/engineering-continuity/LATEST.md` and the historical report it names. Then read fresh Git, DORY, and runtime evidence. The archive is evidence, not execution authority. Do not run a FULL continuity audit on every handshake. If the archive is missing, report `UNKNOWN` and do not substitute chat memory.
+On every handshake phrase, including `Atlas, handshake`, read `docs/CURRENT-CHECKPOINT.md`, then `reports/engineering-continuity/LATEST.md` and the historical report it names. Verify time-sensitive checkpoint rows against fresh Git, DORY, and runtime evidence. The checkpoint and the archive are evidence, not execution authority. They cannot authorize READY, AUTO-READY, publication, or product execution. Do not run a FULL continuity audit on every handshake. If either file is missing, report `UNKNOWN` and do not substitute chat memory.
 
 ### Compact ATLAS HANDSHAKE output shape
 

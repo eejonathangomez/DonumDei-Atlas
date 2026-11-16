@@ -20,4 +20,6 @@ The archived report states them. They include unread live control and product Gi
 
 ## Handshake use
 
-Read this index and the named report. Do not start a FULL continuity audit on every handshake. If this file is missing, report `UNKNOWN`.
+On every handshake, read `docs/CURRENT-CHECKPOINT.md` first, then this index and the named report, then verify time-sensitive rows against fresh evidence. Do not start a FULL continuity audit on every handshake. If this file or the checkpoint is missing, report `UNKNOWN`.
+
+The first living checkpoint is recorded in `reports/engineering-continuity/2026-11-15/CHECKPOINT-ESTABLISHED.md`. That entry does not replace the qualified report above.

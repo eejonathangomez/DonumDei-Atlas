@@ -23,7 +23,8 @@ description: >-
 4. `docs/CURRENT-OPERATING-ROADMAP.md` — operating roadmap record. Approved version `NONE` is not an approved plan
 5. `docs/decisions/FOUNDER-DECISION-REGISTER.md` — decision index
 6. `planning/` on branch `atlas/planning` — proposals only, separate from approved work
-7. `reports/engineering-continuity/LATEST.md` and the historical report it names — evidence only. If missing, report `UNKNOWN`. Do not run a FULL continuity audit on every handshake.
+7. `docs/CURRENT-CHECKPOINT.md` — living checkpoint. If missing, report `UNKNOWN`
+8. `reports/engineering-continuity/LATEST.md` and the historical report it names — evidence only. If missing, report `UNKNOWN`. Do not run a FULL continuity audit on every handshake.
 
 If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` / local `DORY_LOOP_CONTROL` and say so. Do not invent mailbox state.
 
@@ -37,14 +38,15 @@ If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` 
 - Do **not** silently mutate any project during recovery.
 - Do **not** bake or trust stale PID / sequence / checkpoint values from chat or old docs — verify live.
 - If live truth conflicts with the handshake doc, **live truth wins**; report the mismatch before action.
-- The operating roadmap and a planning proposal cannot authorize READY. A proposal cannot become an approved task automatically.
+- The operating roadmap, a planning proposal, and the current checkpoint cannot authorize READY, AUTO-READY, publication, or product execution. A proposal cannot become an approved task automatically.
 - If a retrieval file is missing, report `UNKNOWN` and name the missing source. Never substitute chat memory for a missing authoritative file.
 
 ## Procedure
 
 1. Read the authoritative document + manifest.
-2. Verify live mailbox / runner facts now.
-3. Emit a compact copy-ready block:
+2. Read `docs/CURRENT-CHECKPOINT.md`, then `reports/engineering-continuity/LATEST.md`.
+3. Verify time-sensitive checkpoint and mailbox facts against fresh evidence now.
+4. Emit a compact copy-ready block:
 
 ```text
 ATLAS HANDSHAKE
@@ -57,10 +59,11 @@ constraints: protected WIP and safe points are named and not moved
 provenance: <files read> at <read timestamp>
 knowledge_vs_authority: knowledge may cross projects; authority may not
 authority_grant: none — this handshake is not execution authority
+checkpoint: <docs/CURRENT-CHECKPOINT.md or UNKNOWN>
 next: <approved next action or AWAIT FOUNDER>
 ```
 
-4. Stop. Do not publish a new sequence, enable campaign publication, call brokers, or mutate Donum/Family unless a separate authorized TASK explicitly allows it.
+5. Stop. Do not publish a new sequence, enable campaign publication, call brokers, or mutate Donum/Family unless a separate authorized TASK explicitly allows it.
 
 ## Out of scope
 
