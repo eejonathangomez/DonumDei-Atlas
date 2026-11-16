@@ -23,6 +23,7 @@ description: >-
 4. `docs/CURRENT-OPERATING-ROADMAP.md` — operating roadmap record. Approved version `NONE` is not an approved plan
 5. `docs/decisions/FOUNDER-DECISION-REGISTER.md` — decision index
 6. `planning/` on branch `atlas/planning` — proposals only, separate from approved work
+7. `reports/engineering-continuity/LATEST.md` and the historical report it names — evidence only. If missing, report `UNKNOWN`. Do not run a FULL continuity audit on every handshake.
 
 If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` / local `DORY_LOOP_CONTROL` and say so. Do not invent mailbox state.
 
