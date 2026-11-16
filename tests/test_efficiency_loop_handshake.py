@@ -17,6 +17,10 @@ DOC = ROOT / "docs" / "EFFICIENCY-LOOP-HANDSHAKE.md"
 MANIFEST = ROOT / "handshake" / "efficiency-loop-handshake.json"
 SKILL = ROOT / ".cursor" / "skills" / "reminder-handshake" / "SKILL.md"
 LESSONS = ROOT / "docs" / "lessons" / "efficiency-loop-handshake-lessons.json"
+ROADMAP = ROOT / "docs" / "CURRENT-OPERATING-ROADMAP.md"
+REGISTER = ROOT / "docs" / "decisions" / "FOUNDER-DECISION-REGISTER.md"
+PLANNING = ROOT / "planning" / "README.md"
+PROPOSAL = ROOT / "planning" / "proposals" / "P-001-persistent-planning-foundation.md"
 
 CANONICAL_PUBLISHER = "Publish-DoryAtomicReadyMailbox"
 REQUEST_PATH = "v2/atlas-publication-request.json"
@@ -27,6 +31,10 @@ class EfficiencyLoopHandshakeTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.doc = DOC.read_text(encoding="utf-8")
         cls.skill = SKILL.read_text(encoding="utf-8")
+        cls.roadmap = ROADMAP.read_text(encoding="utf-8")
+        cls.register = REGISTER.read_text(encoding="utf-8")
+        cls.planning = PLANNING.read_text(encoding="utf-8")
+        cls.proposal = PROPOSAL.read_text(encoding="utf-8")
         with MANIFEST.open(encoding="utf-8") as fh:
             cls.manifest = json.load(fh)
         with LESSONS.open(encoding="utf-8") as fh:
@@ -191,6 +199,67 @@ class EfficiencyLoopHandshakeTests(unittest.TestCase):
             if x["lesson_id"] == "ATLAS-REMOTE-REQUEST-IS-NOT-EXECUTION-AUTHORITY"
         )
         self.assertEqual(ref["status"], "DEDUPLICATED-REFERENCE")
+
+    def test_roadmap_reference_cannot_authorize_ready(self) -> None:
+        planning = self.manifest["persistent_planning"]
+        self.assertFalse(planning["authority"])
+        self.assertIn("treating the roadmap as READY", planning["forbidden"])
+        self.assertIn("The operating roadmap is knowledge, not READY", self.manifest["explicit_non_authority_facts"])
+        self.assertIn("cannot authorize READY", self.doc)
+        self.assertIn("NOT AUTHORIZED", self.roadmap)
+        self.assertIn("not execution authority", self.roadmap.lower())
+        self.assertIn("cannot authorize READY", self.skill)
+
+    def test_planning_proposal_cannot_become_approved_task(self) -> None:
+        self.assertIn(
+            "promoting a planning proposal to an approved task without a Founder decision",
+            self.manifest["persistent_planning"]["forbidden"],
+        )
+        self.assertIn("cannot become an approved task automatically", self.doc)
+        self.assertIn("does not become an approved task automatically", self.planning)
+        self.assertIn("not an approved task", self.proposal.lower())
+        self.assertEqual(self.manifest["persistent_planning"]["planning_branch"], "atlas/planning")
+
+    def test_approved_roadmap_has_version_and_source(self) -> None:
+        self.assertIn("OPERATING-ROADMAP-RECORD-2026-11-15", self.roadmap)
+        self.assertIn("Approved roadmap version", self.roadmap)
+        self.assertIn("`NONE`", self.roadmap)
+        self.assertIn("ATLAS PERSISTENT PLANNING AND HANDSHAKE IMPLEMENTATION — PHASE 1", self.roadmap)
+        self.assertEqual(
+            self.manifest["persistent_planning"]["approved_operating_roadmap"],
+            "docs/CURRENT-OPERATING-ROADMAP.md",
+        )
+
+    def test_missing_evidence_is_unknown(self) -> None:
+        self.assertEqual(self.manifest["persistent_planning"]["missing_value"], "UNKNOWN")
+        self.assertIn("substituting chat memory for a missing file", self.manifest["persistent_planning"]["forbidden"])
+        self.assertIn("Never substitute chat memory", self.doc)
+        self.assertIn("UNKNOWN", self.skill)
+        self.assertIn("missing authoritative file", self.skill)
+
+    def test_retrieval_preserves_roles_and_one_contract(self) -> None:
+        order = self.manifest["persistent_planning"]["retrieval_order"]
+        self.assertEqual(
+            order,
+            [
+                "stable operating contract",
+                "approved operating roadmap",
+                "founder decision record",
+                "current milestone and acceptance checklist",
+                "latest verified execution evidence",
+                "STOP, SYNC_STOP, AUTO-READY, and protected-work status",
+                "backlog and proposed enhancements",
+                "pending decisions and next authorized action",
+            ],
+        )
+        self.assertIn("creating a second handshake", self.manifest["persistent_planning"]["forbidden"])
+        self.assertIn("do not replace this contract", self.doc.lower())
+        self.assertIn("FD-2026-11-15-02", self.register)
+        self.assertIn("Publish-DoryAtomicReadyMailbox", self.doc)
+
+    def test_required_planning_files_exist(self) -> None:
+        for path in (ROADMAP, REGISTER, PLANNING, PROPOSAL):
+            self.assertTrue(path.is_file(), f"missing required artifact: {path}")
 
 
 def main() -> int:

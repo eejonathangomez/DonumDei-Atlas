@@ -160,6 +160,21 @@ Labels only. Values come from a fresh live read and are never stored in this con
 6. Return a compact **ATLAS HANDSHAKE** summary (roles, transport, authority boundary, live mailbox snapshot, next safe step).
 7. Do **not** mutate products, enable campaign publication, call brokers, issue READY, or invent the next sequence during recovery unless a separate authorized TASK says so.
 
+## Persistent planning retrieval
+
+Read these after the stable contract and before naming a next action. If a file is missing or a field is blank, report `UNKNOWN` and name the missing path. Never substitute chat memory for a missing authoritative file.
+
+1. Stable Atlas operating contract: this document and `handshake/efficiency-loop-handshake.json`.
+2. Approved operating roadmap: `docs/CURRENT-OPERATING-ROADMAP.md`. Record revision is not approval. Approved version `NONE` means no approved master roadmap.
+3. Founder decision record: `docs/decisions/FOUNDER-DECISION-REGISTER.md`. The document that owns a decision stays authoritative.
+4. Current milestone and acceptance checklist: the roadmap fields. When the approved version is `NONE`, the current approved milestone is `UNKNOWN`.
+5. Latest verified execution evidence: the roadmap evidence list, then a fresh live read. A cited observation is not current until it is re-read.
+6. Live safety: `v2/STOP`, `v2/SYNC_STOP`, `v2/AUTO-READY`, and protected-work status. Absence is a fact, not authorization.
+7. Backlog and proposed enhancements: branch `atlas/planning` and `planning/`. Keep them separate from approved work. A planning proposal cannot become an approved task automatically.
+8. Pending decisions and the next authorized action: the roadmap's next proposed action. If authorization is absent, next is `AWAIT FOUNDER`.
+
+The operating roadmap, the decision register, and a planning proposal cannot authorize READY. They do not replace this contract, the knowledge roadmap `ROADMAP.md`, or the disaster-recovery procedure.
+
 ### Compact ATLAS HANDSHAKE output shape
 
 ```text
@@ -173,6 +188,9 @@ constraints: protected WIP and safe points are named and not moved
 provenance: <files read> at <read timestamp>
 knowledge_vs_authority: knowledge may cross projects; authority may not
 authority_grant: none — this handshake is not execution authority
+roadmap_version: <approved version, NONE, or UNKNOWN>
+current_milestone: <milestone or UNKNOWN>
+planning: proposals are not approved work
 next: <approved next action or AWAIT FOUNDER>
 ```
 
@@ -188,6 +206,8 @@ next: <approved next action or AWAIT FOUNDER>
 | Treat old PID / sequence / checkpoint as current | Transient class; live verify required |
 | Mutate wrong project because knowledge crossed | Authority isolation; stay in authorized project_id / allowed_paths |
 | Recover from docs without live verification | Recovery procedure step 3 is mandatory |
+| Treat the operating roadmap or a planning proposal as READY | Roadmap, register, and `planning/` are non-authority. A proposal cannot become an approved task automatically |
+| Fill a missing plan from chat memory | Report `UNKNOWN` and name the missing file |
 
 ---
 

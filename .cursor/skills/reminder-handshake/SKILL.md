@@ -19,7 +19,10 @@ description: >-
 
 1. `docs/EFFICIENCY-LOOP-HANDSHAKE.md` — authoritative protocol
 2. `handshake/efficiency-loop-handshake.json` — machine manifest
-3. Live control truth under the DORY control repo `v2/` (`STATE.json`, and as needed `TASK.md`, `RESULT.md`, `STOP`) — **mandatory**
+3. Live control truth under the DORY control repo `v2/` (`STATE.json`, and as needed `TASK.md`, `RESULT.md`, `STOP`, `SYNC_STOP`, `AUTO-READY`) — **mandatory**
+4. `docs/CURRENT-OPERATING-ROADMAP.md` — operating roadmap record. Approved version `NONE` is not an approved plan
+5. `docs/decisions/FOUNDER-DECISION-REGISTER.md` — decision index
+6. `planning/` on branch `atlas/planning` — proposals only, separate from approved work
 
 If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` / local `DORY_LOOP_CONTROL` and say so. Do not invent mailbox state.
 
@@ -33,6 +36,8 @@ If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` 
 - Do **not** silently mutate any project during recovery.
 - Do **not** bake or trust stale PID / sequence / checkpoint values from chat or old docs — verify live.
 - If live truth conflicts with the handshake doc, **live truth wins**; report the mismatch before action.
+- The operating roadmap and a planning proposal cannot authorize READY. A proposal cannot become an approved task automatically.
+- If a retrieval file is missing, report `UNKNOWN` and name the missing source. Never substitute chat memory for a missing authoritative file.
 
 ## Procedure
 
