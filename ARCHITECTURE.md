@@ -6,7 +6,7 @@
 |-------|-------|
 | **Repository** | Donum Dei Atlas — Repository 1 |
 | **Type** | Documentation architecture (no runtime stack) |
-| **Last Updated** | 2026-07-08 |
+| **Last Updated** | 2026-11-19 |
 | **Production impact** | None |
 
 ---
@@ -120,6 +120,14 @@ Per [ATLAS-INHERITANCE-GUIDE](../DonumDei-TradingPlatform/docs/ENGINEERING-STAND
 | **Own** | Atlas knowledge domains, curation, relationships, milestones |
 
 Physical DDEB repository split is **deferred**. Atlas references `../DonumDei-TradingPlatform` paths until a future split is earned.
+
+---
+
+## Operating decisions
+
+Atlas inherits execution policy. It does not copy it.
+
+The AI engineering decision is [ADR-008](https://github.com/eejonathangomez/TradingBot/blob/stage-2/ux-workflow-001/docs/architecture-decision-records/ADR-008-ai-engineering-architecture.md) in `eejonathangomez/TradingBot`. That is the canonical address after the documentation commit is published. The published tip `df0538cd4da756472e1b9e9e01c0f3e3de10e633` does not contain the file yet. The twelve principles and the learning feedback loop stay in that ADR. Atlas does not copy them. DORY task state remains [v2/STATE.json](https://github.com/eejonathangomez/dory-loop-control/blob/main/v2/STATE.json). This section does not change Campaign 08 → Block A → Block B → Block C → Guided Recovery qualification.
 
 ---
 
