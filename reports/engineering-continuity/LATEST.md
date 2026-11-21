@@ -18,8 +18,8 @@ Index: [docs/engineering-continuity/README.md](../../docs/engineering-continuity
 
 ## Pending next action
 
-The documentation branch is published and is not merged. Pending Founder decisions are the published-RUNNING resume correction, the choice between Donum's protected manual-trading WIP and the disarmed chart-cancel candidate, telemetry reconciliation, and whether to merge this branch. None of those is authorized by this pointer.
+Pending Founder decisions are the published-RUNNING resume correction, the choice between Donum's protected manual-trading WIP and the disarmed chart-cancel candidate, telemetry reconciliation, and whether to merge this branch. None of those is authorized by this pointer.
 
 `atlas/planning` has its own `LATEST.md` for the 2026-11-15 reconciliation. This file does not replace that branch. A merge would have to resolve both copies.
 
-GitHub `main` remains `f46de55a6cb074879c29ce0c2dfc3d4873f97b91`. This branch's published tip is `a28374af348a58c3086c4e7cd9f2d35a24b98666`. The updates in this working tree are not yet a new commit.
+The current published revision is the GitHub HEAD of `docs/dory-donum-engineering-continuity-2026-11-20`. This file does not name that HEAD. The initial publication event is commit `a28374af348a58c3086c4e7cd9f2d35a24b98666`, parent `f46de55a6cb074879c29ce0c2dfc3d4873f97b91`.
