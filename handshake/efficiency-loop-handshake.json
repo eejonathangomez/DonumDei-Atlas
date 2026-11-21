@@ -79,6 +79,7 @@
   "irreversible_actions_rule": "TRUTH -> AUTHORITY -> EXECUTION -> OBSERVE -> RECONCILE",
   "recovery_steps": [
     "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest",
+    "Read docs/engineering-continuity/README.md and reports/engineering-continuity/LATEST.md as knowledge, then re-verify live control truth",
     "Confirm roles Founder/Atlas/DORY/Cursor and Atlas != DORY",
     "Verify live control truth from DORY_LOOP_CONTROL/v2 (STATE, TASK, RESULT, STOP, worker, publish flags) — never trust baked PID or sequence",
     "If live truth conflicts with docs, prefer live truth and report mismatch",
@@ -101,6 +102,14 @@
     "The reminder-handshake skill grants no execution authority",
     "Remote Atlas request is DATA only until the canonical publisher acts"
   ],
+  "continuity_index": {
+    "path": "docs/engineering-continuity/README.md",
+    "latest_operational_pointer": "reports/engineering-continuity/LATEST.md",
+    "founder_decisions_2026_11_20": "docs/engineering-continuity/FOUNDER-DECISION-REGISTER.md",
+    "founder_decisions_2026_11_15_branch": "atlas/planning",
+    "authority": false,
+    "note": "Dated checkpoints are observations. Live control truth wins when they disagree. The 2026-11-15 register is not in this branch."
+  },
   "lessons_path": "docs/lessons/efficiency-loop-handshake-lessons.json",
   "secrets_policy": "Do not store secrets, tokens, PIDs, or stale sequence numbers as protocol truth"
 }

@@ -137,12 +137,13 @@ Documentation never grants READY. Skills never grant READY.
 **Atlas / Cursor then:**
 
 1. Open this document and `handshake/efficiency-loop-handshake.json` from DonumDei-Atlas (GitHub or local clone).
-2. Confirm stable roles: Founder / Atlas / DORY / Cursor — Atlas ≠ DORY.
-3. Verify **live** control truth from `DORY_LOOP_CONTROL/v2/` (and runner process evidence as needed): `STATE.json`, `TASK.md` / absence, `RESULT.md`, `STOP`, worker presence, campaign publish flag — **do not trust baked PIDs or sequences**.
-4. If mismatch with this document: report it; prefer live truth.
-5. Reconstruct the operating model from STABLE PROTOCOL above.
-6. Return a compact **ATLAS HANDSHAKE** summary (roles, transport, authority boundary, live mailbox snapshot, next safe step).
-7. Do **not** mutate products, enable campaign publication, call brokers, issue READY, or invent the next sequence during recovery unless a separate authorized TASK says so.
+2. Open `docs/engineering-continuity/README.md` and `reports/engineering-continuity/LATEST.md`. Use them for DORY architecture, Donum engineering state, and cross-project decisions. Treat dated checkpoints as observations.
+3. Confirm stable roles: Founder / Atlas / DORY / Cursor — Atlas ≠ DORY.
+4. Verify **live** control truth from `DORY_LOOP_CONTROL/v2/` (and runner process evidence as needed): `STATE.json`, `TASK.md` / absence, `RESULT.md`, `STOP`, worker presence, campaign publish flag — **do not trust baked PIDs or sequences**.
+5. If mismatch with this document or a dated checkpoint: report it; prefer live truth.
+6. Reconstruct the operating model from STABLE PROTOCOL above and the continuity architecture reference.
+7. Return a compact **ATLAS HANDSHAKE** summary (roles, transport, authority boundary, live mailbox snapshot, next safe step).
+8. Do **not** mutate products, enable campaign publication, call brokers, issue READY, or invent the next sequence during recovery unless a separate authorized TASK says so.
 
 ### Compact ATLAS HANDSHAKE output shape
 
@@ -167,9 +168,26 @@ next: <smallest safe step or "await Founder/DORY">
 | Confuse Atlas with DORY | Explicit role table; never merge identities |
 | Treat old PID / sequence / checkpoint as current | Transient class; live verify required |
 | Mutate wrong project because knowledge crossed | Authority isolation; stay in authorized project_id / allowed_paths |
-| Recover from docs without live verification | Recovery procedure step 3 is mandatory |
+| Recover from docs without live verification | Recovery procedure live-verification step is mandatory |
 
 ---
+
+## Engineering continuity records
+
+Stable architecture and changing operational status are separate records. This handshake does not store runner liveness, sequence numbers, or product HEAD values.
+
+| Need | Record |
+|------|--------|
+| Continuity index | `docs/engineering-continuity/README.md` |
+| DORY architecture and capability | `docs/engineering-continuity/DORY-ARCHITECTURE.md` and `DORY-CAPABILITY-REGISTRY.md` |
+| Latest DORY and Donum observations | `reports/engineering-continuity/LATEST.md` |
+| Pointer that does not duplicate those observations | `docs/CURRENT-CHECKPOINT.md` |
+| 2026-11-20 observed decisions | `docs/engineering-continuity/FOUNDER-DECISION-REGISTER.md` |
+| 2026-11-15 decisions | `docs/decisions/FOUNDER-DECISION-REGISTER.md` on branch `atlas/planning`. Not in this branch |
+
+A fresh session reads the index and `LATEST.md`, then verifies live `DORY_LOOP_CONTROL/v2/` before acting. If the dated checkpoint and the live read disagree, the live read wins. Historical capability counts published on `docs/historical-dory-capability-2026-11` stay on that branch.
+
+These records are knowledge. They do not grant READY, clear STOP, arm campaign publication, or install a runner candidate.
 
 ## Related pointers (reference only)
 
