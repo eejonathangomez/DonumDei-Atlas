@@ -191,6 +191,58 @@ next: <approved next action or AWAIT FOUNDER>
 
 ---
 
+## Historical DORY Operational Capability — October–November 2026
+
+This section records demonstrated history. It does not change roles, the atomic-publication invariant, STOP, campaign publication, or any safety restriction above. It is not execution authority. Live mailbox and process truth still win over this section.
+
+### Counting evidence
+
+Control repository `eejonathangomez/dory-loop-control`, branch `main`, tip used for the count: `824cf59cc63586374126d428fa3557c6b6b73836`.
+
+Reproducible count, from that checkout:
+
+```text
+git log origin/main --format="%ad %s" --date=short --grep="COMPLETE return to DORY"
+```
+
+Count each matching subject whose date and `sequence N` parse. On the four days below, the raw subject count and the unique sequence count are the same.
+
+| Date | Unique COMPLETE return subjects | Sequence span |
+| --- | ---: | --- |
+| 2026-10-26 | 39 | 318–359, not every number in the span |
+| 2026-10-29 | 34 | 408–447, not every number in the span |
+| 2026-10-30 | 78 | 448–525, contiguous |
+| 2026-10-31 | 13 | 526–538, contiguous |
+
+October 30 and 31 together are 91 COMPLETE return subjects. A subject is a published mailbox commit. It is not, by itself, proof of a distinct Cursor process, of automatic task selection, or of concurrent execution. The runner log for this era shows one `adapter=spawn` loop at a time.
+
+### How to read the history
+
+1. DORY demonstrated substantial historical task-completion throughput. The Founder remembers about 30 or more tasks around Sequence 500. The mailbox count is higher: 2026-10-30 alone accounts for sequences 448–525.
+2. A stopped runner does not erase that capability. Current STOP and a runner count of zero are a runtime state.
+3. Do not replace the current implementation with an older runner because an older period completed more tasks.
+4. A later architecture review keeps the demonstrated loop: Atlas request data, one atomic READY publication, one Cursor execution, RESULT back to Git, and continuation only when it is separately enabled and the gates pass.
+
+### Five facts that must stay distinct
+
+| Fact | What it is | What it is not |
+| --- | --- | --- |
+| Historical demonstrated capability | Published COMPLETE subjects, and a spawn runner that accepted an Atlas request | Permission to run today |
+| Last-known-good operational state | Sequence 630 at `a67cea92c66b14014ed601fc430e412def283db6` on 2026-11-10. See below | The current mailbox |
+| Current implementation | Control `main` at `824cf59cc63586374126d428fa3557c6b6b73836`, including the later exact-STOP commits | A different product |
+| Current runtime state | Dated runtime snapshot recorded 2026-11-20, not permanent current truth: sequence 632 COMPLETE, STOP asserted, runner not running. Verify live before acting | Permanent current truth, or proof the code path was removed |
+| Safety authorization | STOP, `publish_enabled`, safe points, protected WIP, and a separate Founder decision | Implied by this history |
+
+### Founder-confirmed context, not yet a runtime record
+
+**DORY was fully functional immediately before the deliberate shutdown for the emergency backup and disaster-recovery campaign.**
+
+That sentence is Founder-confirmed historical context. No control-repo commit subject names that backup or disaster-recovery campaign. The local runner log shows pid 16688 still polling at 2026-11-10 17:28 and does not contain a graceful-shutdown line for that process. Do not upgrade this statement into a logged shutdown until those records are found.
+
+Sequence 630 remains the last recorded successful operating checkpoint before that pause: Atlas ingress published READY commit `62ff3901810f1c74665ad72b92d787f7c1eed497`, Cursor exited 0, and the COMPLETE commit is `a67cea92c66b14014ed601fc430e412def283db6`. Committed STOP in that commit is `CLEAR`. Campaign `publish_enabled` was already false, and continuation had already refused publication for product divergence. Those limits are part of the checkpoint, not a later failure.
+
+---
+
 ## Related pointers (reference only)
 
 Do not copy these documents into this contract:
