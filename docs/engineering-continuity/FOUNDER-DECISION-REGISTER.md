@@ -20,11 +20,23 @@ Local planning commit `93c9db984e4d479c26bf4a438a6c005ed38bdff0` is one commit a
 | Historical handshake branch is not merged by the continuity candidate | VERIFIED branch tip, not contained in local `main` | `feb9b53090a4a77d9b376b653b0eee89e7c20e68` | Not merged |
 | Section 11 founding-objectives text in the isolated candidate is proposed | VERIFIED uncommitted doc append, classed by its own text as proposed | Candidate `docs/DORY_ENGINEERING_OS_V1_FOUNDATION.md` | Not authority |
 
+## Decisions completed after the 2026-11-20 observation
+
+At commit `a28374af348a58c3086c4e7cd9f2d35a24b98666` the publication question was still listed as open. This section records what happened after that commit. It does not rewrite the observation-time table above.
+
+| Decision | Evidence | Status |
+|----------|----------|--------|
+| The Founder authorized one documentation commit and one push of `docs/dory-donum-engineering-continuity-2026-11-20`, and that publication completed | GitHub commit `a28374af348a58c3086c4e7cd9f2d35a24b98666`, parent `f46de55a6cb074879c29ce0c2dfc3d4873f97b91`, timestamp `2026-11-21T07:28:01Z`. Recorded in [the publication event](../../reports/engineering-continuity/2026-11-21/PUBLICATION-EVENT.md) | Completed. Documentation only |
+
+That authorization did not include a merge, DORY activation, STOP release, AUTO-READY, campaign publication, or Donum development. Those remain unauthorized.
+
+The 2026-11-15 register on `atlas/planning` is unchanged. This section does not replace `FD-2026-11-15-01` through `FD-2026-11-15-07`.
+
 ## Open decisions
 
 | Question | Why it is open |
 |----------|----------------|
-| Whether to publish this continuity candidate | This task stops before commit, push, and merge |
 | Whether to correct the published-RUNNING product resume bypass | The deferred-reconciliation hole is closed only in the inactive candidate |
 | Whether `DONUM-CHART-CANCEL-TRUTH-V1` remains the next product execution | The campaign file names it, publication is false, and protected manual-trading WIP is present |
-| Whether to reconcile live control telemetry dirt | AUTO-READY stays blocked while those tracked files are dirty. This task did not restore or commit them |
+| Whether to reconcile live control telemetry dirt | AUTO-READY stays blocked while those tracked files are dirty. The publication did not restore or commit them |
+| Whether to merge this documentation branch | The branch is published and is not in `main`. Merge was not authorized |

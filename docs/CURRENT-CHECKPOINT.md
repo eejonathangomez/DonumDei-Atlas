@@ -1,14 +1,20 @@
 # Current checkpoint pointer
 
-This file is a stable pointer. It is not the operational snapshot and it is not execution authority.
+This file is a pointer. It is not the operational snapshot, not a runtime observation, and not execution authority.
 
-The latest accepted engineering checkpoints are named in [reports/engineering-continuity/LATEST.md](../reports/engineering-continuity/LATEST.md).
+The current records are named in [reports/engineering-continuity/LATEST.md](../reports/engineering-continuity/LATEST.md).
 
-Before acting, re-read live DORY `v2/STATE.json`, `v2/STOP`, `v2/campaign-continuation.json`, and runner process evidence. A checkpoint date is an observation, not a claim that the runner is still in that state.
+The continuity documentation branch is published:
 
-As of the continuity candidate authored on 2026-11-20, `LATEST.md` points at:
+- Branch: `docs/dory-donum-engineering-continuity-2026-11-20`
+- Commit: `a28374af348a58c3086c4e7cd9f2d35a24b98666`
+- Parent: `f46de55a6cb074879c29ce0c2dfc3d4873f97b91`
+- Event record: [reports/engineering-continuity/2026-11-21/PUBLICATION-EVENT.md](../reports/engineering-continuity/2026-11-21/PUBLICATION-EVENT.md)
 
-- `reports/engineering-continuity/2026-11-20/DORY-OPERATIONAL-CHECKPOINT-2026-11-20.md`
-- `reports/engineering-continuity/2026-11-20/DONUM-ENGINEERING-CHECKPOINT-2026-11-20.md`
+That publication is complete. It is not a merge into `main`. GitHub `main` remains `f46de55a6cb074879c29ce0c2dfc3d4873f97b91`, so these continuity files are absent from `main`.
 
-Those files are absent from GitHub `main` (`f46de55a6cb074879c29ce0c2dfc3d4873f97b91`). Branch `atlas/planning` has a different `docs/CURRENT-CHECKPOINT.md`. That file is a 2026-11-15 living checkpoint and is not replaced by this pointer. Do not merge the two branches without resolving the shared filename.
+The 2026-11-20 DORY and Donum checkpoints remain the latest operational observations. Re-read live DORY `v2/STATE.json`, `v2/STOP`, `v2/campaign-continuation.json`, and runner process evidence before acting. A checkpoint date is not a claim that the runner is still in that state.
+
+Branch `atlas/planning` has a different `docs/CURRENT-CHECKPOINT.md`. That file is a 2026-11-15 living checkpoint and is not replaced by this pointer. Do not merge the two branches without resolving the shared filename.
+
+The working-tree updates after `a28374a` are a prepared reconciliation. They are not themselves published until a later authorized commit.

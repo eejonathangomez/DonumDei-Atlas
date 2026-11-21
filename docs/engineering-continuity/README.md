@@ -37,7 +37,7 @@ Stable records describe purpose, architecture, and capability. They do not store
 | Latest pointer | [reports/engineering-continuity/LATEST.md](../../reports/engineering-continuity/LATEST.md) |
 | Current-checkpoint pointer | [docs/CURRENT-CHECKPOINT.md](../CURRENT-CHECKPOINT.md) |
 
-`LATEST.md` names the newest dated DORY and Donum checkpoints. Replace that pointer when a newer dated checkpoint is accepted. Do not overwrite the dated files.
+`LATEST.md` names the newest operational observations, the latest documentation publication event, and the latest recovery qualification. A publication event is not a runtime observation. Do not overwrite a dated checkpoint. Replace the pointer when a newer record is accepted.
 
 ## What this index does not replace
 
