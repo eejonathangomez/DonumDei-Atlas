@@ -89,6 +89,7 @@
   "recovery_steps": [
     "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest as stable authority contract",
     "Inspect available GitHub read/write/branch actions and DORY request transport; recover status and send-it behaviors without treating the handshake as authorization",
+    "Read engineering environment / branches registry, Cursor skills catalog and latest-session pointer; refresh dynamic branches only when relevant",
     "Recover latest Founder planning and decision direction plus prompt knowledge and strategy; don't treat a proposed Focus as approved",
     "Verify formal master roadmap approval separately (NONE does not undo later approved strategic direction)",
     "Reconcile fresh dory-loop-control main STATE/RESULT/TASK/STOP/READY/campaign policy and manual-results branch; read SYNC_STOP/AUTO-READY/runner/product WIP if accessible",
@@ -141,6 +142,7 @@
       "canonical stable handshake and machine manifest",
       "current linked Founder continuity plan and decision register (strategic approval)",
       "living prompt engineering knowledge base",
+      "engineering environment and Cursor skill indexes + dated latest-session handoff pointer",
       "formal master roadmap and separate approval version",
       "fresh control main GitHub evidence and manual-results evidence",
       "runtime STOP/SYNC_STOP/AUTO-READY/runner and product WIP if accessible",
@@ -183,6 +185,9 @@
     "read_with": [
       "docs/decisions/FOUNDER-DECISION-REGISTER.md",
       "docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md",
+      "docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md (branch/tool/keyword inventory; dated)",
+      "docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md (index only, skill on demand)",
+      "reports/session-handoffs/LATEST.md (read linked dated report if exists)",
       "docs/CURRENT-OPERATING-ROADMAP.md (approved master version, may be NONE)",
       "dory-loop-control main v2/STATE.json, RESULT.md, TASK.md, STOP, READY, campaign-continuation.json",
       "dory-loop-control atlas/manual-results branch atlas/manual-results/LATEST.md",
@@ -236,7 +241,8 @@
       "next proposed",
       "next authorized",
       "authority boundary",
-      "usable GitHub and DORY status/send capabilities"
+      "usable GitHub and DORY status/send capabilities",
+      "important environment tools, branch/skill navigation and last-session pointer provenance"
     ],
     "test": "New conversation sends only 'Atlas, Handshake'; evaluate six read-only checks in canonical docs/EFFICIENCY-LOOP-HANDSHAKE.md; same-session rehearsal is not full new-chat qualification",
     "states": [
@@ -325,6 +331,87 @@
     "worker_and_campaign": "DORY owns bounded runner, health/audit, policy, STOP, project registry, campaign continuation and evidence; existing design is not blanket approval for unattended multi-task execution",
     "self_check": "On handshake show current ability to read/review GitHub, author approved files/branches, use DORY request transport, status evidence, limits and safety authority; inspect tools rather than guess",
     "documentation_only": true,
+    "execution_authority": false
+  },
+  "engineering_environment": {
+    "registry": "docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md",
+    "skills_catalog": "docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md",
+    "branches_verified_as_of": "2026-11-22",
+    "branch_source": "GitHub remote branches, four repositories, 33 branches; re-enumerate before branch actions",
+    "repos": [
+      "eejonathangomez/DonumDei-Atlas",
+      "eejonathangomez/dory-loop-control",
+      "eejonathangomez/TradingBot",
+      "eejonathangomez/kanban"
+    ],
+    "keyword_families": {
+      "networks": [
+        "Tailscale"
+      ],
+      "credentials": [
+        "Bitwarden"
+      ],
+      "backups": [
+        "Backblaze",
+        "Blackblaze",
+        "Restic",
+        "Seagate"
+      ],
+      "recovery": [
+        "Hyper-V",
+        "DORY-Recovery-Test",
+        "DORY-RECOVERY",
+        "VM",
+        "RecoveryAdmin"
+      ],
+      "engineering": [
+        "ChatGPT",
+        "Atlas",
+        "DORY",
+        "Cursor",
+        "GitHub",
+        "PowerShell",
+        "IBKR",
+        "Donum",
+        "Family Kanban"
+      ],
+      "operations": [
+        "status",
+        "send it",
+        "branches",
+        "skills",
+        "Atlas, End Session",
+        "Atlas, Create Skill"
+      ]
+    },
+    "knowledge_rule": "On every handshake read index-level summary and last-session pointer. Refresh branches and read exact skill files on demand. Founder-reported tools do not prove live access, backup, restore or credentials. Never store secrets.",
+    "no_execution_authority": true
+  },
+  "atlas_skills": {
+    "canonical_root": "docs/skills/",
+    "cursor_adapter_root": ".cursor/skills/",
+    "skills_catalog": "docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md",
+    "atlas_end_session": "docs/skills/atlas-end-session/SKILL.md",
+    "atlas_end_session_cursor_adapter": ".cursor/skills/atlas-end-session/SKILL.md",
+    "create_trigger": "Atlas, Create Skill: <workflow>",
+    "run_end_session_triggers": [
+      "Atlas, End Session",
+      "end-session",
+      "close engineering session",
+      "save session handoff"
+    ],
+    "native_chatgpt_installation": false,
+    "execution_authority": false,
+    "rule": "Skills on GitHub are reference procedures, not guaranteed active in this chat or Cursor runtime; verify available tools and actual worker skill loading"
+  },
+  "session_handoff": {
+    "latest_pointer": "reports/session-handoffs/LATEST.md",
+    "report_pattern": "reports/session-handoffs/YYYY-MM-DD/ATLAS-SESSION-<slug>.md",
+    "initial_state": "NO HANDOFF YET; do not fabricate a completed closeout",
+    "command": "Atlas, End Session",
+    "scope": "Write verified dated context and only necessary approved canonical decisions into DonumDei-Atlas#atlas/planning, update pointer, verify GitHub commit and read-back; no control/product/broker mutation",
+    "read_on_handshake": true,
+    "source_precedence": "Fresh control GitHub/runtime > dated handoff for operations; Founder decisions remain canonical for strategy",
     "execution_authority": false
   }
 }
