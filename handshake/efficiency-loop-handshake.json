@@ -87,12 +87,13 @@
   ],
   "irreversible_actions_rule": "TRUTH -> AUTHORITY -> EXECUTION -> OBSERVE -> RECONCILE",
   "recovery_steps": [
-    "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest",
-    "Confirm roles Founder/Atlas/DORY/Cursor and Atlas != DORY",
-    "Verify live control truth from DORY_LOOP_CONTROL/v2 (STATE, TASK, RESULT, STOP, worker, publish flags) — never trust baked PID or sequence",
-    "If live truth conflicts with docs, prefer live truth and report mismatch",
-    "Emit compact ATLAS HANDSHAKE; do not grant READY; do not silently mutate projects",
-    "Treat DORY handshake, Atlas Handshake, and Atlas, handshake as aliases of this one contract"
+    "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest as stable authority contract",
+    "Recover latest Founder planning and decision direction plus prompt knowledge and strategy; don't treat a proposed Focus as approved",
+    "Verify formal master roadmap approval separately (NONE does not undo later approved strategic direction)",
+    "Reconcile fresh dory-loop-control main STATE/RESULT/TASK/STOP/READY/campaign policy and manual-results branch; read SYNC_STOP/AUTO-READY/runner/product WIP if accessible",
+    "Read docs/CURRENT-CHECKPOINT.md and reports/engineering-continuity/LATEST.md as historical evidence, never priority over fresh observed truth",
+    "Emit compact Focus/mission/live evidence/authority/proposed vs approved next action; mark unknowns",
+    "Never mutate or grant READY, clear STOP, enable campaigns or brokers during handshake"
   ],
   "recovered_field_labels": [
     "active project or UNKNOWN",
@@ -136,14 +137,14 @@
     "planning_records": "planning/",
     "missing_value": "UNKNOWN",
     "retrieval_order": [
-      "stable operating contract",
-      "approved operating roadmap",
-      "founder decision record",
-      "current milestone and acceptance checklist",
-      "latest verified execution evidence",
-      "STOP, SYNC_STOP, AUTO-READY, and protected-work status",
-      "backlog and proposed enhancements",
-      "pending decisions and next authorized action"
+      "canonical stable handshake and machine manifest",
+      "current linked Founder continuity plan and decision register (strategic approval)",
+      "living prompt engineering knowledge base",
+      "formal master roadmap and separate approval version",
+      "fresh control main GitHub evidence and manual-results evidence",
+      "runtime STOP/SYNC_STOP/AUTO-READY/runner and product WIP if accessible",
+      "historical current checkpoint plus continuity index and linked report",
+      "resolve active Focus versus target architecture, blocker, proposed next versus authorized next"
     ],
     "forbidden": [
       "treating the roadmap as READY",
@@ -159,9 +160,10 @@
     "index": "reports/engineering-continuity/LATEST.md",
     "current_checkpoint": "docs/CURRENT-CHECKPOINT.md",
     "handshake_read_order": [
-      "docs/CURRENT-CHECKPOINT.md",
-      "reports/engineering-continuity/LATEST.md",
-      "fresh evidence"
+      "latest linked Founder continuity plan (strategy, not live state)",
+      "fresh GitHub STATE/RESULT/STOP/READY and manual-results",
+      "docs/CURRENT-CHECKPOINT.md (historical checkpoint)",
+      "reports/engineering-continuity/LATEST.md and linked historical report"
     ],
     "missing_value": "UNKNOWN",
     "full_audit_on_every_handshake": false
@@ -178,15 +180,15 @@
     "current_plan": "planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md",
     "read_automatically": true,
     "read_with": [
-      "docs/CURRENT-CHECKPOINT.md",
-      "reports/engineering-continuity/LATEST.md",
       "docs/decisions/FOUNDER-DECISION-REGISTER.md",
-      "docs/CURRENT-OPERATING-ROADMAP.md",
-      "dory-loop-control main v2/STATE.json and RESULT.md",
+      "docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md",
+      "docs/CURRENT-OPERATING-ROADMAP.md (approved master version, may be NONE)",
+      "dory-loop-control main v2/STATE.json, RESULT.md, TASK.md, STOP, READY, campaign-continuation.json",
       "dory-loop-control atlas/manual-results branch atlas/manual-results/LATEST.md",
-      "live STOP/SYNC_STOP/runner/protected WIP where available"
+      "live STOP/SYNC_STOP/AUTO-READY/runner and protected product WIP where available",
+      "docs/CURRENT-CHECKPOINT.md and reports/engineering-continuity/LATEST.md + historical report, treated as historical"
     ],
-    "status_policy": "Plan is a dated handoff: verify current evidence and newer successor; missing evidence UNKNOWN",
+    "status_policy": "Current strategy and its approval are separate from active Focus and formal master roadmap approval; fresh observed GitHub/runtime evidence outranks old checkpoint; missing evidence UNKNOWN",
     "execution_authority": false
   },
   "prompt_engineering": {
@@ -214,6 +216,32 @@
       "DOC"
     ],
     "authorization_rule": "Full Founder trust encourages initiative but does not transfer Founder identity or grant unconditional operational clearance; obey exact approved DORY task/campaign scope and STOP/READY/safety gates",
+    "execution_authority": false
+  },
+  "handshake_quality": {
+    "objective": "One-phrase accurate recovery without Founder reteaching",
+    "output_fields": [
+      "mission",
+      "strategy",
+      "focus (active approval or NONE/UNKNOWN)",
+      "project/objective",
+      "live GitHub state and separate runtime verification",
+      "protected work",
+      "evidence provenance",
+      "prompting standard",
+      "anti-drift",
+      "master roadmap approval",
+      "blocker",
+      "next proposed",
+      "next authorized",
+      "authority boundary"
+    ],
+    "test": "New conversation sends only 'Atlas, Handshake'; evaluate six read-only checks in canonical docs/EFFICIENCY-LOOP-HANDSHAKE.md; same-session rehearsal is not full new-chat qualification",
+    "states": [
+      "PASS",
+      "PASS WITH CONDITIONS",
+      "FAIL"
+    ],
     "execution_authority": false
   }
 }
