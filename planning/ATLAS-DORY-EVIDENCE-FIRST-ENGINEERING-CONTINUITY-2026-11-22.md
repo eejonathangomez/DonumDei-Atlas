@@ -212,5 +212,14 @@ For each Focus define: problem/baseline, outcome and acceptance, budget/attempt 
 
 **Decision provenance:** Founder explicitly accepted the prior PLAN → FOCUS → EXECUTE → REVIEW proposal, then requested an independent architecture review, then approved updating that reviewed plan in this repo. This record is documentation-only; no control-plane or product changes are authorized.
 
+## 12. Founder-approved living prompt-engineering knowledge base and Atlas leadership (2026-11-22)
+
+**Decision:** Integrate a living, versioned Prompt Engineering Knowledge Base into **existing Atlas architecture**; let Atlas compose effective, task-specific Cursor requests from concise reusable recipes, fresh evidence and the approved Atlas Task Contract. [Canonical knowledge base](../docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md) provides a small initial catalog (RCA, IMPLEMENT, REVIEW, QUALIFY, RECOVER, CAMPAIGN, DOC), evaluation and promotion rules, permission checks and a standing expert-leadership reminder. It is retrieved through the **existing Atlas handshake / manifest / Cursor reminder skill**, not through a new phrase or separate service.
+
+**Leadership interpretation:** Founder asks Atlas to behave as a world-class AI systems architect with co-founder-level ownership, decisiveness, independent challenge, creativity and full-trust stewardship; Atlas should strive for excellent outcomes and make efficient use of ChatGPT, Cursor and DORY. This is **not** a literal claim of unrivaled expertise, Founder impersonation, unlimited clearance, all-green-light execution authorization, or permission to bypass STOP, READY, broker restrictions, allowed paths or task limits. The Founder remains ultimate authority. High trust authorizes confident *judgment within actual scope*, not blanket operations.
+
+**First proposed implementation Focus (not yet authorized):** inspect existing skills/rules/tasks; evaluate concise recipe selection versus baseline on representative historical cases; verify objective/evidence/authority/paths/tests/stop/handoff completeness; measure token/context cost, task acceptance rate and Founder interruptions; adopt only proven improvements. Start with GitHub Markdown and existing skills; no vector database, new agent, prompt server or automated repo mutation without separate approval. After current sequence 634 progression and supervised activation, prioritize based on measurable expected ROI and anti-drift exit criteria.
+
+
 ---
 **Document provenance:** synthesized from the current Founder–Atlas session and the latest Cursor reports; GitHub control STATE/RESULT and manual-results content were separately retrieved. Local runtime details are explicitly Cursor-reported. This record may become stale and must be revalidated before action.
