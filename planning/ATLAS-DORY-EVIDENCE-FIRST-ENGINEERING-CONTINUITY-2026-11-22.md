@@ -5,6 +5,16 @@
 **Location:** `eejonathangomez/DonumDei-Atlas`, branch `atlas/planning`.  
 **Authority:** This is a continuity and decision record, not a READY envelope, runner command, approved product roadmap version, or permission to mutate control/product repositories.
 
+## 0. Latest session result (2026-11-22) — supersedes earlier next-task recommendation
+
+**Updated milestone, not operational authorization.** The previously proposed isolated terminal-ack progression correction **has been executed locally and returned PASS WITH CONDITIONS**, and its separate production-publication readiness gate also returned **GO WITH CONDITIONS**. The exact details, test counts, local-only candidate lineage, runner/WIP evidence, regression caveat and next proposed scope are preserved at [the latest dated Atlas session handoff](../reports/session-handoffs/2026-11-22/ATLAS-SESSION-TERMINAL-PROGRESSION-PUBLICATION-GATE.md), discoverable through `reports/session-handoffs/LATEST.md`. This update supersedes the **earlier proposed action** in §1 below; the older chronology remains unchanged as historical evidence.
+
+**Next Founder decision:** separately authorize, or withhold, **one stopped-runner production control maintenance step**: verify STOP/main/runner safety; stop the sole verified runner; fast-forward production `main` from `c478e31950662698e7cf4bb61862c83246060933` to isolated local candidate `815da832bcba0cbf2f0c17f079782e58b66fecc0`; push without force; verify remote and preserve STOP, BLOCKED 634, runner stopped, WIP unchanged. **NOT YET APPROVED OR PERFORMED.** No acknowledgement 634, STOP release, restart, watchdog, READY, 635, product/broker action under this decision.
+
+**Regressions:** five suites 217 checks PASS (Cursor-reported); a separate completion-only recovery suite remains failing after 26 checks because an unset integrity baseline yields safe refusal `PRODUCT_BASELINE_REQUIRED` instead of the test's expected `PROJECT_INCOMPATIBLE:PRODUCT_DIVERGENCE*`; that failure also occurs on the unmodified parent. This is documented, not silently waived.
+
+**Fresh GitHub evidence at End Session:** remote control `main` still `c478e31950662698e7cf4bb61862c83246060933`, sequence 634 BLOCKED, last completed 632, STOP asserted, READY absent, campaign publication disabled. Live local PID 5924, protected WIP and candidate bytes are **Cursor-reported, not independently inspected via GitHub**. The old `atlas/manual-results/LATEST.md` does not contain this new candidate report. Reverify all state before action.
+
 ## 1. Executive handoff — read this first
 
 **Immediate blocker:** DORY production remains STOP asserted. Sequence **634 BLOCKED** has consistent committed STATE and RESULT, but sequence **635 was not published**. The latest activation campaign stopped correctly because the terminal-acknowledgement writer refuses acknowledging sequence 634 when `last_completed_sequence=632`, despite sequence 633 already being acknowledged and `closed_through=633`. This is an **acknowledgement/progression contract defect**, not a watchdog defect. **Do not clear STOP.**
