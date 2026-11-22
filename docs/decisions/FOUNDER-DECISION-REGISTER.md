@@ -1,5 +1,12 @@
 # Founder decision register
 
+## Founder decisions recorded 2026-11-22 — current operating direction
+
+The Founder approved: (1) evidence-first retrieval, context engineering and production-grade RAG principles as the daily target standard; (2) outcome-based Small / Standard / Campaign task contracts with independent verification, explicit authorization and bounded worker autonomy; (3) prioritizing substantial workflow improvements ahead of full Donum feature work when measured, risk-adjusted gains justify the cost; and (4) preserving the existing Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder loop and all safety gates. **These decisions authorize architectural direction and planning, not production mutation, STOP release, READY, general AUTO-READY, broker activity, or a new approved master product roadmap.**
+
+The current engineering continuity, evidence classification, recovery chronology, progression defect and next proposed task are recorded in [the consolidated 2026-11-22 plan](../../planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md). Read it and independently reverify current state before execution. Current outstanding proposal: qualify the sequence 634 terminal-acknowledgement correction while STOP stays asserted; production correction requires separate authorization.
+
+
 No decision-register file existed in DonumDei-Atlas. This index is the retrieval record for decisions that Phase 1 must preserve.
 
 It is not execution authority. It does not grant READY. It does not replace the document that owns a decision.
