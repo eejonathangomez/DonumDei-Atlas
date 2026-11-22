@@ -1,5 +1,8 @@
 # Current checkpoint
 
+> **CURRENT HANDOFF (2026-11-22):** The checkpoint rows below are historical and **not** current execution state. Read [the consolidated Founder-aligned engineering continuity plan](../planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md) and then independently reconcile live control/runtime/manual-results evidence. Latest report: DORY sequence 634 BLOCKED, last completed 632, STOP asserted; terminal acknowledgement progression is blocked; sequence 635 not published. This pointer is documentation only, not execution authority.
+
+
 This file is a living evidence record. It cannot authorize READY, AUTO-READY, publication, or product execution.
 
 Labels: `VERIFIED` was read while writing this file. `REPORTED` comes from a named record and was not repeated here. `UNKNOWN` was not read. `HISTORICAL` is an older record and is not current truth.
