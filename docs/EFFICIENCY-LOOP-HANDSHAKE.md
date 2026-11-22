@@ -160,6 +160,16 @@ Labels only. Values come from a fresh live read and are never stored in this con
 6. Return a compact **ATLAS HANDSHAKE** summary (roles, transport, authority boundary, live mailbox snapshot, next safe step).
 7. Do **not** mutate products, enable campaign publication, call brokers, issue READY, or invent the next sequence during recovery unless a separate authorized TASK says so.
 
+## Automatic Founder-aligned continuity retrieval (all Atlas handshake aliases)
+
+When Founder says **`Atlas, Handshake`**, `Atlas Handshake`, or `DORY handshake`, **automatically** retrieve the latest Founder-aligned working plan from branch `atlas/planning`, starting with `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md`, alongside the existing roadmap, decision register, current checkpoint, and continuity index. The Founder should not need to remember or type a filename. Follow newer clearly linked, verified successors if they exist; do not assume a 2026-11-22 snapshot is perpetually current.
+
+The plan preserves: (1) active DORY recovery blocker and exact next proposed task, (2) Evidence-First Retrieval / Context Engineering / Production-Grade RAG principles, (3) the Atlas Task Contract and Small/Standard/Campaign prompt sizing, (4) independent acceptance and bounded worker autonomy, (5) prioritizing high-return efficiency improvements even ahead of product work when justified, and (6) the approved Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder loop and all safety boundaries. Read the plan **by reference**, do not duplicate its changing status in this stable handshake.
+
+**Mandatory evidence reconciliation:** inspect live control `main` STATE/RESULT/READY and STOP/SYNC_STOP as available; separately inspect the `atlas/manual-results` branch and `atlas/manual-results/LATEST.md` with provenance; inspect protected WIP and current runner/process evidence where available; compare with Atlas checkpoint and plan. Label VERIFIED / REPORTED / HISTORICAL / CONFLICT / UNKNOWN; never promote a historical file or chat report to a current runtime fact. If runtime evidence is not accessible, state the limitation instead of inventing it.
+
+**Handshake response:** compactly give the current objective, Founder-approved strategic direction, verified blocker, next **proposed versus actually authorized** action, safety gates and missing evidence. A handshake never grants execution authority. Do not automatically clear STOP, publish READY, install a patch, restart a runner, or mutate product repositories from this retrieval rule. If the plan is missing, report `UNKNOWN`, follow existing fallback retrieval, and propose restoration.
+
 ## Persistent planning retrieval
 
 Read these after the stable contract and before naming a next action. If a file is missing or a field is blank, report `UNKNOWN` and name the missing path. Never substitute chat memory for a missing authoritative file.
