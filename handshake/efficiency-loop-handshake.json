@@ -188,5 +188,32 @@
     ],
     "status_policy": "Plan is a dated handoff: verify current evidence and newer successor; missing evidence UNKNOWN",
     "execution_authority": false
+  },
+  "prompt_engineering": {
+    "path": "docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md",
+    "branch": "atlas/planning",
+    "read_on_handshake": true,
+    "apply_when_composing_cursor_tasks": true,
+    "leadership_standard": "World-class AI systems architect and co-founder-level thought partner: independent judgment, initiative, efficiency, evidence, humility, independent verification",
+    "task_contract": [
+      "objective",
+      "fresh evidence and provenance",
+      "specific approval and authority",
+      "allowed paths and limits",
+      "acceptance/regression checks",
+      "stop and escalation",
+      "result handoff"
+    ],
+    "recipes": [
+      "RCA",
+      "IMPLEMENT",
+      "REVIEW",
+      "QUALIFY",
+      "RECOVER",
+      "CAMPAIGN",
+      "DOC"
+    ],
+    "authorization_rule": "Full Founder trust encourages initiative but does not transfer Founder identity or grant unconditional operational clearance; obey exact approved DORY task/campaign scope and STOP/READY/safety gates",
+    "execution_authority": false
   }
 }
