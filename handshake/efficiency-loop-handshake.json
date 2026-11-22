@@ -40,7 +40,11 @@
   "atlas_remote_request": {
     "path": "v2/atlas-publication-request.json",
     "protocol": "DORY-ATLAS-PUBLICATION-REQUEST-V1",
-    "allowed_fields": ["protocol", "request_id", "task_text"],
+    "allowed_fields": [
+      "protocol",
+      "request_id",
+      "task_text"
+    ],
     "authority": false,
     "classification": "DATA/non-authority",
     "adoption_entry": "v2/Invoke-DoryAtlasPublicationRequest.ps1",
@@ -163,5 +167,26 @@
     "full_audit_on_every_handshake": false
   },
   "lessons_path": "docs/lessons/efficiency-loop-handshake-lessons.json",
-  "secrets_policy": "Do not store secrets, tokens, PIDs, or stale sequence numbers as protocol truth"
+  "secrets_policy": "Do not store secrets, tokens, PIDs, or stale sequence numbers as protocol truth",
+  "founder_continuity": {
+    "trigger_aliases": [
+      "DORY handshake",
+      "Atlas Handshake",
+      "Atlas, handshake"
+    ],
+    "planning_branch": "atlas/planning",
+    "current_plan": "planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md",
+    "read_automatically": true,
+    "read_with": [
+      "docs/CURRENT-CHECKPOINT.md",
+      "reports/engineering-continuity/LATEST.md",
+      "docs/decisions/FOUNDER-DECISION-REGISTER.md",
+      "docs/CURRENT-OPERATING-ROADMAP.md",
+      "dory-loop-control main v2/STATE.json and RESULT.md",
+      "dory-loop-control atlas/manual-results branch atlas/manual-results/LATEST.md",
+      "live STOP/SYNC_STOP/runner/protected WIP where available"
+    ],
+    "status_policy": "Plan is a dated handoff: verify current evidence and newer successor; missing evidence UNKNOWN",
+    "execution_authority": false
+  }
 }
