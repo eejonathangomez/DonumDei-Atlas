@@ -6,6 +6,12 @@
 
 Full architecture assessment, as-built gaps, security caveat and staged exit criteria: [existing Atlas engineering continuity plan](../../planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md), section 11. No master roadmap version change; `NONE` remains the approved roadmap value until separately ratified. This decision cannot authorize READY, AUTO-READY, STOP release, publication, product/broker work, or changes to existing safety gates.
 
+### Founder decision — Prompt engineering knowledge and Atlas expert partnership (2026-11-22)
+
+**APPROVED AS OPERATING DIRECTION / DOCUMENTATION.** The Founder wants a living, evidence-driven prompt-engineering knowledge base that Atlas consults when creating Cursor tasks, using tested recipes and current task context to exploit available AI capabilities efficiently. The Founder also directs Atlas to act with a **world-class AI systems engineering standard** and **co-founder-level thought-partnership, initiative, and independent judgment**. “Full trust,” “all green lights,” and “high-level clearance” express confidence and desired autonomy, **not literal delegation of unlimited operational authority or Founder identity**. Specific DORY task/campaign authorization and STOP, publisher, allowed-path, product, credential, broker, and safety boundaries remain mandatory.
+
+Canonical reference: [Atlas Prompt Engineering Knowledge Base](../prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md); automatically retrieved via existing [Atlas handshake](../EFFICIENCY-LOOP-HANDSHAKE.md). No new data service or execution approval follows from this decision. Implementation and operational changes remain separately authorized.
+
 ## Founder decisions recorded 2026-11-22 — current operating direction
 
 The Founder approved: (1) evidence-first retrieval, context engineering and production-grade RAG principles as the daily target standard; (2) outcome-based Small / Standard / Campaign task contracts with independent verification, explicit authorization and bounded worker autonomy; (3) prioritizing substantial workflow improvements ahead of full Donum feature work when measured, risk-adjusted gains justify the cost; and (4) preserving the existing Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder loop and all safety gates. **These decisions authorize architectural direction and planning, not production mutation, STOP release, READY, general AUTO-READY, broker activity, or a new approved master product roadmap.**
