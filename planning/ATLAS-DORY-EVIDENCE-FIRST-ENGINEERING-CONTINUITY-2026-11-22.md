@@ -147,5 +147,70 @@ Recover current Donum architecture/roadmap, reconcile protected WIP and authoriz
 
 “Atlas, handshake. Read `eejonathangomez/DonumDei-Atlas` branch `atlas/planning`, file `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md`. Reconcile fresh `eejonathangomez/dory-loop-control` main STATE/RESULT, `atlas/manual-results/LATEST.md` on `atlas/manual-results`, and live runtime evidence. Sequence 634 is BLOCKED; last completed 632; STOP was asserted in the latest report; sequence 635 not published. The next proposed task is an isolated terminal-acknowledgement progression correction. Preserve all safety controls and the approved evidence-first/prompting/ROI plan. Do not execute without separate authority.”
 
+## 11. Founder-approved architecture review: PLAN → FOCUS → EXECUTE → REVIEW (2026-11-22)
+
+**Decision:** Founder agreed with Atlas's independent AI-systems architectural review. Adopt **PLAN → FOCUS → EXECUTE → REVIEW** as the *target operating model*, while **reusing and qualifying DORY's existing machinery**, rather than building another orchestration engine or granting broader permissions now. This is approved strategy and documentation, **not** permission to activate a campaign.
+
+### North star and focus guardrail
+
+The engineering platform exists to accelerate **verified product delivery**, not to become an endless infrastructure project. Allow substantial workflow investment when expected, risk-adjusted return exceeds implementation and qualification cost. Keep a single active Focus with bounded tasks, permissions, budgets, success criteria and explicit return to Donum product work. A discovered unrelated enhancement is backlog, not automatically the next task.
+
+- **PLAN (Founder + Atlas):** evidence-first review; define product/engineering outcome, dependencies, expected ROI, constraints and candidate tasks.
+- **FOCUS (Founder approval):** approve a **versioned, finite campaign contract**—specific project/branch, task permissions and exact allowed paths, dependencies, task/attempt limits, acceptance predicates, stop/escalation conditions, return condition. Focus is a logical contract *represented within existing Atlas and DORY policy*; not a new queue, agent, approval server or publisher.
+- **EXECUTE (DORY + Cursor):** DORY selects and publishes each eligible task via the existing canonical atomic publisher; Cursor implements and tests within approved limits; DORY verifies terminal acceptance, checkpoints progress, learns and can select the next authorized task only after predecessor gates pass.
+- **REVIEW (Atlas + Founder):** independently reconcile control GitHub, runtime, preserved evidence, manual-results, safety and product WIP; declare COMPLETE / BLOCKED / BUDGET_EXHAUSTED / SUPERSEDED, and decide whether to authorize another Focus.
+
+**Autonomy rule:** One Founder approval can bound multiple tasks; it is not unlimited delegated authority. Routine AGREE/IMPROVE choices within the unchanged scope do not require repeated Founder approval. Material authority, scope, financial exposure, safety or mission changes always require escalation. No campaign may spawn another campaign by itself.
+
+### As-built architecture findings (control main observed at `c478e31950662698e7cf4bb61862c83246060933`)
+
+| Capability | Evidence / existing home | Assessment |
+| --- | --- | --- |
+| Canonical atomic TASK+READY publication | `v2/DoryAtomicMailbox.ps1`; `Publish-DoryAtomicReadyMailbox` | Existing; retain |
+| Campaign selection and bounded continuation | `v2/DoryCampaignContinuation.ps1` | Existing; inspect and qualify for new use case |
+| Campaign policy | `v2/campaign-continuation.json`: `COMMISSIONED`, `publish_enabled=false`, `bounded_campaign=true`, `max_complete_tasks=15` | Existing, disarmed; **not** authority or proof of ready deployment |
+| Durable progress | `v2/campaign-progress.json` logic and publication function | Existing; test crash/restart/idempotence |
+| Candidate permissions and allowlist | bounded policy, publisher, allowed-path checks | Existing application controls; retain |
+| Runner health/audit/supervised acceptance | runner, post-exec health/audit and corrected watchdog | Implemented; accepted new smoke not yet established |
+| Multi-task distinct dependencies and unattended completion | selected/candidate continuation mechanism | **Not yet independently qualified** for proposed general engineering Focus |
+| Evidence-first knowledge and prompt recovery | Atlas plan, handshake, Cursor skill | Target direction documented; runtime integration/overhead not qualified |
+| OS-level isolation of real Cursor worker | `docs/DORY-OPERATING-MODEL.md` explicitly says not proven | **Security qualification gap** before broad unattended mutations |
+
+**Important implementation fact:** At this revision `Test-DoryBoundedCampaignContract` requires `max_complete_tasks` to equal **15**, not an arbitrary Founder-selected bound; the current policy has **one** chart-cancellation candidate and prohibits broker activity. Do not mistake a one-candidate disarmed policy for a proven general multi-task workflow. Historical sequences **455–502** reportedly exercised 48 continuation cycles for **one task shape**, which supports the existence of continuation, **not** 48 independent software deliverables. Verify historical evidence before using it as a fresh operational qualification.
+
+**Defect finding:** DORY's `Add-DoryTerminalAcknowledgement` and `Get-DoryMailboxProgression` both contain sequencing assumptions tied to `last_completed_sequence`; fixing only the writer could leave reader/writer inconsistency. Correct a **single terminal closure invariant** while preserving the distinction between last successfully accepted COMPLETE and last terminally acknowledged BLOCKED. Test consecutive terminal failures, idempotence, corrupt/missing audit, gaps, published parent sequencing and proper refusal. This remains the next critical-path work, not an excuse to redesign all of DORY.
+
+### Agreed architectural decisions
+
+**GO:** Adopt PLAN → FOCUS → EXECUTE → REVIEW as the target; integrate evidence-first retrieval and Atlas Task Contract; measure verified throughput rather than runner utilization or prompt size.
+
+**MODIFY/REUSE:** Reuse DORY's campaign policy, selector, ledger, publisher, runner, STOP and learning systems. Qualify normal software-engineering tasks and *then* make minimal compatible improvements if needed (including configurable task-budget validation when justified).
+
+**NO-GO now:** General unattended mutating campaigns, automatic STOP release, permissive credentials, any broker/LIVE authority, a second orchestrator, new agent network, vector database/fine-tuning without proven need, or unbounded self-improvement loops. `allowed_paths` is an application authorization check, not an OS security sandbox. Broader unattended worker execution requires evidence for isolation/scoped credentials/mutation controls and a qualified rollout.
+
+### Updated implementation stages and exit contracts
+
+**Stage 0 — restore supervised execution (critical path).** Qualify the existing isolated `DORY-TERMINAL-ACK-PROGRESSION-CORRECTION-V1` task and its full progression invariant; separately authorize production correction, acknowledge 634, qualify STOP release, arm watchdog, publish one supervised read-only 635, verify accepted COMPLETE. **No permission implied here.** Exit: accepted, independently corroborated terminal sequence and safe checkpoint.
+
+**Stage 1 — focused as-built gap audit.** Inspect selector, ledger, policy schema, task publication, auth, terminal recovery, restart/replay, tests and realistic worker isolation. Produce reuse / modify / defer and minimal gap list. Avoid a broad redesign. Exit: prioritized validated gaps and proposed bounded changes.
+
+**Stage 2 — small synthetic multi-task Focus.** Qualify at least two **distinct** dependent engineering tasks in isolated non-broker fixtures, with exact approval envelope, normal completion, retry ceiling, duplicate/reconnect/restart safety, partial completion, out-of-scope refusal, budget-exhausted stop and authoritative evidence. Exit: repeatable verified campaign completion with no unauthorized publication/mutation.
+
+**Stage 3 — evidence-first context and prompt quality.** Minimal source manifest (repo/path/branch/commit/time/verification class), fresh versus stale comparison, manual-results and checkpoint retrieval, conflict UNKNOWN behavior, compact Atlas Task Contract, session handoff, nightly report. Measure context retrieval overhead and errors; do not add technology by default. Exit: repeatable fresh recovery and measurable quality/efficiency improvement.
+
+**Stage 4 — measured engineering Focus.** Establish baseline (successful tasks per hour, Founder interventions, retry/recovery time, context incidents, wasted calls); test a real authorized low-risk campaign and compare under equivalent safety requirements. Exit: improvement demonstrated or explicitly deferred with lessons.
+
+**Stage 5 — Donum product delivery.** Reconcile product architecture/WIP and approved product milestone. Use bounded Focus campaigns; avoid further infrastructure work unless a new substantial expected return is justified. Exit: repeated independently verified product outcomes.
+
+Stages are an **architectural roadmap**, not automatically authorized execution tasks; sequence may be reordered when credible evidence shows a higher-return, equally safe investment. Prioritize correcting 634 right now.
+
+### Focus drift and completion contract
+
+For each Focus define: problem/baseline, outcome and acceptance, budget/attempt limit, allowed repos/paths/actions, required predecessor gates, exact stop conditions, rollback/safe point, and return-to-product condition. Execution ends on **COMPLETE**, **BLOCKED**, **BUDGET_EXHAUSTED**, or **SUPERSEDED**. A task failing acceptance triggers bounded diagnosis or escalation, **not** permission for unlimited additional tasks. Related safety prerequisites must be resolved before advancing; unrelated discoveries go to the existing backlog. Only the Founder can approve a materially new campaign.
+
+**Atlas handshake retrieval:** `Atlas, Handshake` already auto-loads this existing plan, decision register and evidence index. Because this update is incorporated **in place** at the same path, no additional handshake, reminder phrase, branch, or file is required. Always re-read current evidence: this section's code observations are dated, not live runtime proof.
+
+**Decision provenance:** Founder explicitly accepted the prior PLAN → FOCUS → EXECUTE → REVIEW proposal, then requested an independent architecture review, then approved updating that reviewed plan in this repo. This record is documentation-only; no control-plane or product changes are authorized.
+
 ---
 **Document provenance:** synthesized from the current Founder–Atlas session and the latest Cursor reports; GitHub control STATE/RESULT and manual-results content were separately retrieved. Local runtime details are explicitly Cursor-reported. This record may become stale and must be revalidated before action.
