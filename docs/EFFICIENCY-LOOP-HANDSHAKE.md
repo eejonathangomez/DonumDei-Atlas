@@ -175,6 +175,32 @@ Documentation never grants READY. Skills never grant READY.
 
 ---
 
+## Engineering environment, branches, tools, skills and End Session — mandatory navigation
+
+The Founder requires Atlas to remember **important engineering keywords, tools, branch navigation, existing Cursor skill procedures, and the practical workflow**, not just the current DORY sequence. These are recoverable in GitHub—not claims of permanent, infallible model memory.
+
+**Stable index files (automatic on handshake):**
+
+- [Engineering Environment & Repository Inventory](engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md) — repositories, **33 remote branches as-of 2026-11-22** with descriptive navigation hints, Tailscale, Bitwarden, Backblaze, Restic/Seagate, Hyper-V recovery VM, PowerShell, DORY/Cursor/GitHub/IBKR/Family, and critical keyword lookup.
+- [Cursor & Atlas Skills Catalog](engineering-inventory/CURSOR-SKILLS-CATALOG.md) — **existing skill names and capabilities**, exact repository/branch source, selection and invocation boundaries; includes `dory-loop-governed-execution`, `dory-request-publication`, `prompt-craft`, `dev-watchdog`, `manual-auto`, `project-navigator`, etc.
+- [Atlas End Session skill](skills/atlas-end-session/SKILL.md) — reusable `Atlas, End Session` command that preserves a dated, evidence-classified session handoff in the existing Atlas planning repo and updates `reports/session-handoffs/LATEST.md`.
+- [Latest Atlas session handoff](../reports/session-handoffs/LATEST.md) — **pointer, not live truth**; currently may say `NO HANDOFF YET`. When present, read the linked report and reconcile with fresh DORY GitHub evidence.
+
+**Retrieval efficiency:** On every handshake, read the current inventory and skills *index-level summaries* and the latest handoff pointer; present a concise **environment / skill awareness** recap. Re-enumerate branches and read relevant individual `SKILL.md` files **on demand**, when selecting a branch, invoking a skill, preparing a Cursor task or resolving a conflict. Do not inject 33 branches and the full skill corpus into every handshake or Cursor task. Branch names and tools are not permanent; verify actual remote/local availability before acting.
+
+**Evidence classes:** Tailscale, Bitwarden, Backblaze, and the recovery VM/Restic history have Founder-reported or historical provenance until actual current setup/restore/connectivity evidence is inspected. Never infer an accessible vault, network node, completed Backblaze offsite backup, VM isolation or independent-machine recovery from a name in this index. Never store passwords, keys, vault contents or secrets in GitHub.
+
+**Commands:**
+
+- `Atlas, End Session` / `end-session`: *run* the bounded [End Session skill](skills/atlas-end-session/SKILL.md), write one dated session record and update the latest-session pointer with actual GitHub commit/read-back. Do not silently run after every conversation without an explicit request.
+- `Atlas, Create Skill: <workflow>`: search existing skill catalog, extend an appropriate skill if possible, otherwise create a canonical `docs/skills/<slug>/SKILL.md` and optional `.cursor/skills/<slug>/SKILL.md` adapter on the approved Atlas planning branch; update catalog/index, verify; **create != execute**.
+- `Atlas, Handshake`: recover the latest handoff, compare it with the current Founder plan, Founder decision register and fresh control/manual-result evidence; state one safe next action. Do not mistake prior session state for current runtime truth.
+- `branches` / `skills` / `Tailscale` / `Bitwarden` / `Backblaze` / `VM`: use the inventory/skills navigation, then retrieve actual source details before stating current operating status or issuing actions.
+
+**Skill scope:** This is a **GitHub-defined Atlas procedure** available for ChatGPT to retrieve with its connector and a Cursor-compatible skill adapter in the Atlas repo. It does **not** mean a new native ChatGPT plugin was installed or that Cursor automatically has an Atlas skill in every project checkout. Skill availability must be checked in the actual execution environment.
+
+---
+
 ## Minimum recovered fields
 
 Labels only; **never bake transient values into this protocol**:
@@ -187,6 +213,8 @@ Labels only; **never bake transient values into this protocol**:
 - Protected product WIP, safe points and manual-results provenance
 - Prompt-engineering standard: independent world-class judgment, applicable recipe for the **next task** (if known), concise evidence-backed task contract
 - Current **Atlas tool capabilities**: available GitHub read/write/branch operations; DORY request transport eligibility and latest publication proof versus request-only state
+- **Engineering environment**: important Tailscale/Bitwarden/Backblaze/Restic/Hyper-V VM/GitHub/DORY/Cursor tools and provenance; branch and skill indexes (not a stale full listing)
+- **Last session closeout**: `reports/session-handoffs/LATEST.md` pointer, linked summary or NO HANDOFF, reconciled to fresh state
 - High-ROI efficiency opportunity and **anti-drift** check: does the next work serve the Focus and have bounded exit criteria?
 - Provenance (repo/branch/commit/source/time), verification classes, conflicting or missing evidence
 
@@ -196,12 +224,13 @@ Labels only; **never bake transient values into this protocol**:
 
 1. Read this **single authoritative handshake** and `handshake/efficiency-loop-handshake.json` from `eejonathangomez/DonumDei-Atlas` branch `atlas/planning`. Confirm Founder/Atlas/DORY/Cursor and that Atlas ≠ DORY.
 2. **Load current strategic context first:** `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md` (or a verified newer successor linked by the handshake), `docs/decisions/FOUNDER-DECISION-REGISTER.md`, and `docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md`. Extract **approved design versus actually active/authorized work**; never assume a proposed Focus is active.
-3. Read the formal `docs/CURRENT-OPERATING-ROADMAP.md` to determine the **approved master roadmap version** (may remain `NONE`) and its provenance. A strategic operating direction may be Founder-approved even while the formal master roadmap is `NONE`; do not confuse either with task authority.
-4. **Inspect available tools and DORY capabilities:** confirm connected GitHub repository/branch/read/write actions and the established DORY request route. Do not fall back to user copy/paste or claim inability before checking actual tools. The handshake itself must not submit a task.
-5. **Reconcile fresh evidence:** `eejonathangomez/dory-loop-control` `main`: `v2/STATE.json`, `v2/RESULT.md`, `v2/TASK.md`, `v2/STOP`, `v2/READY` and campaign policy, with SYNC_STOP/AUTO-READY and live runner/process evidence if available. Independently read `atlas/manual-results/LATEST.md` on branch `atlas/manual-results`, plus relevant product HEAD/WIP/safe points when accessible.
-6. **Read historical continuity second:** `docs/CURRENT-CHECKPOINT.md`, `reports/engineering-continuity/LATEST.md` and the historical report linked by that index. These preserve history but may precede the plan and current control evidence. Do not replace newer verified truth with old checkpoint fields. A full continuity audit is **not** required on every handshake.
-7. Classify evidence `VERIFIED`, `REPORTED`, `HISTORICAL`, `CONFLICT` or `UNKNOWN`. An observed GitHub STOP file is verified **GitHub state**, not proof of the current local runner. Name missing access and divergent evidence without guessing.
-8. Emit the compact **ATLAS HANDSHAKE** summary below, including Focus status and next **proposed versus authorized** task; no mutation during recovery. Only a separately authorized DORY task or Founder-approved operation may proceed afterward.
+3. **Recover engineering capabilities and current handoff:** Read `docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md`, `docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md` and `reports/session-handoffs/LATEST.md`; follow its dated handoff link if available. Read `docs/skills/atlas-end-session/SKILL.md` when invoking End Session, but do not run it as part of handshake. Re-enumerate branches or load individual skills only when relevant.
+4. Read the formal `docs/CURRENT-OPERATING-ROADMAP.md` to determine the **approved master roadmap version** (may remain `NONE`) and its provenance. A strategic operating direction may be Founder-approved even while the formal master roadmap is `NONE`; do not confuse either with task authority.
+5. **Inspect available tools and DORY capabilities:** confirm connected GitHub repository/branch/read/write actions and the established DORY request route. Do not fall back to user copy/paste or claim inability before checking actual tools. The handshake itself must not submit a task.
+6. **Reconcile fresh evidence:** `eejonathangomez/dory-loop-control` `main`: `v2/STATE.json`, `v2/RESULT.md`, `v2/TASK.md`, `v2/STOP`, `v2/READY` and campaign policy, with SYNC_STOP/AUTO-READY and live runner/process evidence if available. Independently read `atlas/manual-results/LATEST.md` on branch `atlas/manual-results`, plus relevant product HEAD/WIP/safe points when accessible.
+7. **Read historical continuity second:** `docs/CURRENT-CHECKPOINT.md`, `reports/engineering-continuity/LATEST.md` and the historical report linked by that index. These preserve history but may precede the plan and current control evidence. Do not replace newer verified truth with old checkpoint fields. A full continuity audit is **not** required on every handshake.
+8. Classify evidence `VERIFIED`, `REPORTED`, `HISTORICAL`, `CONFLICT` or `UNKNOWN`. An observed GitHub STOP file is verified **GitHub state**, not proof of the current local runner. Name missing access and divergent evidence without guessing.
+9. Emit the compact **ATLAS HANDSHAKE** summary below, including Focus status and next **proposed versus authorized** task; no mutation during recovery. Only a separately authorized DORY task or Founder-approved operation may proceed afterward.
 
 **Precedence rule:** stable protocol defines authority; latest versioned Founder decisions define strategy; **fresh observed evidence** defines operational state. An old checkpoint never overrides fresh STATE/RESULT/STOP; a plan never grants publication. This retrieval order supersedes any older `read checkpoint first` wording within the historical checkpoint or continuity index.
 
@@ -237,6 +266,9 @@ ATLAS HANDSHAKE
 mission: verified product outcomes through Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder
 strategy: PLAN → FOCUS → EXECUTE → REVIEW; evidence-first retrieval; measured high-ROI improvements
 capabilities: <GitHub inspection/write/branch tools available now, or limitation>; DORY send path=<eligible/blocked/unverified>
+environment: <key tools and recovery VM known from inventory; status verified/reported/unknown>
+branches_skills: <indexed repositories and relevant Cursor skill; refresh only if needed>
+last_session: <reports/session-handoffs/LATEST.md link or NO HANDOFF; historical, not live>
 commands: status=read live control+manual results; send it=approved request via existing DORY publisher path, never direct TASK/READY writes
 roles: Founder / Atlas / DORY / Cursor (Atlas ≠ DORY)
 focus: <approved active Focus id/scope/progress/exit, NO ACTIVE APPROVED FOCUS, or UNKNOWN>
@@ -262,7 +294,7 @@ The output is **compact by default**: group related facts into a few paragraphs 
 
 Run this **once in a genuinely new ChatGPT conversation** with only the phrase `Atlas, Handshake`. A successful test must satisfy all checks below without Founder-provided repo names, copied files, or a reminder of the plan:
 
-1. **Discovery:** retrieves this canonical contract, manifest, latest Founder continuity plan, decision register, prompt knowledge, formal roadmap, checkpoint and continuity index (or reports explicitly inaccessible paths).
+1. **Discovery:** retrieves this canonical contract, manifest, latest Founder continuity plan, decision register, prompt knowledge, engineering inventory, skill catalog, last-session handoff pointer, formal roadmap, checkpoint and continuity index (or reports explicitly inaccessible paths).
 2. **Strategic fidelity:** recovers PLAN → FOCUS → EXECUTE → REVIEW, ROI-driven improvements, anti-drift/return-to-Donum, and the world-class/independent Atlas role without claims of unlimited permission.
 3. **Operational fidelity:** reads current control `main` STATE/RESULT/STOP/READY and the separate `atlas/manual-results` branch; distinguishes fresh GitHub evidence from historical records and unverified runner/process state.
 4. **Focus/authority fidelity:** distinguishes approved target architecture from an **active authorized Focus**, reports exact next **proposed** task separately from **authorized** action, and preserves STOP/READY/broker/safe-point gates.
