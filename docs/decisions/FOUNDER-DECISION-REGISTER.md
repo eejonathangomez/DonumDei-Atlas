@@ -1,5 +1,11 @@
 # Founder decision register
 
+### Founder architecture decision — PLAN / FOCUS / EXECUTE / REVIEW (2026-11-22)
+
+**APPROVED AS TARGET DESIGN, NOT AS EXECUTION AUTHORITY.** Following an independent review of DORY's existing campaign continuation and safety architecture, the Founder adopted PLAN → FOCUS → EXECUTE → REVIEW: plan bounded engineering outcomes; approve a finite Focus contract; let DORY publish and supervise multiple *individually validated, in-scope* tasks through the existing atomic mailbox; then independently review results with Atlas. Reuse current selector, progress ledger, publisher, STOP and learning mechanisms; qualify them before generalizing. No new orchestration engine, unrestricted self-improvement, automatic STOP release or blanket unattended-mutating permission. Significant workflow improvements may precede Donum development **only when their expected, risk-adjusted benefit is justified**, with explicit stop/return criteria. The immediate critical path remains sequence 634 acknowledgement invariant correction before any supervised 635 attempt.
+
+Full architecture assessment, as-built gaps, security caveat and staged exit criteria: [existing Atlas engineering continuity plan](../../planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md), section 11. No master roadmap version change; `NONE` remains the approved roadmap value until separately ratified. This decision cannot authorize READY, AUTO-READY, STOP release, publication, product/broker work, or changes to existing safety gates.
+
 ## Founder decisions recorded 2026-11-22 — current operating direction
 
 The Founder approved: (1) evidence-first retrieval, context engineering and production-grade RAG principles as the daily target standard; (2) outcome-based Small / Standard / Campaign task contracts with independent verification, explicit authorization and bounded worker autonomy; (3) prioritizing substantial workflow improvements ahead of full Donum feature work when measured, risk-adjusted gains justify the cost; and (4) preserving the existing Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder loop and all safety gates. **These decisions authorize architectural direction and planning, not production mutation, STOP release, READY, general AUTO-READY, broker activity, or a new approved master product roadmap.**
