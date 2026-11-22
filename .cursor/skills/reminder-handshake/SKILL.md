@@ -28,6 +28,10 @@ description: >-
 
 If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` / local `DORY_LOOP_CONTROL` and say so. Do not invent mailbox state.
 
+## Automatic continuity (do not ask Founder for a filename)
+
+On **every** `Atlas, Handshake`, `Atlas Handshake`, or `DORY handshake`, load the Founder continuity plan linked by the authoritative handshake: `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md` on `atlas/planning`, or its verified newer successor. Retrieve the approved evidence-first, prompting, autonomy and ROI-improvement decisions; separately reconcile live control/main, `atlas/manual-results/LATEST.md` on `atlas/manual-results`, runner/STOP and protected WIP. Report the current blocker, next proposed versus authorized action and uncertainty. This is a read-only retrieval requirement, not permission to execute. Keep the user-facing handshake compact.
+
 ## Hard rules
 
 - Documentation and this skill are **not** execution authority. They do not grant READY, clear STOP, select a project, or publish.
