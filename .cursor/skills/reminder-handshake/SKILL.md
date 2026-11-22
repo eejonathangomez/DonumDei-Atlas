@@ -24,6 +24,17 @@ Use the **one** canonical contract at `docs/EFFICIENCY-LOOP-HANDSHAKE.md` and it
 3. **Fresh state:** DORY control `main` `v2/STATE.json`, `RESULT.md`, `TASK.md`, `STOP`, `READY`, campaign policy; separately `atlas/manual-results/LATEST.md` from `atlas/manual-results`. Check SYNC_STOP/AUTO-READY, runner, worker and product WIP where access allows; explicitly report missing local runtime access.
 4. **Historical supporting continuity second:** `docs/CURRENT-CHECKPOINT.md`, `reports/engineering-continuity/LATEST.md`, and the indexed historical report. Do not let their old sequence, STOP or priority values outrank fresh evidence. No full continuity audit every invocation.
 
+## Engineering inventory, skills and latest-session handoff (required)
+
+On every handshake load **summaries**, not entire inventories:
+
+- `docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md` — 4-repo branch map, GitHub source/ref selection, Tailscale/Bitwarden/Backblaze, Restic/Seagate, Hyper-V recovery VM and DORY/Cursor workflows. Names and observations are dated; refresh remote branches when the task needs an exact branch and verify local processes separately.
+- `docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md` — Cursor skills found in Atlas, DORY and Donum; for a task, load the relevant **exact** `.cursor/skills/<skill>/SKILL.md` in the proper repo/branch, never assume a skill name grants execution authority or is installed in a different workspace.
+- `reports/session-handoffs/LATEST.md` — a dated end-session pointer; follow the report if present, otherwise state `NO HANDOFF`. Always compare old handoff facts to fresh GitHub/runtime evidence.
+- `docs/skills/atlas-end-session/SKILL.md` — on an **explicit** `Atlas, End Session` command, preserve one dated, evidence-classified session handoff and update LATEST in Atlas planning with verified GitHub commits. Do not run as part of handshake.
+
+`Atlas, Create Skill: <workflow>` means author a reusable skill only after checking the existing catalog, with bounded Atlas planning docs commits and no automatic invocation. Do not claim custom GitHub skills were natively installed into ChatGPT; they are versioned instructions that must be retrieved with accessible tools.
+
 ## Core Atlas context
 
 - **Mission:** deliver verified product engineering outcomes efficiently, not endless DORY infrastructure.
