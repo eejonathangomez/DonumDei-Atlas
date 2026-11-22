@@ -88,6 +88,7 @@
   "irreversible_actions_rule": "TRUTH -> AUTHORITY -> EXECUTION -> OBSERVE -> RECONCILE",
   "recovery_steps": [
     "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest as stable authority contract",
+    "Inspect available GitHub read/write/branch actions and DORY request transport; recover status and send-it behaviors without treating the handshake as authorization",
     "Recover latest Founder planning and decision direction plus prompt knowledge and strategy; don't treat a proposed Focus as approved",
     "Verify formal master roadmap approval separately (NONE does not undo later approved strategic direction)",
     "Reconcile fresh dory-loop-control main STATE/RESULT/TASK/STOP/READY/campaign policy and manual-results branch; read SYNC_STOP/AUTO-READY/runner/product WIP if accessible",
@@ -234,7 +235,8 @@
       "blocker",
       "next proposed",
       "next authorized",
-      "authority boundary"
+      "authority boundary",
+      "usable GitHub and DORY status/send capabilities"
     ],
     "test": "New conversation sends only 'Atlas, Handshake'; evaluate six read-only checks in canonical docs/EFFICIENCY-LOOP-HANDSHAKE.md; same-session rehearsal is not full new-chat qualification",
     "states": [
@@ -242,6 +244,87 @@
       "PASS WITH CONDITIONS",
       "FAIL"
     ],
+    "execution_authority": false
+  },
+  "atlas_operational_capabilities": {
+    "purpose": "Recover usable current DORY/GitHub capabilities on every handshake; avoid reflexive prompt handoff when approved direct transport is available",
+    "read_only_status_triggers": [
+      "status",
+      "DORY status",
+      "check results",
+      "review results",
+      "what is next"
+    ],
+    "send_triggers": [
+      "send it",
+      "send to DORY",
+      "publish"
+    ],
+    "github": {
+      "tools": "Connected GitHub tools may provide repository, commit, branch, file read/write/review; inspect actual available actions and repository permissions this session",
+      "default_behavior": "Use GitHub directly for approved analysis/engineering operations, prove commit/readback on any write; do not request manual copying by default",
+      "authority": "Bounded Founder-approved GitHub maintenance allowed; production control/product mutation, STOP, broker and protected WIP are not blanket-authorized"
+    },
+    "status": {
+      "control_repo": "eejonathangomez/dory-loop-control",
+      "branch": "main",
+      "files": [
+        "v2/STATE.json",
+        "v2/TASK.md",
+        "v2/RESULT.md",
+        "v2/STOP",
+        "v2/READY",
+        "v2/campaign-continuation.json"
+      ],
+      "additional_if_accessible": [
+        "v2/SYNC_STOP",
+        "v2/AUTO-READY",
+        "v2/telemetry/STATUS.json",
+        "v2/telemetry/LAST-ERROR.json",
+        "runner process / lock / worker / watchdog",
+        "product worktrees / safe points"
+      ],
+      "independent_manual_results": "eejonathangomez/dory-loop-control#atlas/manual-results:atlas/manual-results/LATEST.md",
+      "rule": "Latest observed GitHub state is not proof of local runtime; separate verified/reported/historical/unknown"
+    },
+    "send": {
+      "request_repo": "eejonathangomez/dory-loop-control",
+      "branch": "main",
+      "file": "v2/atlas-publication-request.json",
+      "protocol": "DORY-ATLAS-PUBLICATION-REQUEST-V1",
+      "fields": [
+        "protocol",
+        "request_id",
+        "task_text"
+      ],
+      "adopter": "Invoke-DoryAtlasPublicationRequest",
+      "publisher": "Publish-DoryAtomicReadyMailbox",
+      "steps": [
+        "Verify explicit Founder approval and scope",
+        "Reconcile STOP/SYNC_STOP/READY/STATE/progression/parent/allowed_paths/runner and transport",
+        "If all qualify and GitHub tools allow, commit one request DATA file, not TASK/STATE/READY",
+        "Verify request commit",
+        "Observe actual DORY atomic TASK+READY publication before saying published",
+        "Observe accepted COMPLETE only after runner/audit confirmation"
+      ],
+      "result_levels": [
+        "NOT_SENT",
+        "REQUEST_COMMITTED",
+        "DORY_PUBLISHED_READY",
+        "EXECUTING",
+        "ACCEPTED_COMPLETE",
+        "BLOCKED"
+      ],
+      "unsafe_prohibitions": [
+        "No task submission under asserted STOP or unverified authority",
+        "No bypass of canonical publisher",
+        "No false published/completed status",
+        "No broker/LIVE/PAPER authorization implied"
+      ]
+    },
+    "worker_and_campaign": "DORY owns bounded runner, health/audit, policy, STOP, project registry, campaign continuation and evidence; existing design is not blanket approval for unattended multi-task execution",
+    "self_check": "On handshake show current ability to read/review GitHub, author approved files/branches, use DORY request transport, status evidence, limits and safety authority; inspect tools rather than guess",
+    "documentation_only": true,
     "execution_authority": false
   }
 }
