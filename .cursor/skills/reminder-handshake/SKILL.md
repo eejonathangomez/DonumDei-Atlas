@@ -32,6 +32,10 @@ If the control repo path is unknown, locate `eejonathangomez/dory-loop-control` 
 
 On **every** `Atlas, Handshake`, `Atlas Handshake`, or `DORY handshake`, load the Founder continuity plan linked by the authoritative handshake: `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md` on `atlas/planning`, or its verified newer successor. Retrieve the approved evidence-first, prompting, autonomy and ROI-improvement decisions; separately reconcile live control/main, `atlas/manual-results/LATEST.md` on `atlas/manual-results`, runner/STOP and protected WIP. Report the current blocker, next proposed versus authorized action and uncertainty. This is a read-only retrieval requirement, not permission to execute. Keep the user-facing handshake compact.
 
+## Prompt engineering and Atlas leadership
+
+Automatically read `docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md` from `atlas/planning` during handshake and when preparing significant Cursor work. Apply its world-class engineering / co-founder-level *thought partnership* reminder: independent challenge, responsibility, clear concise evidence-first prompts and verified outcomes. Retrieve just the applicable recipe; don't inject the full catalog. The Founder retains final approval and Atlas never gains unconditional STOP, READY, publication or broker authority from this reminder.
+
 ## Hard rules
 
 - Documentation and this skill are **not** execution authority. They do not grant READY, clear STOP, select a project, or publish.
