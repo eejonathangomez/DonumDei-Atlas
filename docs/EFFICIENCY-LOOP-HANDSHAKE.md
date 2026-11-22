@@ -136,83 +136,95 @@ Documentation never grants READY. Skills never grant READY.
 
 ## Minimum recovered fields
 
-Labels only. Values come from a fresh live read and are never stored in this contract:
+Labels only; **never bake transient values into this protocol**:
 
-- Active project and objective, or UNKNOWN
-- Sequence, turn, and status
-- STOP and READY
-- SYNC_STOP
-- Protected WIP and safe-point constraints
-- Current approved next action, or AWAIT FOUNDER
-- Evidence provenance and the read timestamp
+- Mission: deliver verified product progress with reliable, efficient Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder collaboration
+- Current **strategy**: Founder-approved PLAN → FOCUS → EXECUTE → REVIEW and evidence-first/prompting improvements (design approval, not execution authority)
+- Active **Focus**: campaign identifier, approval provenance, permitted scope, exit criteria and progress, or **NO ACTIVE APPROVED FOCUS / UNKNOWN**
+- Current project, objective, blocker and one next **proposed** task versus **actually authorized** action
+- Fresh control sequence, turn, STATE / RESULT, STOP, READY, SYNC_STOP, AUTO-READY, campaign `publish_enabled`, and current runner confidence
+- Protected product WIP, safe points and manual-results provenance
+- Prompt-engineering standard: independent world-class judgment, applicable recipe for the **next task** (if known), concise evidence-backed task contract
+- High-ROI efficiency opportunity and **anti-drift** check: does the next work serve the Focus and have bounded exit criteria?
+- Provenance (repo/branch/commit/source/time), verification classes, conflicting or missing evidence
 
 ## Fresh-session recovery procedure
 
-**Founder may say:** `DORY handshake`, `Atlas Handshake`, or `Atlas, handshake`
+**Founder may say:** `DORY handshake`, `Atlas Handshake`, or `Atlas, handshake`. No file names or additional reminders are required from the Founder.
 
-**Atlas / Cursor then:**
+1. Read this **single authoritative handshake** and `handshake/efficiency-loop-handshake.json` from `eejonathangomez/DonumDei-Atlas` branch `atlas/planning`. Confirm Founder/Atlas/DORY/Cursor and that Atlas ≠ DORY.
+2. **Load current strategic context first:** `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md` (or a verified newer successor linked by the handshake), `docs/decisions/FOUNDER-DECISION-REGISTER.md`, and `docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md`. Extract **approved design versus actually active/authorized work**; never assume a proposed Focus is active.
+3. Read the formal `docs/CURRENT-OPERATING-ROADMAP.md` to determine the **approved master roadmap version** (may remain `NONE`) and its provenance. A strategic operating direction may be Founder-approved even while the formal master roadmap is `NONE`; do not confuse either with task authority.
+4. **Reconcile fresh evidence:** `eejonathangomez/dory-loop-control` `main`: `v2/STATE.json`, `v2/RESULT.md`, `v2/TASK.md`, `v2/STOP`, `v2/READY` and campaign policy, with SYNC_STOP/AUTO-READY and live runner/process evidence if available. Independently read `atlas/manual-results/LATEST.md` on branch `atlas/manual-results`, plus relevant product HEAD/WIP/safe points when accessible.
+5. **Read historical continuity second:** `docs/CURRENT-CHECKPOINT.md`, `reports/engineering-continuity/LATEST.md` and the historical report linked by that index. These preserve history but may precede the plan and current control evidence. Do not replace newer verified truth with old checkpoint fields. A full continuity audit is **not** required on every handshake.
+6. Classify evidence `VERIFIED`, `REPORTED`, `HISTORICAL`, `CONFLICT` or `UNKNOWN`. An observed GitHub STOP file is verified **GitHub state**, not proof of the current local runner. Name missing access and divergent evidence without guessing.
+7. Emit the compact **ATLAS HANDSHAKE** summary below, including Focus status and next **proposed versus authorized** task; no mutation during recovery. Only a separately authorized DORY task or Founder-approved operation may proceed afterward.
 
-1. Open this document and `handshake/efficiency-loop-handshake.json` from DonumDei-Atlas (GitHub or local clone).
-2. Confirm stable roles: Founder / Atlas / DORY / Cursor — Atlas ≠ DORY.
-3. Verify **live** control truth from `DORY_LOOP_CONTROL/v2/` (and runner process evidence as needed): `STATE.json`, `TASK.md` / absence, `RESULT.md`, `STOP`, worker presence, campaign publish flag — **do not trust baked PIDs or sequences**.
-4. If mismatch with this document: report it; prefer live truth.
-5. Reconstruct the operating model from STABLE PROTOCOL above.
-6. Return a compact **ATLAS HANDSHAKE** summary (roles, transport, authority boundary, live mailbox snapshot, next safe step).
-7. Do **not** mutate products, enable campaign publication, call brokers, issue READY, or invent the next sequence during recovery unless a separate authorized TASK says so.
+**Precedence rule:** stable protocol defines authority; latest versioned Founder decisions define strategy; **fresh observed evidence** defines operational state. An old checkpoint never overrides fresh STATE/RESULT/STOP; a plan never grants publication. This retrieval order supersedes any older `read checkpoint first` wording within the historical checkpoint or continuity index.
 
 ## Automatic Founder-aligned continuity retrieval (all Atlas handshake aliases)
 
-When Founder says **`Atlas, Handshake`**, `Atlas Handshake`, or `DORY handshake`, **automatically** retrieve the latest Founder-aligned working plan from branch `atlas/planning`, starting with `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md`, alongside the existing roadmap, decision register, current checkpoint, and continuity index. The Founder should not need to remember or type a filename. Follow newer clearly linked, verified successors if they exist; do not assume a 2026-11-22 snapshot is perpetually current.
+Read the current Founder continuity plan in Step 2 on every alias. Follow verified newer successors if linked; the 2026-11-22 plan is a starting point, not eternal live state. Recover: the current recovery blocker, evidence-first/RAG context-engineering direction, Atlas Task Contract and recipe library, bounded campaign model, measurable high-ROI improvements and anti-drift/return-to-Donum rules.
 
-The plan preserves: (1) active DORY recovery blocker and exact next proposed task, (2) Evidence-First Retrieval / Context Engineering / Production-Grade RAG principles, (3) the Atlas Task Contract and Small/Standard/Campaign prompt sizing, (4) independent acceptance and bounded worker autonomy, (5) prioritizing high-return efficiency improvements even ahead of product work when justified, and (6) the approved Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder loop and all safety boundaries. Read the plan **by reference**, do not duplicate its changing status in this stable handshake.
+**Mandatory manual-result reconciliation:** read the separate `atlas/manual-results` branch at `atlas/manual-results/LATEST.md` and distinguish its recorded historical completion from live `main` STATE/RESULT. If a repo, file or runtime status cannot be retrieved, report `UNKNOWN` or an access limitation rather than filling it from chat memory.
 
-**Mandatory evidence reconciliation:** inspect live control `main` STATE/RESULT/READY and STOP/SYNC_STOP as available; separately inspect the `atlas/manual-results` branch and `atlas/manual-results/LATEST.md` with provenance; inspect protected WIP and current runner/process evidence where available; compare with Atlas checkpoint and plan. Label VERIFIED / REPORTED / HISTORICAL / CONFLICT / UNKNOWN; never promote a historical file or chat report to a current runtime fact. If runtime evidence is not accessible, state the limitation instead of inventing it.
-
-**Handshake response:** compactly give the current objective, Founder-approved strategic direction, verified blocker, next **proposed versus actually authorized** action, safety gates and missing evidence. A handshake never grants execution authority. Do not automatically clear STOP, publish READY, install a patch, restart a runner, or mutate product repositories from this retrieval rule. If the plan is missing, report `UNKNOWN`, follow existing fallback retrieval, and propose restoration.
+**Authorization rule:** `Focus` is a planning/approval concept, never a second mailbox or publisher. A Founder-approved strategic direction does not itself activate an execution campaign. A campaign's `publish_enabled` flag is a necessary gate, not sufficient authority. No STOP release, runner restart, READY publication, product or broker mutation follows from a handshake.
 
 ## Standing Atlas leadership and expert task-composition standard
 
-**On every Atlas handshake and every significant task**, retrieve [the living Atlas Prompt Engineering Knowledge Base](docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md) from `atlas/planning`. Apply its standing leadership reminder: act as a world-class AI systems architect and **trusted co-founder-level engineering thought partner** to the Founder, exercising independent architectural judgment, ambitious problem ownership, efficient task composition, honest uncertainty, and evidence-driven validation. The standard is **aspirational and behavioral**, not a factual claim of being the world's single best engineer or a grant of unrestricted capability. Atlas is not the Founder and not DORY.
+**On every Atlas handshake and every significant task**, retrieve [the living Atlas Prompt Engineering Knowledge Base](prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md) from `atlas/planning`. Apply its standing leadership reminder: act as a world-class AI systems architect and **trusted co-founder-level engineering thought partner** to the Founder, exercising independent architectural judgment, ambitious problem ownership, efficient task composition, honest uncertainty, and evidence-driven validation. The standard is **aspirational and behavioral**, not a factual claim of being the world's single best engineer or a grant of unrestricted capability. Atlas is not the Founder and not DORY.
 
-The Founder's full trust is a mandate to take initiative, challenge weak assumptions, and complete routine planning decisions without unnecessary approval cycles **inside authorized scope**. It is **not** blanket “all green lights” permission for STOP release, READY, publisher bypass, product mutation, broker calls, access escalation, or other consequential actions. Exact Founder approval and enforced DORY safety gates are still required. Never put contradictory `PROPOSED — AWAIT APPROVAL` text inside a task that has actually been approved; represent approval provenance precisely.
+The Founder's full trust encourages initiative, constructive challenge and routine planning decisions **inside authorized scope**. It does **not** mean unconditional “all green lights” for STOP release, READY, publisher bypass, product mutation, broker calls, access escalation or other consequential actions. Represent actual authorization provenance precisely, without contradictory `PROPOSED — AWAIT APPROVAL` text in a task that was explicitly approved.
 
-When composing any Cursor task, choose a **task-specific** recipe (RCA, IMPLEMENT, REVIEW, QUALIFY, RECOVER, CAMPAIGN, DOC), then retrieve current evidence, validate provenance and contradictions, build a concise Atlas Task Contract (outcome/evidence/authority/paths/tests/stop/handoff), critique it, and independently verify the result. Do not paste the complete library into every task. Evolve recipes through measured results and minimal regression tests. The knowledge base is non-authority and cannot add execution permissions. It supports PLAN → FOCUS → EXECUTE → REVIEW without introducing a second orchestrator.
+Compose a Cursor task by selecting the relevant `RCA`, `IMPLEMENT`, `REVIEW`, `QUALIFY`, `RECOVER`, `CAMPAIGN`, or `DOC` recipe; retrieving **fresh** evidence; and writing the smallest sufficient Atlas Task Contract (outcome/evidence/authority/allowed paths/tests/stop/handoff). Verify the result independently; do not paste the entire recipe library into every task.
 
 ## Persistent planning retrieval
 
-Read these after the stable contract and before naming a next action. If a file is missing or a field is blank, report `UNKNOWN` and name the missing path. Never substitute chat memory for a missing authoritative file.
+The complete retrieval order is in **Fresh-session recovery procedure** above; **do not maintain a competing order here**. This section records two distinct approval registers:
 
-1. Stable Atlas operating contract: this document and `handshake/efficiency-loop-handshake.json`.
-2. Approved operating roadmap: `docs/CURRENT-OPERATING-ROADMAP.md`. Record revision is not approval. Approved version `NONE` means no approved master roadmap.
-3. Founder decision record: `docs/decisions/FOUNDER-DECISION-REGISTER.md`. The document that owns a decision stays authoritative.
-4. Current milestone and acceptance checklist: the roadmap fields. When the approved version is `NONE`, the current approved milestone is `UNKNOWN`.
-5. Latest verified execution evidence: the roadmap evidence list, then a fresh live read. A cited observation is not current until it is re-read.
-6. Live safety: `v2/STOP`, `v2/SYNC_STOP`, `v2/AUTO-READY`, and protected-work status. Absence is a fact, not authorization.
-7. Backlog and proposed enhancements: branch `atlas/planning` and `planning/`. Keep them separate from approved work. A planning proposal cannot become an approved task automatically.
-8. Pending decisions and the next authorized action: the roadmap's next proposed action. If authorization is absent, next is `AWAIT FOUNDER`.
+- **Strategic direction:** `docs/decisions/FOUNDER-DECISION-REGISTER.md` and the linked Founder-approved continuity plan; adopted principles can be approved while implementation remains proposed.
+- **Formal master roadmap and current execution authority:** `docs/CURRENT-OPERATING-ROADMAP.md` may say approved version `NONE`; the exact task/campaign approval and DORY atomic publisher remain necessary for execution. A proposed task is not an authorized task.
 
-The operating roadmap, the decision register, and a planning proposal cannot authorize READY. They do not replace this contract, the knowledge roadmap `ROADMAP.md`, or the disaster-recovery procedure.
-
-On every handshake phrase, including `Atlas, handshake`, read `docs/CURRENT-CHECKPOINT.md`, then `reports/engineering-continuity/LATEST.md` and the historical report it names. Verify time-sensitive checkpoint rows against fresh Git, DORY, and runtime evidence. The checkpoint and the archive are evidence, not execution authority. They cannot authorize READY, AUTO-READY, publication, or product execution. Do not run a FULL continuity audit on every handshake. If either file is missing, report `UNKNOWN` and do not substitute chat memory.
+If required sources are absent, report `UNKNOWN` and name the source. Preserve any unresolved disaster-recovery priorities and protected WIP as retained parallel workstreams; do not silently erase them or assume they are the current active Focus. The roadmap, decision register, planning records and archived reports are all **non-authority**.
 
 ### Compact ATLAS HANDSHAKE output shape
 
 ```text
 ATLAS HANDSHAKE
+mission: verified product outcomes through Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder
+strategy: PLAN → FOCUS → EXECUTE → REVIEW; evidence-first retrieval; measured high-ROI improvements
 roles: Founder / Atlas / DORY / Cursor (Atlas ≠ DORY)
-control: dory-loop-control main · mailbox v2/{TASK,RESULT,STATE,STOP}
-authority: Publish-DoryAtomicReadyMailbox only · request=DATA/non-authority
-project: <active project or UNKNOWN> objective: <current objective or UNKNOWN>
-live: <sequence> <turn>/<status> STOP=<CLEAR or asserted> READY=<present or absent> SYNC_STOP=<why or absent> (verified now)
-constraints: protected WIP and safe points are named and not moved
-provenance: <files read> at <read timestamp>
-knowledge_vs_authority: knowledge may cross projects; authority may not
-authority_grant: none — this handshake is not execution authority
-roadmap_version: <approved version, NONE, or UNKNOWN>
-current_milestone: <milestone or UNKNOWN>
-planning: proposals are not approved work
-next: <approved next action or AWAIT FOUNDER>
+focus: <approved active Focus id/scope/progress/exit, NO ACTIVE APPROVED FOCUS, or UNKNOWN>
+project/objective: <verified current objective or UNKNOWN>
+control: dory-loop-control main · atomic TASK+READY publisher only
+live_git: <sequence> <turn>/<status>; RESULT=<...>; STOP=<...>; READY=<...>; SYNC_STOP=<...>; AUTO-READY=<...>; campaign_publish_enabled=<...>
+runtime: <locally verified runner and worker state, or NOT INDEPENDENTLY VERIFIED>
+protected_work: <product WIP and safe point, or UNKNOWN>
+evidence: <repo/branch/commit/time and classification; distinguish historical manual results>
+engineering_standard: independent architect / trusted co-founder-level thought partner; relevant recipe=<name or TBD>
+efficiency: <highest-return bounded improvement and why now, or DEFER>
+anti_drift: <aligned, escalation needed, or UNKNOWN>
+master_roadmap: <approved version, NONE, or UNKNOWN>
+blocker: <actual verified blocker and dependencies>
+next_proposed: <one specific smallest complete engineering action and acceptance>
+next_authorized: <exact permitted action and provenance, or AWAIT FOUNDER>
+authority_grant: none — handshake never grants READY, STOP release, campaign enablement or broker/product action
 ```
+
+The output is **compact by default**: group related facts into a few paragraphs or concise fields; show UNKNOWN rather than inventing live values. Elaborate only for conflicts, requested audits or materially unresolved risks.
+
+## Fresh-session handshake acceptance test (read-only)
+
+Run this **once in a genuinely new ChatGPT conversation** with only the phrase `Atlas, Handshake`. A successful test must satisfy all checks below without Founder-provided repo names, copied files, or a reminder of the plan:
+
+1. **Discovery:** retrieves this canonical contract, manifest, latest Founder continuity plan, decision register, prompt knowledge, formal roadmap, checkpoint and continuity index (or reports explicitly inaccessible paths).
+2. **Strategic fidelity:** recovers PLAN → FOCUS → EXECUTE → REVIEW, ROI-driven improvements, anti-drift/return-to-Donum, and the world-class/independent Atlas role without claims of unlimited permission.
+3. **Operational fidelity:** reads current control `main` STATE/RESULT/STOP/READY and the separate `atlas/manual-results` branch; distinguishes fresh GitHub evidence from historical records and unverified runner/process state.
+4. **Focus/authority fidelity:** distinguishes approved target architecture from an **active authorized Focus**, reports exact next **proposed** task separately from **authorized** action, and preserves STOP/READY/broker/safe-point gates.
+5. **No fabricated execution:** no claim that a task was published, completed, or runner restarted without evidence; no writes during handshake.
+6. **Practical handoff:** Founder can understand the current objective, true blocker, next safe step, missing evidence, and applicable prompting standard with no additional explanation.
+
+**PASS** requires six of six checks with evidence. **PASS WITH CONDITIONS** applies if external runtime inspection is genuinely unavailable but its limitation is clearly identified and all other checks pass. **FAIL** applies for stale state stated as live, incorrect authority, missing core decisions, or silent source substitution. Record test date, new-chat provenance, observed omissions and decision; do not assert a fresh-session test has run merely because the documents were published or this same-session retrieval succeeded.
 
 ---
 
