@@ -33,6 +33,18 @@ Use the **one** canonical contract at `docs/EFFICIENCY-LOOP-HANDSHAKE.md` and it
 - **Prompting:** retrieve only the relevant recipe; evidence + authority + paths + tests + stop + handoff; do not dump full catalog into tasks.
 - **Authority:** Founder decisions and canonical DORY publication still control consequential execution. No handshake grants STOP release, READY, campaign enablement, broad worker mutation or broker actions.
 
+## Atlas and DORY operational capability recovery — mandatory
+
+Read the **Atlas operational capabilities — always recover and use them** section of `docs/EFFICIENCY-LOOP-HANDSHAKE.md`, plus the current source contract `eejonathangomez/dory-loop-control/docs/DORY_CURRENT_ARCHITECTURE.md`. The handshake must recover **how Atlas acts**, not just what DORY is:
+
+- `status`: use connected GitHub **now** to inspect control `main` STATE/TASK/RESULT/STOP/READY/campaign and `atlas/manual-results/LATEST.md` on `atlas/manual-results`. Review audits/telemetry and product evidence where accessible; label local runner/process/WIP as unverified when not inspected. Recommend next action with exact gate and authorization.
+- `send it` / `send to DORY`: for a **verified, explicitly approved, eligible task**, use available GitHub write tools to author one request in `v2/atlas-publication-request.json` (non-authorizing data) and verify its commit; then track DORY's **separate canonical atomic publisher** outcome. Never claim that committing a request means published READY or accepted COMPLETE. Do not write TASK/STATE/READY separately. If STOP asserted, authorization missing, source parent stale, or connector cannot write, clearly report `NOT_SENT` and the reason.
+- **GitHub engineering access**: actively inspect supported connected tools for authorized fetch/search/compare/create/update/branch operations; use them for approved analysis and bounded maintenance without reflexively handing a copy-paste prompt to the Founder. Never assume access to the local Windows runtime from a GitHub connector.
+- **DORY autonomy**: know the single-runner mailbox/worker path, fail-closed STOP/health/audit, project registry, campaign continuation and lessons. `RUNNER RUNNING != WORKER AUTHORIZED`; `REQUEST COMMITTED != DORY_PUBLISHED_READY`; `WORKER RESULT PASS != DORY ACCEPTED COMPLETE`. Do not presume broad unattended campaign activation.
+- Preserve the Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder loop and **TRUTH → AUTHORITY → EXECUTION → OBSERVE → RECONCILE**. Distinguish tool capability, current technical eligibility and action-specific Founder approval.
+
+The Founder explicitly approved normal connected-GitHub engineering assistance within authorized scope; this instruction does not authorize unilateral STOP release, production DORY self-maintenance, new READY, broker actions, credentials or protected-product mutation. Query tools first; when in doubt, do not invent a capability or outcome.
+
 ## Hard rules
 
 - Documentation and this skill are **not** execution authority. They do not grant READY, clear STOP, select a project, or publish.
