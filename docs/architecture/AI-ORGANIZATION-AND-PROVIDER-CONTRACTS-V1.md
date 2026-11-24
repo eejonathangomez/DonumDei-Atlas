@@ -86,3 +86,12 @@ The adapter must support: launch, observe liveness, cancel/terminate, time out, 
 **Next review trigger:** after the first qualified one-task automated loop, examine the observed worker interface and decide whether a minimal vendor-neutral contract and Codex disposable pilot have enough measurable value to approve.
 
 **Related existing records:** `docs/EFFICIENCY-LOOP-HANDSHAKE.md`, `docs/decisions/FOUNDER-DECISION-REGISTER.md`, `docs/CURRENT-OPERATING-ROADMAP.md`, `docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md`. Their existing execution and roadmap authority boundaries remain unchanged.
+
+## 8. Provider adoption lifecycle and learning record (2026-11-24)
+
+**Founder-directed documentation standard:** Record **every meaningful adoption step** for new AI/software providers—identity, installation, permissions, workspace, handshake, constraints, failures, qualifications, provider-switch tests, independent evidence and offboarding—so successive vendors can be evaluated under a common procedure.
+
+- [AI Provider Adoption — Reusable Onboarding and Qualification Runbook V1](../provider-adoption/AI-PROVIDER-ONBOARDING-RUNBOOK-V1.md) — canonical repeatable gates and evidence/reporting requirements.
+- [Codex Adoption Experience — 2026-11-24](../provider-adoption/CODEX-ADOPTION-EXPERIENCE-2026-11-24.md) — first living adoption case, installation and safety observations, lessons and outstanding work.
+
+**Separation of states:** editor installed ≠ manual engineering qualification ≠ qualified DORY worker ≠ production activation. No newly recorded step changes STOP, publication authority, the current Cursor production worker or master roadmap status. All future provider adoption should create its own case record rather than overwriting prior experience.
