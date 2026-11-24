@@ -35,6 +35,25 @@ If verified live truth conflicts with this document, **current verified truth wi
 
 **Never confuse Atlas with DORY.** Atlas is not the mailbox publisher. DORY (via the canonical publisher) is.
 
+
+## Current engineering-provider selection and qualification (Founder decision, 2026-11-24)
+
+**Founder chose Codex as the current *manual engineering assistant* while Cursor usage is constrained.** This is a provider/tool selection for **manual developer-assigned tasks**, **not** a production DORY worker replacement. The user has installed Codex in Visual Studio Code and demonstrated read-only workspace and architecture inspection. Codex should be the default suggested manual execution agent for new bounded repository investigations during this period unless the Founder changes the selection or current capability/permission evidence requires another option.
+
+**The production DORY execution loop remains Founder → Atlas → DORY → Cursor → DORY → Atlas/Founder.** The DORY runner, publisher, supervision, STOP and terminal-acceptance implementation is still Cursor-specific and Codex integration is **NOT QUALIFIED**. Never rewrite an operational `CURSOR/READY` contract, publication schema, or protocol identity to Codex merely because the manual coding tool changed. The target **vendor-neutral** worker interface is documented but not commissioned.
+
+**Durable adoption record:** [Codex Adoption Experience — 2026-11-24](provider-adoption/CODEX-ADOPTION-EXPERIENCE-2026-11-24.md); [reusable AI-provider onboarding runbook](provider-adoption/AI-PROVIDER-ONBOARDING-RUNBOOK-V1.md); [AI organization / provider contracts](architecture/AI-ORGANIZATION-AND-PROVIDER-CONTRACTS-V1.md). This section records an operator choice that can change; **verify the latest Founder decision and adoption case on each handshake**, don't infer a permanent or live Windows execution state.
+
+**Mandatory on every Atlas/DORY handshake alias:**
+1. Recover which provider currently fills the **manual engineering worker** position, what it has actually qualified to do, and its copy/paste evidence handoff requirements.
+2. Recover **separately** the provider currently supported by the **production DORY runner**; never conflate installation, manual read-only task qualification, source-edit qualification, disposable DORY adapter qualification, and production commissioning.
+3. Read the current provider case log / runbook **at index level**, resolve later adoption updates, and state the next *proposed versus authorized* action. Retrieve deeper provider details only when relevant.
+4. Preserve the default **one fenced Markdown report** from the manual worker with task ID, result, mode, authority, eight evidence sections, exact changes/tests and honest VERIFIED/REPORTED/HISTORICAL/UNKNOWN labels. Codex reported creating `C:\Users\eejon\.codex\AGENTS.md` with the reporting rule, SHA-256 `7F07560AD3C84A8C1B3C34FE0F32B93881E59A9EE15A84511626269BDF304204`; **this is worker-reported and has not been independently inspected by Atlas or smoke-tested in a new Codex session**.
+5. Do not use historical roadmap references to sequence 634 as the current DORY blocker. Recover fresh `main`/STATE/STOP and local runner evidence first. The current critical path is **one fully automated, read-only DORY round-trip** with a separately authorized disposable qualification before production.
+
+**Latest Codex read-only investigation (Founder-provided, 2026-11-24):** `DORY-ONE-SHOT-COMMISSIONING-READINESS-REVIEW-V1` reported PASS WITH CONDITIONS after a disposable clone of `dory-loop-control` at `9f4d63025fd32d82eee08ac04fa438a26c0e5c73`. It found a tip-sensitive sequence-636 acceptance boundary; commits that move HEAD before 637 publication can block progression, whereas a canonical *unstaged local* STOP/CLEAR is a possible route requiring **disposable qualification**. No DORY scripts/tests or production commands were executed in that review. This is Codex-reported analysis, not authorization to clear STOP. Treat the SHA and sequence as a dated checkpoint and verify live state again.
+
+
 Institutional knowledge home: **DonumDei-Atlas**. Continuity archaeology under `DORY_LOOP_CONTROL/atlas/**` is a separate archive — not this home.
 
 ---
@@ -213,7 +232,7 @@ Labels only; **never bake transient values into this protocol**:
 - Protected product WIP, safe points and manual-results provenance
 - Prompt-engineering standard: independent world-class judgment, applicable recipe for the **next task** (if known), concise evidence-backed task contract
 - Current **Atlas tool capabilities**: available GitHub read/write/branch operations; DORY request transport eligibility and latest publication proof versus request-only state
-- **Engineering environment**: important Tailscale/Bitwarden/Backblaze/Restic/Hyper-V VM/GitHub/DORY/Cursor tools and provenance; branch and skill indexes (not a stale full listing)
+- **Engineering environment and worker selection**: important Tailscale/Bitwarden/Backblaze/Restic/Hyper-V VM/GitHub/DORY/Cursor/Codex tools and provenance; current manual coding provider versus qualified DORY runner worker; adoption stage, case log, and branch/skill indexes (not a stale full listing)
 - **Last session closeout**: `reports/session-handoffs/LATEST.md` pointer, linked summary or NO HANDOFF, reconciled to fresh state
 - High-ROI efficiency opportunity and **anti-drift** check: does the next work serve the Focus and have bounded exit criteria?
 - Provenance (repo/branch/commit/source/time), verification classes, conflicting or missing evidence
@@ -224,6 +243,7 @@ Labels only; **never bake transient values into this protocol**:
 
 1. Read this **single authoritative handshake** and `handshake/efficiency-loop-handshake.json` from `eejonathangomez/DonumDei-Atlas` branch `atlas/planning`. Confirm Founder/Atlas/DORY/Cursor and that Atlas ≠ DORY.
 2. **Load current strategic context first:** `planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md` (or a verified newer successor linked by the handshake), `docs/decisions/FOUNDER-DECISION-REGISTER.md`, and `docs/prompt-engineering/ATLAS-PROMPT-ENGINEERING-KNOWLEDGE-BASE.md`. Extract **approved design versus actually active/authorized work**; never assume a proposed Focus is active.
+3a. **Recover the current engineering-provider assignment:** Read the Codex adoption case and provider onboarding runbook linked above, plus the latest Founder decision. State manual worker (currently Codex, reported onboarding), production DORY worker (Cursor), qualification levels, reporting convention, and any known vendor-change risk. Reconcile newer evidence; no provider activation or repo mutation during handshake.
 3. **Recover engineering capabilities and current handoff:** Read `docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md`, `docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md` and `reports/session-handoffs/LATEST.md`; follow its dated handoff link if available. Read `docs/skills/atlas-end-session/SKILL.md` when invoking End Session, but do not run it as part of handshake. Re-enumerate branches or load individual skills only when relevant.
 4. Read the formal `docs/CURRENT-OPERATING-ROADMAP.md` to determine the **approved master roadmap version** (may remain `NONE`) and its provenance. A strategic operating direction may be Founder-approved even while the formal master roadmap is `NONE`; do not confuse either with task authority.
 5. **Inspect available tools and DORY capabilities:** confirm connected GitHub repository/branch/read/write actions and the established DORY request route. Do not fall back to user copy/paste or claim inability before checking actual tools. The handshake itself must not submit a task.
