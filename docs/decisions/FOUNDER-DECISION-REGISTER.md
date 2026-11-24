@@ -1,5 +1,11 @@
 # Founder decision register
 
+### Founder architectural direction — AI organization and provider independence (2026-11-24)
+
+**RECORDED AS TARGET ARCHITECTURE / DOCUMENTATION ONLY.** The Founder and Atlas aligned on a vendor-independent AI engineering organization: distinguish permanent positions (Founder, Atlas, DORY, worker, verification and knowledge) from externally contracted capabilities and interchangeable providers. DORY retains execution and acceptance authority; provider-specific implementation belongs behind qualified worker adapters. Record minimum service capabilities and phased portability/isolation requirements in [AI Organization and Provider Contracts — Architecture V1](../architecture/AI-ORGANIZATION-AND-PROVIDER-CONTRACTS-V1.md). **Immediate critical path remains one complete, separately authorized automated DORY task.** No new provider purchase, alternative worker activation, STOP release, READY, source changes, product/broker actions, or change to approved master roadmap version `NONE` is authorized by this entry.
+
+
+
 ### Founder architecture decision — PLAN / FOCUS / EXECUTE / REVIEW (2026-11-22)
 
 **APPROVED AS TARGET DESIGN, NOT AS EXECUTION AUTHORITY.** Following an independent review of DORY's existing campaign continuation and safety architecture, the Founder adopted PLAN → FOCUS → EXECUTE → REVIEW: plan bounded engineering outcomes; approve a finite Focus contract; let DORY publish and supervise multiple *individually validated, in-scope* tasks through the existing atomic mailbox; then independently review results with Atlas. Reuse current selector, progress ledger, publisher, STOP and learning mechanisms; qualify them before generalizing. No new orchestration engine, unrestricted self-improvement, automatic STOP release or blanket unattended-mutating permission. Significant workflow improvements may precede Donum development **only when their expected, risk-adjusted benefit is justified**, with explicit stop/return criteria. The immediate critical path remains sequence 634 acknowledgement invariant correction before any supervised 635 attempt.
