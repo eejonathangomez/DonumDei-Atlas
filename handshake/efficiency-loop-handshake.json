@@ -433,5 +433,12 @@
     "critical_path": "Prove one fully automated read-only DORY round-trip through existing Cursor path with distinct authorization and safety qualifications",
     "fresh_check": "On every handshake check latest Founder provider selection, adoption-case evidence, DORY main and local runtime separately; current assignments are not timeless",
     "execution_authority": false
+  },
+  "atlas_reporting_convention": {
+    "founder_approved_date": "2026-11-24",
+    "scope": "Atlas conversational engineering reports and copy-ready execution assignments",
+    "approval_pending": "Present assessment, recommendation, scope, risks and approval question; withhold full copy-ready task until approved.",
+    "approval_granted": "Put all explanation, safety notes and usage instructions before the complete copy-ready task. The task block is the final visible content; no commentary, charts, conclusions or other material after it.",
+    "authority": "Presentation only; no change to approval, execution, Cursor, Codex or DORY contracts."
   }
 }
