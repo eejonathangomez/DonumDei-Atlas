@@ -1,7 +1,7 @@
 # Codex Adoption Experience — 2026-11-24
 
 **Purpose:** Preserve the complete observed onboarding experience so a future AI provider can be evaluated and added without losing what we learned.  
-**Status:** Codex installed and **manual read-only architecture handshake passed (worker-reported)**. Reporting preference adopted in current Codex conversation. **Not qualified as DORY worker**.  
+**Status:** Codex installed, manual read-only architecture handshake and one disposable read-only DORY source investigation **PASS / PASS WITH CONDITIONS (Codex-reported)**. Reporting preference was adopted in conversation and global `AGENTS.md` created/read-back **(Codex-reported)**. **Not qualified as DORY worker**.  
 **Case owner:** Founder. **Architectural reviewer:** Atlas. **Target capability:** AI software engineering worker.  
 **Companion reusable runbook:** [AI Provider Onboarding and Qualification V1](AI-PROVIDER-ONBOARDING-RUNBOOK-V1.md)  
 **Architecture:** [AI Organization and Provider Contracts V1](../architecture/AI-ORGANIZATION-AND-PROVIDER-CONTRACTS-V1.md)  
@@ -36,9 +36,19 @@ All events below occurred in the 2026-11-24 adoption conversation; precise local
 | 13 — Architecture handshake V2 | Read five specified Atlas documents | Codex reported clean `C:\Users\eejon\DonumDei-Atlas`, HEAD `c428d490e2571dcf5527ef71322180db56fc21e8`; correctly described Founder, Atlas, DORY, worker, gates and provider contracts. GitHub Atlas files at this HEAD were independently read/verified by Atlas | PASS (worker-reported) · Codex; source documents independently read by Atlas |
 | 14 — Catch stale operational guidance | Codex proposed rechecking seq634 based on older planning docs | Atlas independently checked DORY control GitHub: `main`=`9f4d63025fd32d82eee08ac04fa438a26c0e5c73`, sequence **636 COMPLETE**, STOP asserted, campaign publication disabled. Manual-results `LATEST.md` remained historical. **Do not act on stale seq634 recommendations** | VERIFIED CORRECTION · Atlas GitHub |
 | 15 — Reporting preference | Founder required complete copy/paste-ready Codex task results by default | Codex adopted one fenced Markdown report with eight sections, checked for `AGENTS.md`, found none locally, reported no file changes; global/repo persistence was **not** performed | PASS (session-level only, worker-reported) · Codex |
-| 16 — Propose global persistence | Atlas proposed narrowly scoped `C:\Users\eejon\.codex\AGENTS.md` instructions, after checking active Codex home and existing files | Copy-ready task supplied to Founder. **No returned completion evidence yet; do not claim global `AGENTS.md` was written.** | PROPOSED / EXECUTION UNKNOWN |
-| 17 — First real technical assignment | Atlas proposed an isolated read-only one-shot commissioning readiness inspection against fresh DORY control | Task contract supplied; no Codex result returned yet. Do not assume clone creation, tests, safety inspection or runner execution occurred | PROPOSED / NOT VERIFIED EXECUTED |
+| 16 — Global reporting persistence | Atlas authorized one scoped global instruction file and Codex returned an execution report: created `C:\Users\eejon\.codex\AGENTS.md`, read back, exit 0, SHA-256 `7F07560AD3C84A8C1B3C34FE0F32B93881E59A9EE15A84511626269BDF304204`; no fresh-session smoke test or Atlas-local verification | PASS (Codex-reported); fresh-session loading UNKNOWN |
+| 17 — First real technical investigation | Codex completed `DORY-ONE-SHOT-COMMISSIONING-READINESS-REVIEW-V1` in a disposable cloned `dory-loop-control` checkout, at `9f4d63025...` | PASS WITH CONDITIONS: identified tip-sensitive 636 recovery and potential canonical unstaged local STOP/CLEAR route; recommended disposable qualification; **zero test suites**, no DORY scripts run; production-local runner and WIP UNKNOWN | PASS WITH CONDITIONS (Codex-reported), not production qualification |
 | 18 — Generalize lessons | Founder directed recording every Codex adoption step as precedent for future providers | Reusable runbook plus this case report recorded in Atlas planning GitHub documentation; this act grants no worker execution authority | DOCUMENTED · Atlas |
+
+## 2a. Additional evidence received (2026-11-24)
+
+### Codex global reporting instructions
+Codex returned `CODEX-GLOBAL-ENGINEERING-REPORTING-STANDARD-V1` PASS, maintenance-mode. It reported confirming effective `CODEX_HOME=C:\\Users\\eejon\\.codex`, no existing `AGENTS.md` or override, an exclusive-create UTF-8 write of `C:\\Users\\eejon\\.codex\\AGENTS.md`, read-back exit `0`, and SHA-256 `7F07560AD3C84A8C1B3C34FE0F32B93881E59A9EE15A84511626269BDF304204`. It reported no repository or DORY mutations. **Founder-provided Codex report; not an Atlas-direct Windows readback; fresh-session loading was not smoke-tested.**
+
+### Codex commissioning source review
+Codex returned `DORY-ONE-SHOT-COMMISSIONING-READINESS-REVIEW-V1` **PASS WITH CONDITIONS**, read-only, using disposable clone `C:\\Users\\eejon\\AppData\\Local\\Temp\\DORY-Commissioning-Review-f4397ebaa4a442be8213b59e0a8470db`. It reported `origin/main`=`main`=`9f4d63025fd32d82eee08ac04fa438a26c0e5c73`; sequence 636 `DORY/COMPLETE`; STOP asserted; campaign disabled. It traced the acceptance predicate in `v2/DoryAtomicMailbox.ps1`, STOP handling in `v2/dory_v2_runner.ps1`, the Atlas publisher/request routes and watchdog. **Finding:** unrelated synced commits or a committed STOP release can displace the special acceptance-at-HEAD boundary, while a canonical **unstaged local CLEAR** may preserve the tip; the latter still needs strict disposable publisher/sync/runner qualification. A preceding committed Atlas publication-request would be unsuitable for this acceptance boundary. No test suites were run, no DORY scripts executed; runtime UNKNOWN. **Verdict:** disposable rehearsal GO WITH CONDITIONS, production 637 NO-GO until distinct qualification and Founder approval. Full report was supplied in the Founder conversation, not published to this repository as a verified local artifact.
+
+**Priority interpretation:** Codex is now a viable **manual read-only investigation agent**, not a demonstrated autonomous engineering worker. Continue current DORY/Cursor one-shot milestone. Correct future instructions that still describe this Codex review or global AGENTS write as not yet performed.
 
 ## 3. Concrete environment evidence and boundaries
 
@@ -73,8 +83,8 @@ All events below occurred in the 2026-11-24 adoption conversation; precise local
 | 3 Workspace | PASS WITH CONDITIONS | Separate Atlas checkout reported; OS-level isolation not proven |
 | 4 Git preflight | PASS | Wrong branch detected, stopped, bounded correction, clean state reported |
 | 5 Organizational handshake | PASS | Five docs reviewed, roles and safety accurately described |
-| 6 Copy-ready reporting | PASS WITH CONDITIONS | Session preference adopted; persistence pending verification |
-| 7 Read-only source investigation | NOT STARTED | Proposed commissioning readiness task has no returned result |
+| 6 Copy-ready reporting | PASS WITH CONDITIONS | Global `AGENTS.md` created and hashed (Codex report); no independent readback or fresh-session smoke test |
+| 7 Read-only source investigation | PASS WITH CONDITIONS | Codex-reported disposable DORY clone, source inspection and bounded report; no scripts/tests executed, no independent local observation |
 | 8 Bounded source edits | NOT STARTED | No implementation authority or test evidence |
 | 9 DORY adapter | NOT STARTED | No supervised Codex lifecycle qualification |
 | 10 Isolation/security | NOT STARTED | No OS/process/credential-boundary tests |
@@ -85,7 +95,7 @@ All events below occurred in the 2026-11-24 adoption conversation; precise local
 
 ## 6. Next steps and stop criteria
 
-**Immediate, smallest step:** Confirm whether global Codex `AGENTS.md` instructions were actually persisted (if Founder sent that task), without inventing completion. Then conduct the already-proposed **isolated read-only DORY commissioning readiness review** on a disposable checkout using **current** control evidence. Atlas independently reviews source and report.
+**Immediate, smallest step:** Verify the Codex global `AGENTS.md` configuration on a fresh Codex session when useful (creation/read-back is Codex-reported). Qualify the proposed **disposable 636 → 637 transition and STOP/acceptance progression** before asking for any production sequence 637 commissioning. Atlas independently reviews source, test fixtures and evidence.
 
 **Do not divert the critical path:** First prove one actual automated read-only DORY task via the **existing qualified Cursor path**, with separately authorized, fully qualified STOP transition and worker/runner activation. Only then compare Codex on the same harmless task and decide whether a DORY adapter is worth building.
 
