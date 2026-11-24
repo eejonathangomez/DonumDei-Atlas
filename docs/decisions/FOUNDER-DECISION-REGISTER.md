@@ -1,5 +1,10 @@
 # Founder decision register
 
+### Founder direction — record AI-provider adoption as reusable engineering experience (2026-11-24)
+
+**APPROVED FOR DOCUMENTATION AND CONTINUOUS EVIDENCE CAPTURE ONLY.** The Founder requires Atlas to document each meaningful step of onboarding Codex—including installation/permissions, unexpected environment observations, Git alignment, role handshake, reporting conventions, discrepancies, qualifications and safety conclusions—as a reusable precedent for introducing future AI suppliers and coding agents. Use the [Provider Onboarding Runbook](../provider-adoption/AI-PROVIDER-ONBOARDING-RUNBOOK-V1.md) and dated [Codex Adoption Experience](../provider-adoption/CODEX-ADOPTION-EXPERIENCE-2026-11-24.md). Classify independently verified evidence separately from Founder and worker reports. Preserve failures and unverified gates. No code deployment, provider contract purchase, DORY worker substitution, STOP/READY changes, unattended execution or change to the master roadmap is authorized. The current critical path remains **one completed supervised DORY task**.
+
+
 ### Founder architectural direction — AI organization and provider independence (2026-11-24)
 
 **RECORDED AS TARGET ARCHITECTURE / DOCUMENTATION ONLY.** The Founder and Atlas aligned on a vendor-independent AI engineering organization: distinguish permanent positions (Founder, Atlas, DORY, worker, verification and knowledge) from externally contracted capabilities and interchangeable providers. DORY retains execution and acceptance authority; provider-specific implementation belongs behind qualified worker adapters. Record minimum service capabilities and phased portability/isolation requirements in [AI Organization and Provider Contracts — Architecture V1](../architecture/AI-ORGANIZATION-AND-PROVIDER-CONTRACTS-V1.md). **Immediate critical path remains one complete, separately authorized automated DORY task.** No new provider purchase, alternative worker activation, STOP release, READY, source changes, product/broker actions, or change to approved master roadmap version `NONE` is authorized by this entry.
