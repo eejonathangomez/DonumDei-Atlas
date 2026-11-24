@@ -87,3 +87,8 @@ Provenance for every row below: Founder task `ATLAS PERSISTENT PLANNING AND HAND
 | Advancing control `main` to `05744c4b` | NOT AUTHORIZED | Separate Founder decision |
 | A six-phase DORY roadmap known only from chat | `UNKNOWN` | No local authoritative file |
 | Ratification of `handshake.v0-draft.json` | Remains DRAFT | Existing ratification path |
+
+
+### Founder decision — provider-neutral alignment and knowledge continuity (2026-11-24)
+
+Approved: improve shared Atlas knowledge freshness, scoped blocker handling, safe engineering initiative and durable evidence; preserve existing Cursor usage, skills, instructions and production DORY/Cursor contracts unchanged. Approved bounded clean local Atlas planning fast-forward and separately isolated worker-free sequence-637 negative Sync-Pull qualification; no production mutation, STOP release, READY publication, runner/worker launch, broker action, adapter replacement or roadmap ratification. Codex remains manual only. See adoption case for evidence and remaining gates.

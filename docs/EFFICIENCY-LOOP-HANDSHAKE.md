@@ -354,3 +354,8 @@ Do not copy these documents into this contract:
 - Dual-Atlas clarification (control repo): `DORY_LOOP_CONTROL/docs/ATLAS_WHAT_IS_AND_IS_NOT.md`
 
 *Knowledge and recovery protocol only. Not execution authority. Ad Majorem Dei Gloriam.*
+
+
+## Provider-neutral engineering alignment (Founder approved 2026-11-24)
+
+Before making engineering decisions, compare the local knowledge revision with authoritative GitHub; cached tracking refs alone do not prove freshness. Read current remote evidence if local knowledge is stale. Synchronize only with explicit authority, a clean intended branch and verified fast-forward ancestry; never reset, rebase, force, or disturb WIP to recover knowledge. Record evidence provenance and distinguish historical, reported and verified facts. Reuse existing qualified mechanisms and investigate safe alternatives inside scope. Task contracts must distinguish global mandatory stop conditions from explicitly independent workstream blockers; continue independent work only where authorized. Ambiguous mandatory stops remain binding. Challenge unnecessary complexity and preserve significant results in existing evidence records. These principles apply equally to Cursor, Codex and future providers; existing Cursor skills, instructions, invocation, production adapter, atomic CURSOR/READY contract and DORY acceptance are unchanged. No new execution authority follows. See the dated Codex adoption case for qualification evidence and current proposed work.

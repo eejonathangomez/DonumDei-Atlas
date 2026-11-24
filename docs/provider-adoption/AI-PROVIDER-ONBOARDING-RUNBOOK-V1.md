@@ -100,3 +100,8 @@ If an agent sees unexpected repo/branch, dirty worktree, uncertain permissions, 
 Measure independently accepted tasks per engineering hour, task turnaround, Founder interventions, retries, unreconciled partial work, cost/usage consumption, unavailable-provider time, security incidents and successful disposable recovery. A second tool from the same underlying vendor is not necessarily independent supplier redundancy.
 
 **Current organization priority:** qualify **one complete supervised read-only DORY task** through the current Cursor path; only then use observed real worker behavior to justify a Codex adapter. The standard operating roadmap remains unratified (`NONE`). This runbook is documentation, not production change authorization.
+
+
+## H. Provider-neutral continuity and initiative (2026-11-24)
+
+Compare local institutional knowledge against fresh authoritative remote evidence before decisions. A clean fast-forward requires explicit scope and verification; stale local knowledge may instead be read remotely. Recover existing mechanisms before proposing new ones. Specify task-wide mandatory stops and independent workstream gates; only continue independently authorized work, never bypass ambiguous mandatory stops. Distinguish reproduced defects, source-supported hypotheses, environmental blockers and unknowns. Record meaningful results with exact refs, artifact hashes and evidence provenance. A provider-specific instruction or reporting preference must not overwrite another provider's established skills or runtime contract. Existing Cursor usage and production DORY/Cursor integration remain unchanged. No execution authority is granted here.
