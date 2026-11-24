@@ -90,6 +90,7 @@
     "Read docs/EFFICIENCY-LOOP-HANDSHAKE.md and this manifest as stable authority contract",
     "Inspect available GitHub read/write/branch actions and DORY request transport; recover status and send-it behaviors without treating the handshake as authorization",
     "Read engineering environment / branches registry, Cursor skills catalog and latest-session pointer; refresh dynamic branches only when relevant",
+    "Recover Founder-selected manual Codex workflow, adoption case/runbook, reporting format, and distinct production DORY Cursor worker; do not equate manual availability with adapter qualification",
     "Recover latest Founder planning and decision direction plus prompt knowledge and strategy; don't treat a proposed Focus as approved",
     "Verify formal master roadmap approval separately (NONE does not undo later approved strategic direction)",
     "Reconcile fresh dory-loop-control main STATE/RESULT/TASK/STOP/READY/campaign policy and manual-results branch; read SYNC_STOP/AUTO-READY/runner/product WIP if accessible",
@@ -108,7 +109,8 @@
     "SYNC_STOP",
     "protected WIP and safe-point constraints",
     "approved next action or AWAIT FOUNDER",
-    "evidence provenance and read timestamp"
+    "evidence provenance and read timestamp",
+    "manual coding agent and current provider qualification versus DORY production worker"
   ],
   "transient_current_truth": {
     "note": "Observe live; never store as protocol constants",
@@ -188,6 +190,8 @@
       "docs/engineering-inventory/ENVIRONMENT-AND-REPOSITORY-MAP.md (branch/tool/keyword inventory; dated)",
       "docs/engineering-inventory/CURSOR-SKILLS-CATALOG.md (index only, skill on demand)",
       "reports/session-handoffs/LATEST.md (read linked dated report if exists)",
+      "docs/provider-adoption/CODEX-ADOPTION-EXPERIENCE-2026-11-24.md (worker adoption, update with new outcomes)",
+      "docs/provider-adoption/AI-PROVIDER-ONBOARDING-RUNBOOK-V1.md (future supplier onboarding gates)",
       "docs/CURRENT-OPERATING-ROADMAP.md (approved master version, may be NONE)",
       "dory-loop-control main v2/STATE.json, RESULT.md, TASK.md, STOP, READY, campaign-continuation.json",
       "dory-loop-control atlas/manual-results branch atlas/manual-results/LATEST.md",
@@ -242,7 +246,8 @@
       "next authorized",
       "authority boundary",
       "usable GitHub and DORY status/send capabilities",
-      "important environment tools, branch/skill navigation and last-session pointer provenance"
+      "important environment tools, branch/skill navigation and last-session pointer provenance",
+      "Founder-selected manual engineering provider and separate production DORY worker, evidence-backed qualification stage"
     ],
     "test": "New conversation sends only 'Atlas, Handshake'; evaluate six read-only checks in canonical docs/EFFICIENCY-LOOP-HANDSHAKE.md; same-session rehearsal is not full new-chat qualification",
     "states": [
@@ -412,6 +417,21 @@
     "scope": "Write verified dated context and only necessary approved canonical decisions into DonumDei-Atlas#atlas/planning, update pointer, verify GitHub commit and read-back; no control/product/broker mutation",
     "read_on_handshake": true,
     "source_precedence": "Fresh control GitHub/runtime > dated handoff for operations; Founder decisions remain canonical for strategy",
+    "execution_authority": false
+  },
+  "engineering_provider_adoption": {
+    "founder_direction_date": "2026-11-24",
+    "manual_worker": "Codex in Visual Studio Code (selected manual engineering tool; onboarding read-only Codex-reported)",
+    "dory_production_worker": "Cursor (existing worker path, Codex NOT qualified for DORY)",
+    "distinction": "Manual Codex adoption does not change the CURSOR/READY canonical mailbox, production runner, worker acceptance, or authority",
+    "adoption_case_path": "docs/provider-adoption/CODEX-ADOPTION-EXPERIENCE-2026-11-24.md",
+    "onboarding_runbook_path": "docs/provider-adoption/AI-PROVIDER-ONBOARDING-RUNBOOK-V1.md",
+    "architecture_path": "docs/architecture/AI-ORGANIZATION-AND-PROVIDER-CONTRACTS-V1.md",
+    "default_worker_report": "One complete copy-ready fenced Markdown report with eight evidence sections",
+    "codex_global_instructions": "C:\\Users\\eejon\\.codex\\AGENTS.md (creation reported by Codex, fresh-session test not verified)",
+    "commissioning_review": "2026-11-24 Codex-reported one-shot readiness review PASS WITH CONDITIONS; disposable qualification required before seq637 production",
+    "critical_path": "Prove one fully automated read-only DORY round-trip through existing Cursor path with distinct authorization and safety qualifications",
+    "fresh_check": "On every handshake check latest Founder provider selection, adoption-case evidence, DORY main and local runtime separately; current assignments are not timeless",
     "execution_authority": false
   }
 }
