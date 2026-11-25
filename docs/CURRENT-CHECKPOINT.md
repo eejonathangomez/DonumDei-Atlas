@@ -1,6 +1,6 @@
 # Current checkpoint
 
-> **CURRENT HANDOFF (2026-11-22):** The checkpoint rows below are historical and **not** current execution state. Read [the consolidated Founder-aligned engineering continuity plan](../planning/ATLAS-DORY-EVIDENCE-FIRST-ENGINEERING-CONTINUITY-2026-11-22.md) and then independently reconcile live control/runtime/manual-results evidence. Latest report: DORY sequence 634 BLOCKED, last completed 632, STOP asserted; terminal acknowledgement progression is blocked; sequence 635 not published. This pointer is documentation only, not execution authority.
+> **CURRENT HANDOFF (2026-11-24):** Read [latest session handoff](../reports/session-handoffs/2026-11-24/ATLAS-SESSION-DORY-CODEX-RECOVERY-CHECKPOINT.md) and [session index](../reports/session-handoffs/LATEST.md). Rows below are historical, not current runtime truth. Verified GitHub control main 9f4d63025fd32d82eee08ac04fa438a26c0e5c73, sequence 636 DORY COMPLETE, STOP asserted, READY absent; latest manual evidence f97616781ac3cdd95cc63d1dac7c31d2288b4e52. Recovery refresh BLOCKED by local authentication; fresh Kanban export waived after remote report. Candidate e1c553e83b878f81d88475ab04ee850534788303 LOCAL_ONLY, external backup unverified. Reconcile fresh evidence before action. Documentation only, not execution authority.
 
 
 This file is a living evidence record. It cannot authorize READY, AUTO-READY, publication, or product execution.

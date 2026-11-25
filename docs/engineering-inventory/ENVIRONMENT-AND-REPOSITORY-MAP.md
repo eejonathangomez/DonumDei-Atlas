@@ -108,3 +108,8 @@
 ## Inventory maintenance
 
 This is a **navigation registry**, not live system truth or a separate operating authority. At each meaningful end-session record added or corrected tool definitions, repo purpose, new skills and promoted decisions with source and date. For branch inventories prefer refreshed enumeration and meaningful tips/ancestry only when they affect the action; do not mutate branch refs just to tidy this catalog. Changes to Founder authorization require explicit decision and actual publisher gates, not a registry edit.
+
+
+### Operational knowledge addition (2026-11-24)
+
+Codex manual execution may use a different Windows account/session than the Founder; verify actual path visibility and privileges, use stable screened diagnostic staging for Founder handoff, and prefer the existing interactive masked credential procedure in the same process as backup. GUI automation did not expose Windows Sandbox; direct guest PowerShell report retrieval worked. Windows Sandbox enabled and offline synthetic probes demonstrated; restricted egress and actual worker execution remain unqualified. Current hardware/VM observations, candidate bundle and backup blockers are in the [dated handoff](../../reports/session-handoffs/2026-11-24/ATLAS-SESSION-DORY-CODEX-RECOVERY-CHECKPOINT.md), not permanent runtime facts. Existing Cursor integration is unchanged.
