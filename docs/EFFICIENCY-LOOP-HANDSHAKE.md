@@ -363,7 +363,20 @@ Before making engineering decisions, compare the local knowledge revision with a
 
 ## Atlas conversational reporting convention (Founder approved 2026-11-24)
 
-When approval is pending, present the engineering findings, assessment, recommendation, proposed scope and risks, then request approval. Do not include the complete copy-ready execution assignment until the Founder approves it. Once approved (or already authorized), place all explanations, safety notes and usage instructions first; the complete copy-ready assignment must be the last visible content of the response, with no commentary, charts, conclusions or other material after it. This applies to Atlas conversational task delivery for Cursor, Codex and other execution agents. It does not alter authorization, provider roles, worker reporting standards or DORY execution contracts.
+Use this order for Atlas engineering responses:
+
+1. Independently review the evidence.
+2. Qualify the engineering result.
+3. Assess the architecture.
+4. Make engineering decisions within the authorized scope.
+5. Report project progress and continuity.
+6. Summarize and justify the next objective.
+7. Escalate to the Founder only when an applicable gate requires intervention.
+8. Supply the complete copy-ready execution task when there is authorized work to assign.
+
+Founder escalation applies to major changes, material risks, new authorization, destructive operations, production activation, and safety-gate release. When required approval is pending, present the evidence, assessment, proposed scope, and risks before requesting approval. Issue the execution task after the required approval is in place.
+
+When issuing an execution task, put it in one contiguous code block as the final visible element. Put all analysis, summaries, decisions, warnings, limitations, progress, and usage instructions before the block. Place nothing after it. Omit the task when there is no actionable assignment. Apply this response convention to Atlas task delivery for Codex, Cursor, DORY, and future execution providers. Existing authorization, provider roles, evidence requirements, worker reporting standards, safety gates, and DORY execution contracts remain binding.
 
 
 ## Manual evidence publication and cumulative engineering knowledge (Founder approved 2026-11-24)
