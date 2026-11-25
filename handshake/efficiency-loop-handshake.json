@@ -440,5 +440,27 @@
     "approval_pending": "Present assessment, recommendation, scope, risks and approval question; withhold full copy-ready task until approved.",
     "approval_granted": "Put all explanation, safety notes and usage instructions before the complete copy-ready task. The task block is the final visible content; no commentary, charts, conclusions or other material after it.",
     "authority": "Presentation only; no change to approval, execution, Cursor, Codex or DORY contracts."
+  },
+  "manual_evidence_publication": {
+    "status": "ADOPTED_CONDITIONAL_PER_USE",
+    "founder_approved_date": "2026-11-24",
+    "providers": [
+      "Cursor",
+      "Codex"
+    ],
+    "repository": "eejonathangomez/dory-loop-control",
+    "branch": "atlas/manual-results",
+    "pointer": "atlas/manual-results/LATEST.md",
+    "publisher_sha256": "E38D4FDC601221C5C1B188B5D0EF988F772B69137F622D7113D9CAB6E590EE3E",
+    "qualification_evidence_commit": "98c08495674d4f62ef83919292e3e4e7ea51eb0c",
+    "scope": "Completed authorized manual assignments; immutable review-text package plus pointer; evidence only",
+    "preconditions": "Verify exact qualified local publisher and dependencies, expected parent, provenance, text inventory, secrets, staged bytes, WIP and main isolation; verify remote paths and hashes; preserve originals and stop on uncertainty",
+    "limits": "No installation, distribution, code modification, candidate Git-object publication, execution, deployment, STOP/READY, product or broker authority. Exact publisher source not independently inspected; full Atlas hash sweep incomplete.",
+    "retrieval": "Atlas retrieves commit-pinned evidence directly; manual attachment fallback only if retrieval blocked."
+  },
+  "historical_knowledge_reuse": {
+    "required": true,
+    "scope": "Existing task preparation for Atlas and all manual providers",
+    "rule": "Retrieve relevant previous RCA, tests, qualified mechanisms, rejected approaches and lessons before implementation; justify reinvention; no separate campaign or benchmarking."
   }
 }

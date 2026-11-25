@@ -92,3 +92,8 @@ Provenance for every row below: Founder task `ATLAS PERSISTENT PLANNING AND HAND
 ### Founder decision — provider-neutral alignment and knowledge continuity (2026-11-24)
 
 Approved: improve shared Atlas knowledge freshness, scoped blocker handling, safe engineering initiative and durable evidence; preserve existing Cursor usage, skills, instructions and production DORY/Cursor contracts unchanged. Approved bounded clean local Atlas planning fast-forward and separately isolated worker-free sequence-637 negative Sync-Pull qualification; no production mutation, STOP release, READY publication, runner/worker launch, broker action, adapter replacement or roadmap ratification. Codex remains manual only. See adoption case for evidence and remaining gates.
+
+
+### Founder decision — standing manual evidence transfer and historical reuse (2026-11-24)
+
+APPROVED, with per-use conditions in the canonical handshake. Founder authorized restoration and standing evidence-only workflow for Cursor and Codex, with activation after Atlas review. Evidence commit 98c08495674d4f62ef83919292e3e4e7ea51eb0c verified for branch ancestry, changed paths, pointer, manifest and decisive source/runtime retrieval; full independent byte sweep incomplete and restored publisher source remains local. Pin E38D4FDC601221C5C1B188B5D0EF988F772B69137F622D7113D9CAB6E590EE3E; no installation or deployment authority. Founder also approved retrieving and reusing accumulated provider-independent engineering experience within existing assignments, and deferred benchmarking and new provider projects. No production authority or roadmap ratification follows. Continue current DORY qualification and return to Donum.
