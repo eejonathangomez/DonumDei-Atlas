@@ -1,6 +1,6 @@
 # Current checkpoint
 
-> **CURRENT HANDOFF (2026-11-26):** Read [installation checkpoint](../reports/session-handoffs/2026-11-26/ATLAS-DORY-PILOT-INSTALLATION-CHECKPOINT.md) and [session index](../reports/session-handoffs/LATEST.md). Historical rows below are not current truth. Gate A and B.1–B.3 PASS; all pilot VMs OFF, staging disconnected, worker/gateway private-only, all pilot ISOs detached per Founder console evidence. Next B.4 authenticated package preparation; staging connectivity requires separate approval. STOP asserted, sequence 636 COMPLETE YELLOW last read earlier today; refresh. No new backup or execution authority. Four continuous documentation obligations recorded; preserve local divergent work.
+> **CURRENT HANDOFF (2026-11-26 closeout):** Read [offline installation closeout](../reports/session-handoffs/2026-11-26/ATLAS-SESSION-DORY-OFFLINE-INSTALLATION-CLOSEOUT.md) and [session index](../reports/session-handoffs/LATEST.md). Historical rows below are not current truth. Gates A and B.1–B.5 PASS; gateway OFF confirmed, software installed but masked/inactive, guest network isolated at last check. Gate C next, proposed only. Final inventory hash and explicit unmount evidence missing. STOP asserted, sequence 636 COMPLETE YELLOW at fresh closeout read; refresh. No new backup, gateway uplink or production authority. Preserve local divergent WIP.
 
 
 This file is a living evidence record. It cannot authorize READY, AUTO-READY, publication, or product execution.
