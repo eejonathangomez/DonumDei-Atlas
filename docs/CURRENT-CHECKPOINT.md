@@ -1,6 +1,6 @@
 # Current checkpoint
 
-> **CURRENT HANDOFF (2026-11-26):** Read [latest session handoff](../reports/session-handoffs/2026-11-26/ATLAS-DORY-DEDICATED-WORKER-PILOT-CLOSEOUT.md) and [session index](../reports/session-handoffs/LATEST.md). Rows below are historical, not current runtime truth. Fresh GitHub sequence 636 DORY COMPLETE, YELLOW, STOP asserted; AUTO-READY NO. Manual-results pointer stale. Local reported Seagate 3598c305 targeted restore PASS. Dedicated private pilot provisioned; worker Ubuntu installed, baseline PASS and OFF; gateway last seen GRUB installer, installation pending. No uplink or actual worker execution authorized. Reconcile fresh evidence and local divergent edits before action. Documentation only, not execution authority.
+> **CURRENT HANDOFF (2026-11-26):** Read [installation checkpoint](../reports/session-handoffs/2026-11-26/ATLAS-DORY-PILOT-INSTALLATION-CHECKPOINT.md) and [session index](../reports/session-handoffs/LATEST.md). Historical rows below are not current truth. Gate A and B.1–B.3 PASS; all pilot VMs OFF, staging disconnected, worker/gateway private-only, all pilot ISOs detached per Founder console evidence. Next B.4 authenticated package preparation; staging connectivity requires separate approval. STOP asserted, sequence 636 COMPLETE YELLOW last read earlier today; refresh. No new backup or execution authority. Four continuous documentation obligations recorded; preserve local divergent work.
 
 
 This file is a living evidence record. It cannot authorize READY, AUTO-READY, publication, or product execution.
