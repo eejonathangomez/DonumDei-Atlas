@@ -13,6 +13,10 @@ This document is the one authoritative recovery contract for the Atlas / DORY / 
 
 ---
 
+## Continuous recovery, reconstruction and knowledge maintenance
+
+Founder direction (2026-11-26): on every handshake and significant engineering change maintain four continuous obligations: comprehensive recovery documentation, enhanced as-built versus target architecture and design rationale, clean reconstruction from scratch with qualification evidence, and continuous handshake enhancement. Retrieve the current checkpoint and session index first; capture evidence during work, reconcile and publish at session close; never substitute chat memory for canonical evidence or grant execution authority. Before Gate D, close Gate C, reconcile the existing local RECOVERY.md, complete reconstruction and architecture documentation, expand and verify the backup manifest, then perform a separately authorized incremental checkpoint and targeted restoration. Preserve local divergent WIP; avoid duplicate authority. Independent-machine recovery remains open. See [installation checkpoint](../reports/session-handoffs/2026-11-26/ATLAS-DORY-PILOT-INSTALLATION-CHECKPOINT.md).
+
 ## STABLE PROTOCOL vs TRANSIENT CURRENT TRUTH
 
 | Class | What belongs here | Rule |
