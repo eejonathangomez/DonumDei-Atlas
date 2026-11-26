@@ -1,9 +1,6 @@
-# Atlas End Session — latest handoff pointer
+# Atlas latest session checkpoint
 
-**Latest handoff:** [ATLAS-DORY-DEDICATED-WORKER-PILOT-CLOSEOUT.md](2026-11-26/ATLAS-DORY-DEDICATED-WORKER-PILOT-CLOSEOUT.md)
-**Session date:** 2026-11-26 Pacific
-**Result:** PASS WITH CONDITIONS — host pilot provisioned, worker offline installation and baseline PASS, gateway at installer GRUB menu last observed.
-**Handoff commit:** `50dc0ec11f3d5f1905442b63df7295e076dc4299`
-**Authority:** evidence only; no production or new execution authority.
-
-Fresh remote control: sequence 636 DORY COMPLETE, YELLOW, STOP asserted. AUTO-READY NO. Manual-results pointer stale; local recovery 3598c305 targeted restore PASS reported. Local runtime recheck required. Gateway installation next, then offline package closure, policy and synthetic network qualification. No uplink or actual worker execution until qualified and authorized. Preserve local WIP; reconcile divergent local pointers without overwriting.
+**Latest checkpoint:** [ATLAS-DORY-PILOT-INSTALLATION-CHECKPOINT.md](2026-11-26/ATLAS-DORY-PILOT-INSTALLATION-CHECKPOINT.md)
+**Date:** 2026-11-26 Pacific
+**Result:** Gate A and B.1–B.3 PASS; all pilot VMs installed, baseline verified, Off; staging disconnected; worker/gateway private only; all pilot ISOs detached. Next B.4 authenticated package preparation, separately authorized staging connectivity only. No production execution or gateway uplink. Checkpoint commit: `685ee0e360bf3b90f3ecfeb36d5cfc19dfe4a44d`.
+Prior handoff: [dedicated worker pilot closeout](2026-11-26/ATLAS-DORY-DEDICATED-WORKER-PILOT-CLOSEOUT.md). STOP asserted and sequence 636 COMPLETE YELLOW last read earlier today; refresh live state. Manual-results stale; local runner unknown. No new backup. Four Founder documentation obligations recorded in checkpoint. Reconcile local divergent WIP before any local synchronization.
