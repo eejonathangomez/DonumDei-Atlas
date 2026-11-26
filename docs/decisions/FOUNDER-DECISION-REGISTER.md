@@ -106,3 +106,8 @@ APPROVED, with per-use conditions in the canonical handshake. Founder authorized
 ### Founder decision — recovery maintenance and provider efficiency (2026-11-24)
 
 APPROVED: reuse existing recovery mechanisms for a bounded checkpoint refresh; a screened one-run manifest copy may cover confirmed recent engineering omissions, retaining existing exclusions and credential protections. No permanent manifest change or recovery redevelopment. Fresh Family Kanban export waived for this refresh only, preserving historical coverage; live data freshness unverified. Do not redesign functioning mechanisms for Codex; if session authentication/access blocks completion, use established Founder/Cursor procedure when available. Restricted worker egress deferred until recovery refresh. Offline Sandbox qualification accepted with conditions; no real provider invocation or production commissioning authorized. See [session handoff](../../reports/session-handoffs/2026-11-24/ATLAS-SESSION-DORY-CODEX-RECOVERY-CHECKPOINT.md). No roadmap ratification.
+
+
+### Founder authorization — bounded offline gateway installation (2026-11-26)
+
+Explicitly approved 15 new packages and four dependency upgrades from the authenticated local bundle, zero removals, no general upgrade, no external network or service activation. Installation executed and accepted within observed scope; authority consumed. Founder requested stop at safe Gate B.5 boundary and preserve handshake/context. Gate C and recovery refresh remain separate; no new authorization or roadmap ratification. Evidence and reusable procedure: [offline installation closeout](../../reports/session-handoffs/2026-11-26/ATLAS-SESSION-DORY-OFFLINE-INSTALLATION-CLOSEOUT.md).
